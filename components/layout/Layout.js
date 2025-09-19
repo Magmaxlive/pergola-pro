@@ -1,7 +1,7 @@
 import { useEffect } from "react"
 import BackToTop from '../elements/BackToTop'
 import DataBg from '../elements/DataBg'
-import Breadcrumb from './Breadcrumb';
+import Breadcrumb from './Breadcrumb'
 import BreadcrumbService from './BreadcrumbService'
 import Footer from './Footer'
 import Header from './Header'
@@ -22,7 +22,13 @@ export default function Layout({ headerCls, headerTop, headTitle, breadcrumbTitl
 
             <Header headerCls={headerCls} headerTop={headerTop} />
             <main>
-                {breadcrumbTitle && isService ? (<BreadcrumbService breadcrumbTitle={breadcrumbTitle} pageTitle={pageTitle} />) : (<Breadcrumb breadcrumbTitle={breadcrumbTitle} pageTitle={pageTitle} />)}
+                {breadcrumbTitle && (
+                    isService ? (
+                        <BreadcrumbService breadcrumbTitle={breadcrumbTitle} pageTitle={pageTitle} />
+                    ) : (
+                        <Breadcrumb breadcrumbTitle={breadcrumbTitle} pageTitle={pageTitle} />
+                    )
+                )}
                 {children}
             </main>
             < Footer />
