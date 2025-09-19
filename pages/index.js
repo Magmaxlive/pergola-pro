@@ -1,0 +1,40 @@
+import Layout from "@/components/layout/Layout"
+
+import Banner1 from "@/components/sections/Banner1"
+import Brand1 from "@/components/sections/Brand1"
+import Features1 from "@/components/sections/Features1"
+import About1 from "@/components/sections/About1"
+import Services1 from "@/components/sections/Services1"
+import Team1 from "@/components/sections/Team1"
+import Counter1 from "@/components/sections/Counter1"
+import Testimonial1 from "@/components/sections/Testimonial1"
+import Blog1 from "@/components/sections/Blog1"
+import Newsletter1 from "@/components/sections/Newsletter1"
+import Work1 from "@/components/sections/Work1"
+import Counter4 from "@/components/sections/Counter4"
+import Appointment3 from "@/components/sections/Appointment3"
+import Support1 from "@/components/sections/Support1"
+import Faq1 from "@/components/sections/Faq1"
+
+export default function Home() {
+
+    return (
+        <>
+            <Layout headerCls="transparent-header">
+                <Banner1 />
+                <Features1 />
+                <About1 />
+                <Services1 />
+                <Work1 />
+
+                <div className="area-bg">
+                    <div className="area-background-img jarallax" data-background="/assets/img/bg/area_bg01.jpg" />
+                    <Appointment3 />
+                </div>
+                <Support1 />
+                <Faq1 />
+                
+            </Layout>
+        </>
+    )
+}
