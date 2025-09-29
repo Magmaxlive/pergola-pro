@@ -1,8 +1,11 @@
 
-import { useEffect, useState } from "react"
+import { useEffect, useState, useRef } from "react"
 import data from "../../util/blog.json"
 import BlogCard1 from "./BlogCard1"
 import Pagination from "./Pagination"
+import { baseURL } from "@/auth/auth";
+import { useRouter } from "next/navigation";
+
 export default function BlogPost({ style, showItem, showPagination }) {
     let [currentPage, setCurrentPage] = useState(1)
     let showLimit = showItem,
@@ -46,6 +49,46 @@ export default function BlogPost({ style, showItem, showPagination }) {
     const handleActive = (item) => {
         setCurrentPage(item)
     }
+
+
+
+    const [newsData, setNewsData] = useState([]);
+    const [isLoading, setIsLoading] = useState(false);
+    const cachedData = useRef([]);
+    const router = useRouter();
+
+    useEffect(() => {
+        const storedData = localStorage.getItem("nData");
+        if (storedData) {
+            const parsedData = JSON.parse(storedData);
+            setNewsData(parsedData);
+            cachedData.current = parsedData;
+        } else {
+            fetchNewsData();
+        }
+        const handleScroll = () => {
+            if (window.scrollY === 0 && cachedData.current.length === 0) {
+                fetchNewsData();
+            }
+        };
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+    const fetchNewsData = async () => {
+        setIsLoading(true);
+        const res = await fetch(`${baseURL}/wp-json/wp/v2/posts?per_page=100`, {
+            method: "GET",
+            headers: { "Content-Type": "application/json" },
+        });
+        const data = await res.json();
+        setNewsData(data);
+        cachedData.current = data;
+        localStorage.setItem("nData", JSON.stringify(data));
+        setIsLoading(false);
+    };
+
+
     return (
         <>
 
@@ -54,11 +97,11 @@ export default function BlogPost({ style, showItem, showPagination }) {
                 <h3>No Products Found </h3>
             )}
 
-            {getPaginatedProducts.map((item, i) => (
-                <BlogCard1 key={i} item={item} />
+            {newsData.map((news, i) => (
+                <BlogCard1 key={i} item={news} />
             ))}
 
-            {showPagination &&
+            {/* {showPagination &&
                 <Pagination
                     getPaginationGroup={
                         getPaginationGroup
@@ -69,7 +112,7 @@ export default function BlogPost({ style, showItem, showPagination }) {
                     prev={prev}
                     handleActive={handleActive}
                 />
-            }
+            } */}
         </>
     )
 }

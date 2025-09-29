@@ -10,16 +10,16 @@ export default function Footer1() {
                             <div className="row">
                                 <div className="col-xl-3 col-lg-4 col-md-7">
                                     <div className="footer-widget">
-                                        <h2 className="fw-title">About Us</h2>
+                                        <h2 className="fw-title">Contact Us</h2>
                                         <div className="footer-content">
-                                            <p>There are many variations of passages of Lore Ipsum available, but the majori have alteration in some form, by injected humour, ondomised word which don't look</p>
-                                            <div className="footer-newsletter">
+                                            <p>11 Aurora Avenue, Welcome bay, Tauranga <br /> <a href="mailto:info@pergolapro.co.nz" class="underline_hover">info@pergolapro.co.nz</a> <br /></p>
+                                            {/* <div className="footer-newsletter">
                                                 <h4 className="title">Subscribe to Our Newsletter</h4>
                                                 <form action="#">
                                                     <input type="text" placeholder="Enter your email" />
                                                     <button type="submit" className="btn btn-two">Subscribe</button>
                                                 </form>
-                                            </div>
+                                            </div> */}
                                         </div>
                                     </div>
                                 </div>
@@ -28,12 +28,12 @@ export default function Footer1() {
                                         <h2 className="fw-title">Our Services</h2>
                                         <div className="footer-link">
                                             <ul className="list-wrap">
-                                                <li><Link href="/project"><i className="fas fa-angle-double-right" />Single Ply Roofing</Link></li>
-                                                <li><Link href="/project"><i className="fas fa-angle-double-right" />Modified Roofing</Link></li>
-                                                <li><Link href="/project"><i className="fas fa-angle-double-right" />Built-Up Roofing</Link></li>
-                                                <li><Link href="/project"><i className="fas fa-angle-double-right" />Metal Roofing</Link></li>
-                                                <li><Link href="/project"><i className="fas fa-angle-double-right" />Vegetative Roofing</Link></li>
-                                                <li><Link href="/project"><i className="fas fa-angle-double-right" />Specialty Metal</Link></li>
+                                                <li><Link href="/project"><i className="fas fa-angle-double-right" />Pergolas</Link></li>
+                                                <li><Link href="/project"><i className="fas fa-angle-double-right" />Roller Blinds</Link></li>
+                                                <li><Link href="/project"><i className="fas fa-angle-double-right" />Carports</Link></li>
+                                                <li><Link href="/project"><i className="fas fa-angle-double-right" />Louvre Roof Systems</Link></li>
+                                                <li><Link href="/project"><i className="fas fa-angle-double-right" />Canopies</Link></li>
+                                                <li><Link href="/project"><i className="fas fa-angle-double-right" />Fencing & Decking</Link></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -93,7 +93,7 @@ export default function Footer1() {
                                             </div>
                                             <div className="content">
                                                 <span>Phone No</span>
-                                                <Link href="/tel:0123456789">+000 (123) 456 88</Link>
+                                                <Link href="/tel:+64273928106">+64 27 392 8106</Link>
                                             </div>
                                         </div>
                                     </div>
@@ -101,10 +101,9 @@ export default function Footer1() {
                                         <div className="footer-social">
                                             <h2 className="title">Follow Us:</h2>
                                             <ul className="list-wrap">
-                                                <li><Link href="/#"><i className="fab fa-facebook-f" /></Link></li>
-                                                <li><Link href="/#"><i className="fab fa-twitter" /></Link></li>
-                                                <li><Link href="/#"><i className="fab fa-linkedin-in" /></Link></li>
-                                                <li><Link href="/#"><i className="fab fa-youtube" /></Link></li>
+                                                <li><a href="https://www.facebook.com/Pergolapronz?mibextid=ZbWKwL" target="_blank"  rel="noopener noreferrer"><i className="fab fa-facebook-f" /></a></li>
+                                                <li><a href="https://www.instagram.com/pergolapronz/?igsh=ajFxemh2OXphNDh6#" target="_blank"  rel="noopener noreferrer"><i className="fab fa-instagram" /></a></li>
+                                                <li><a href="https://www.linkedin.com/company/pergola-pro/" target="_blank"  rel="noopener noreferrer"><i className="fab fa-linkedin-in" /></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -116,15 +115,15 @@ export default function Footer1() {
                         <div className="container">
                             <div className="row">
                                 <div className="col-md-6">
-                                    <div className="copyright-text">
+                                    <div className="copyright-text" style={{fontSize: "14px"}}>
                                         <p>© Copyright {new Date().getFullYear()}. All Right Reserved</p>
                                     </div>
                                 </div>
                                 <div className="col-md-6">
                                     <div className="footer-bootom-menu">
                                         <ul className="list-wrap">
-                                            <li><Link href="/contact">Privacy Policy</Link></li>
-                                            <li><Link href="/contact">Terms  Conditions</Link></li>
+                                            <li><Link href="/contact" style={{fontSize: "14px"}}>Privacy Policy</Link></li>
+                                            <li><Link href="/contact" style={{fontSize: "14px"}}>Terms  Conditions</Link></li>
                                         </ul>
                                     </div>
                                 </div>

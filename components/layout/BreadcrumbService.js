@@ -1,18 +1,19 @@
 import Link from "next/link";
 
-export default function Breadcrumb({ breadcrumbTitle, pageTitle }) {
+export default function Breadcrumb({ breadcrumbTitle, pageTitle, imageURL }) {
     return (
         <>
             <section 
                 className="breadcrumb-area breadcrumb-bg position-relative" 
                 style={{ 
-                    backgroundImage: `url(https://pergolapro.co.nz/wp-content/uploads/2023/12/louvre.jpg)`,
+                    backgroundImage: `url(${imageURL})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
                     minHeight: '400px',
                     display: 'flex',
                     alignItems: 'center',
-                    padding: '60px 0'
+                    padding: '60px 0',
+                    objectFit: "cover"
                 }}  >
                 <div 
                     className="breadcrumb-shape" 

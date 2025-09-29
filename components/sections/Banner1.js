@@ -24,11 +24,11 @@ export default function Banner1() {
     return (
         <>
             <section className="banner-area">
-                <div className="banner-shape" data-background="/assets/img/banner/banner_shape.jpg" />
-                <div className="banner-bg" data-background="/assets/img/banner/banner_bg.jpg">
+                <div className="banner-shape" data-background="/assets/img/banner/banner.jpeg" />
+                <div className="banner-bg" data-background="/assets/img/banner/banner.jpeg">
                     <div className="banner-content">
-                        <h2 className="title wow fadeInDown" data-wow-delay=".2s">Best Roofing Services and Consulting</h2>
-                        <p className="wow fadeInUp" data-wow-delay=".2s">There are many variations of passages of Lorem as Ipsumoff available, but the majority have suffered alt.</p>
+                        <h2 className="title wow fadeInDown" data-wow-delay=".2s">Tauranga's Most Popular Pergola Brand</h2>
+                        <p className="wow fadeInUp" data-wow-delay=".2s">Discover why thousands of homeowners trust us to elevate their homes. </p>
                         <Link href="/project" className="btn wow fadeInUp" data-wow-delay=".4s">Discover More</Link>
                     </div>
                     <div className="banner-tooltip-wrap">

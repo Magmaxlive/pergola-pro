@@ -13,19 +13,30 @@ const settings = {
     slidesToScroll: 1,
 }
 
+
 export default function About() {
 
+  
     return (
         <>
             <Layout breadcrumbTitle="About Us">
 
-                <section className="about-area inner-about-area pt-120 pb-120">
+                <section className="about-area inner-about-area pt-30 pb-120">
                     <div className="container">
+                        <div className="row justify-content-center">
+                        <div className="col-lg-6">
+                            <div className="section-title text-center mb-50 tg-heading-subheading animation-style3">
+                                <span className="sub-title tg-element-title">About</span>
+                                <h2 className="title tg-element-title">Signature Attributes of Pergola Pro Tauranga</h2>
+                            </div>
+                        </div>
+                    </div>
+
                         <div className="row align-items-center">
                             <div className="col-xl-7 col-lg-6 order-0 order-lg-2">
                                 <div className="about-img-wrap">
-                                    <img src="/assets/img/images/about_img01.jpg" alt="" className="wow fadeInRight" data-wow-delay=".4s" />
-                                    <img src="/assets/img/images/about_img02.jpg" alt="" className="wow fadeInRight" data-wow-delay=".2s" />
+                                    <img src="/assets/img/about/2.jpg" alt=""  style={{maxWidth:"369px"}}  className="wow fadeInRight" data-wow-delay=".4s" />
+                                    <img src="/assets/img/about/1.jpg" alt=""  style={{maxWidth:"369px"}}  className="wow fadeInRight" data-wow-delay=".2s" />
                                     <div className="about-experiences-wrap">
                                         <div className="experiences-item">
                                             <div className="icon">
@@ -50,18 +61,19 @@ export default function About() {
                                 <div className="about-content">
                                     <div className="section-title mb-25">
                                         <span className="sub-title">About Our Company</span>
-                                        <h2 className="title">We’re Committed to Roofing Excellence</h2>
+                                        <h2 className="title">V BUILDERS VENTURE FOR: CURATING THE PERFECT LIVING SPACE</h2>
                                     </div>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majori have suffered
-                                        alteration in some form, by injected humour, or randomised word which don't look even slightly
-                                        believable.</p>
-                                    <div className="about-list">
+                                    <p>Pergola Pro expertly creates outdoor areas that are tailored to each house. Under the direction of our in-house architectural designer, every client is able to express their distinct vision during the design phase. We then turn that vision into a remarkable final product, which significantly enhances the value of your property and lifestyle with comprehensive outdoor solutions.</p>
+                                    <p>
+                                        <strong>OUR WORKFLOW IN-HOME CONSULTATION</strong> <br />
+                                        After meeting with you on-site, one of our design experts will thoroughly comprehend your home’s vision, go over all of your options, and then offer you the best option for your particular circumstance.</p>
+                                    {/* <div className="about-list">
                                         <ul className="list-wrap">
                                             <li><i className="fas fa-check" />32k Partners have worked us.</li>
                                             <li><i className="fas fa-check" />Professional and experienced human resources.</li>
                                             <li><i className="fas fa-check" />Provide the best roof services</li>
                                         </ul>
-                                    </div>
+                                    </div> */}
                                     <Link href="/about" className="btn">Learn More</Link>
                                 </div>
                             </div>
@@ -74,9 +86,9 @@ export default function About() {
                     <div className="container">
                         <div className="row justify-content-center">
                             <div className="col-lg-8">
-                                <div className="section-title text-center mb-50">
-                                    <span className="sub-title">Working Plan</span>
-                                    <h2 className="title">Roof Plan Working Process</h2>
+                                <div className="section-title text-center mb-50 tg-heading-subheading animation-style3">
+                                    <span className="sub-title tg-element-title">Working Plan</span>
+                                    <h2 className="title tg-element-title">Roof Plan Working Process</h2>
                                 </div>
                             </div>
                         </div>
@@ -88,8 +100,8 @@ export default function About() {
                                         <h4 className="number">01</h4>
                                     </div>
                                     <div className="work-content">
-                                        <h2 className="title">Plan for Roofing</h2>
-                                        <p>Suffered alteration in some a form, by injected humour, or randomised word</p>
+                                        <h2 className="title">Advanced construction materials</h2>
+                                        <p><ul><li>Highly durable aluminum alloy, resistant to oxidation and corrosion, crafts profiled edges.<br /><br /></li><li>Polycarbonate roofing materials have a lifespan exceeding ten years, ensuring longevity and reliability.</li></ul></p>
                                     </div>
                                 </div>
                             </div>
@@ -100,8 +112,8 @@ export default function About() {
                                         <h4 className="number">02</h4>
                                     </div>
                                     <div className="work-content">
-                                        <h2 className="title">Schedule Estimate</h2>
-                                        <p>Suffered alteration in some a form, by injected humour, or randomised word</p>
+                                        <h2 className="title">Superior Drainage System</h2>
+                                        <p><ul><li>We use corrosion-resistant aluminum alloy drain pipes with a distinctive design to ensure efficient water flow and simple maintenance..<br /><br /></li><li>The noise reduction design ensures a peaceful atmosphere even during rainy weather, enhancing comfort and tranquility.</li></ul></p>
                                     </div>
                                 </div>
                             </div>
@@ -112,8 +124,10 @@ export default function About() {
                                         <h4 className="number">03</h4>
                                     </div>
                                     <div className="work-content">
-                                        <h2 className="title">Install New Roof</h2>
-                                        <p>Suffered alteration in some a form, by injected humour, or randomised word</p>
+                                        <h2 className="title">A fully customizable canopy</h2>
+                                        <p><ul>
+                                            <li>Irregular shape design options are available to cover any desired area, providing tailored solutions to meet individual needs.</li>
+                                        </ul></p>
                                     </div>
                                 </div>
                             </div>
@@ -124,8 +138,11 @@ export default function About() {
                                         <h4 className="number">04</h4>
                                     </div>
                                     <div className="work-content">
-                                        <h2 className="title">Enjoy Roofing</h2>
-                                        <p>Suffered alteration in some a form, by injected humour, or randomised word</p>
+                                        <h2 className="title">Safety and protection</h2>
+                                        <p><ul>
+                                            <li>The aluminum canopy&#8217;s B1-grade flame retardant properties prevent accidental fire damage, ensuring safety for the structure and occupants..<br /><br /></li>
+                                            <li>The double-sided co-extrusion process creates a UV-resistant layer, providing effective protection against harmful UV rays and promoting durability and longevity.</li>
+                                        </ul>	</p>
                                     </div>
                                 </div>
                             </div>
@@ -156,18 +173,19 @@ export default function About() {
                             <div className="col-lg-6">
                                 <div className="history-content">
                                     <div className="section-title mb-20">
-                                        <span className="sub-title">Our Roofing History</span>
-                                        <h2 className="title">Roofing when an unknown printer took to make type book</h2>
+                                        <span className="sub-title">THEN THE DESIGN</span>
+                                        <h2 className="title">ULTIMATELY, THERE IS A SOLUTION</h2>
                                     </div>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majori our as have suffered alteration in some form, by injected humour, or randomised word which don't look even slightly believable.</p>
-                                    <div className="history-list">
+                                    <p>After that, we will refine the design and get the materials ready for your project, all the while keeping you informed about the project’s timeline. We strive to keep the lead time at roughly six weeks, which is highly competitive.</p>
+                                    <p>One of our knowledgeable teams will deliver all the ready-made materials to the location and construct your outdoor solution according to the precise measurements of the area. Depending on the project’s size and complexity, this could take one to five days to finish.</p>
+                                    {/* <div className="history-list">
                                         <ul className="list-wrap">
                                             <li><i className="fas fa-check-circle" />Technology management</li>
                                             <li><i className="fas fa-check-circle" />Roofing Solutions</li>
                                             <li><i className="fas fa-check-circle" />Modern Worker Working here</li>
                                             <li><i className="fas fa-check-circle" />Quick Response</li>
                                         </ul>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>

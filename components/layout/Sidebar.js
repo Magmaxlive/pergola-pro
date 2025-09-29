@@ -1,23 +1,36 @@
-import Link from "next/link"
-import { useState } from "react"
+import Link from "next/link";
+import { useRouter } from "next/router"; // Import useRouter
+import { useState } from "react";
 
 export default function Sidebar() {
-   
-    return (
-        <>
+  const router = useRouter(); // Initialize useRouter
 
-            <ul className="navigation">
-                <li className="active menu-item"  ><Link href="/" style={{ fontSize: "14px" }}>Home</Link>
-                </li>
-                <li ><Link href="/about" style={{ fontSize: "14px" }}>About us</Link></li>
-                <li className="menu-item"><Link href="/services" style={{ fontSize: "14px" }}>Services</Link>
-                </li>
-                <li className="menu-item"><Link href="/gallery" style={{ fontSize: "14px" }}>Gallery</Link></li>
-                <li className="menu-item"><Link href="/blog" style={{ fontSize: "14px" }}>Blog</Link>
-                </li>
-                <li><Link href="/contact" style={{ fontSize: "14px" }}>Contact</Link></li>
-            </ul>
+  // Define menu items with their paths
+  const menuItems = [
+    { path: "/", label: "Home" },
+    { path: "/about", label: "About us" },
+    { path: "/services", label: "Services" },
+    { path: "/gallery", label: "Gallery" },
+    { path: "/blog", label: "Blog" },
+    { path: "/contact", label: "Contact" },
+  ];
 
-        </>
-    )
+  return (
+    <>
+      <ul className="navigation">
+        {menuItems.map((item) => (
+          <li
+            key={item.path}
+            className={`menu-item ${
+              router.pathname === item.path ? "active" : ""
+            }`}
+          >
+            <Link href={item.path} style={{ fontSize: "14px" }}>
+              {item.label}
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </>
+  );
 }

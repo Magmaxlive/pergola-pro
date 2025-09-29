@@ -59,7 +59,7 @@ export default function Project() {
   return (
     <>
       <Layout breadcrumbTitle="Projects">
-        <section className="inner-project-area pt-115 pb-90">
+        <section className="inner-project-area pt-30 pb-90">
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-lg-8">

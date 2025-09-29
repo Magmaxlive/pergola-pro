@@ -22,18 +22,16 @@ export default function Home() {
         <>
             <Layout headerCls="transparent-header">
                 <Banner1 />
-                <Features1 />
                 <About1 />
+                {/* <Features1 /> */}
                 <Services1 />
                 <Work1 />
-
                 <div className="area-bg">
                     <div className="area-background-img jarallax" data-background="/assets/img/bg/area_bg01.jpg" />
                     <Appointment3 />
                 </div>
                 <Support1 />
                 <Faq1 />
-                
             </Layout>
         </>
     )

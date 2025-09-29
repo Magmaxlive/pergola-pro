@@ -1,6 +1,19 @@
 import Link from "next/link"
+import Slugify from "@/components/validators/slugify";
+import { useState } from "react";
 
 export default function BlogCard1({ item }) {
+    const [slugnName, SlugName] = useState(item?.title.rendered ? Slugify(item?.title.rendered) : null)
+
+    const formatDate = (dateString) => {
+        const date = new Date(dateString)
+        return date.toLocaleDateString('en-US', {
+            day: 'numeric',
+            month: 'short',
+            year: 'numeric'
+        })
+    }
+
     return (
         <>
             {/* <div className="inner-blog-item">
@@ -25,19 +38,24 @@ export default function BlogCard1({ item }) {
             <div className="col-lg-6 col-md-6">
                 <div className="blog-post-item">
                     <div className="blog-post-thumb">
-                        <Link href={`/blog/${item.id}`}><img src={`/assets/img/blog/${item.img}`} alt="" /></Link>
+                        <Link href={`/blog/${slugnName}/${item.id}`}><img
+                            src={`${item?.yoast_head_json?.og_image ? item?.yoast_head_json?.og_image[0].url : null}`}
+                            alt=""
+                            style={{ width: "100%", height: "300px", objectFit: "cover" }}
+                        />
+                        </Link>
                     </div>
                     <div className="blog-post-content">
-                        <Link href="/blog" className="tag">{item.category}</Link>
+                        {/* <Link href="/blog" className="tag">{item.category}</Link> */}
                         <div className="blog-meta">
                             <ul className="list-wrap">
-                                <li><i className="far fa-user" /> By <Link href={`/blog/${item.id}`}>{item.author}</Link></li>
-                                <li><i className="fas fa-calendar-alt" />23 Dec {new Date().getFullYear()}</li>
+                                {/* <li><i className="far fa-user" /> By <Link href={`/blog/${item.id}`}>{item.author}</Link></li> */}
+                                <li><i className="fas fa-calendar-alt" />{formatDate(item.date)}</li>
                             </ul>
                         </div>
-                        <h2 className="title"><Link href={`/blog/${item.id}`}>{item.title}</Link>
+                        <h2 className="title"><Link href={`/blog/${slugnName}/${item.id}`}>{item.title.rendered ? item.title.rendered.substring(0, 55): null}</Link>
                         </h2>
-                        <Link href={`/blog/${item.id}`} className="link-btn">Read More<i className="fas fa-arrow-right" /></Link>
+                        <Link href={`/blog/${slugnName}/${item.id}`} className="link-btn">Read More<i className="fas fa-arrow-right" /></Link>
                     </div>
                 </div>
             </div>
