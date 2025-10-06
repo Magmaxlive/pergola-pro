@@ -23,6 +23,7 @@ export default function Home() {
         <>
             <Layout headerCls="transparent-header">
                 <Banner1 />
+                 <GoogleReviews />
                 <About1 />
                 {/* <Features1 /> */}
                 <Services1 />
@@ -33,7 +34,7 @@ export default function Home() {
                 </div>
                 <Support1 />
                 <Faq1 />
-                <GoogleReviews />
+               
             </Layout>
         </>
     )

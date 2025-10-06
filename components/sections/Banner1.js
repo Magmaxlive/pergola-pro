@@ -29,7 +29,7 @@ export default function Banner1() {
                 <div className="banner-bg" data-background="/assets/img/banner/banner.jpeg">
                     <div className="banner-content">
                         <h2 className="title wow fadeInDown" data-wow-delay=".2s">Tauranga's Most Popular Pergola Brand</h2>
-                        <p className="wow fadeInUp" data-wow-delay=".2s">Discover why thousands of homeowners trust us to elevate their homes. </p>
+                        <p className="" data-wow-delay=".2s" style={{fontSize: "16px"}}>Discover why thousands of homeowners trust us to elevate their homes. </p>
                         <Link href="/project" className="btn wow fadeInUp" data-wow-delay=".4s">Discover More</Link>
                     </div>
                     <div className="banner-tooltip-wrap">
@@ -66,7 +66,7 @@ export default function Banner1() {
                     
                 </div>
                 {/* brand-area */}
-                <Brand1 />
+                {/* <Brand1 /> */}
                 {/* brand-area-end */}
             </section>
 

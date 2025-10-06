@@ -12,7 +12,7 @@ export default function Footer1() {
                                     <div className="footer-widget">
                                         <h2 className="fw-title">Contact Us</h2>
                                         <div className="footer-content">
-                                            <p>11 Aurora Avenue, Welcome bay, Tauranga <br /> <a href="mailto:info@pergolapro.co.nz" class="underline_hover">info@pergolapro.co.nz</a> <br /></p>
+                                            <a href="https://maps.app.goo.gl/wRSf8qe3BmQEFH8F9" target="_blank">11 Aurora Avenue, Welcome bay, Tauranga <br /> <a href="mailto:info@pergolapro.co.nz" class="underline_hover">info@pergolapro.co.nz</a> <br /></a>
                                             {/* <div className="footer-newsletter">
                                                 <h4 className="title">Subscribe to Our Newsletter</h4>
                                                 <form action="#">

@@ -355,14 +355,14 @@ const GoogleReviews = () => {
           <h3 className="h3 text-muted">What our customers say about us</h3>
 
           {/* Average Rating */}
-          <div className="d-flex align-items-center justify-content-center gap-3 mt-4">
+          {/* <div className="d-flex align-items-center justify-content-center gap-3 mt-4">
             <div className="d-flex align-items-center">
               {renderStars(5)}
               <span className="h4 fw-bold text-dark ms-2 mb-0">5.0</span>
             </div>
             <span className="text-muted">•</span>
             <span className="text-muted">{reviews.length} reviews</span>
-          </div>
+          </div> */}
         </div>
 
         {/* Reviews Container with Navigation */}
