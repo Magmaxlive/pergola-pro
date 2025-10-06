@@ -4,12 +4,26 @@ import { useState, useEffect } from "react";
 
 export default function Project() {
   const images = [
-    "/assets/img/project/h3_project_img01.jpg",
-    "/assets/img/project/h3_project_img02.jpg",
-    "/assets/img/project/h3_project_img03.jpg",
-    "/assets/img/project/h3_project_img04.jpg",
-    "/assets/img/project/h3_project_img05.jpg",
-    "/assets/img/project/h3_project_img06.jpg",
+    "/assets/img/gallery/1.jpg",
+    "/assets/img/gallery/2.png",
+    "/assets/img/gallery/3.png",
+    "/assets/img/gallery/4.png",
+    "/assets/img/gallery/5.png",
+    "/assets/img/gallery/6.png",
+    "/assets/img/gallery/7.png",
+    "/assets/img/gallery/8.png",
+    "/assets/img/gallery/9.png",
+    "/assets/img/gallery/10.png",
+    "/assets/img/gallery/11.png",
+    "/assets/img/gallery/12.png",
+    "/assets/img/gallery/13.png",
+    "/assets/img/gallery/14.png",
+    "/assets/img/gallery/15.png",
+    "/assets/img/gallery/16.png",
+    "/assets/img/gallery/17.png",
+    "/assets/img/gallery/18.png",
+    "/assets/img/gallery/19.png",
+    "/assets/img/gallery/20.jpg",
   ];
 
   const [selectedImageIndex, setSelectedImageIndex] = useState(null);
@@ -78,7 +92,7 @@ export default function Project() {
                         <img
                           src={imgSrc}
                           alt={`Project ${index + 1}`}
-                          style={{ cursor: "pointer" }}
+                          style={{ cursor: "pointer", maxWidth: "600px", height:"300px", objectFit: "cover" }}
                           onClick={(e) => {
                             e.preventDefault();
                             handleImageClick(index);

@@ -15,6 +15,7 @@ import Counter4 from "@/components/sections/Counter4"
 import Appointment3 from "@/components/sections/Appointment3"
 import Support1 from "@/components/sections/Support1"
 import Faq1 from "@/components/sections/Faq1"
+import GoogleReviews from "@/components/google/reviews";
 
 export default function Home() {
 
@@ -32,6 +33,7 @@ export default function Home() {
                 </div>
                 <Support1 />
                 <Faq1 />
+                <GoogleReviews />
             </Layout>
         </>
     )

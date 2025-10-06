@@ -1,4 +1,5 @@
 import Link from "next/link";
+import CTAFormsOne from "@/components/forms/cta";
 
 export default function Breadcrumb({ breadcrumbTitle, pageTitle, imageURL }) {
     return (
@@ -55,76 +56,7 @@ export default function Breadcrumb({ breadcrumbTitle, pageTitle, imageURL }) {
                         <div className="col-lg-6 col-md-12">
                             <aside className=" p-4">
                                 
-                                <div 
-                                    className="services-widget widget-bg p-4" 
-                                    style={{ 
-                                        backgroundImage: `url(/assets/img/services/sw_bg.jpg)`,
-                                        backgroundSize: 'cover',
-                                        color: '#fff'
-                                    }} >
-                                    <h4 className="widget-title mb-3" style={{ fontSize: '1.5rem', fontWeight: '600' }}>
-                                        Get a Free Quote
-                                    </h4>
-                                    <form action="#" className="sidebar-form">
-                                        <div className="form-grp mb-3">
-                                            <input 
-                                                id="name" 
-                                                type="text" 
-                                                placeholder="Your Name" 
-                                                className="form-control"
-                                                style={{ 
-                                                    padding: '10px', 
-                                                    borderRadius: '5px', 
-                                                    border: 'none',
-                                                    width: '100%'
-                                                }}
-                                            />
-                                        </div>
-                                        <div className="form-grp mb-3">
-                                            <input 
-                                                id="email" 
-                                                type="email" 
-                                                placeholder="Your Email Address" 
-                                                className="form-control"
-                                                style={{ 
-                                                    padding: '10px', 
-                                                    borderRadius: '5px', 
-                                                    border: 'none',
-                                                    width: '100%'
-                                                }}
-                                            />
-                                        </div>
-                                        <div className="form-grp mb-3">
-                                            <textarea 
-                                                id="message" 
-                                                placeholder="Your Message" 
-                                                className="form-control"
-                                                style={{ 
-                                                    padding: '10px', 
-                                                    borderRadius: '5px', 
-                                                    border: 'none',
-                                                    minHeight: '100px',
-                                                    width: '100%'
-                                                }}
-                                            />
-                                        </div>
-                                        <button 
-                                            type="submit" 
-                                            className="btn btn-two w-100"
-                                            style={{ 
-                                                padding: '10px', 
-                                                background: '#FE5D14', 
-                                                color: '#fff', 
-                                                borderRadius: '5px',
-                                                border: 'none',
-                                                transition: 'background 0.3s'
-                                            }}
-                                            onMouseOver={(e) => e.currentTarget.style.background = '#0056b3'}
-                                            onMouseOut={(e) => e.currentTarget.style.background = '#007bff'} >
-                                            Contact Us
-                                        </button>
-                                    </form>
-                                </div>
+                              <CTAFormsOne />
                                
                             </aside>
                         </div>
