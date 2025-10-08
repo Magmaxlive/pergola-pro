@@ -119,7 +119,7 @@ export default function Services1() {
 
 
                         <div className="col-lg-4 col-md-6 col-sm-10">
-                            <Link href={"/services/pergolas/" + "7862"}>
+                            <Link href={"/services/pergolas/" + "7864"}>
                                 <div className="services-item wow fadeInUp" data-wow-delay=".6s" data-background="https://pergolapro.co.nz/wp-content/uploads/2023/12/carports.jpg" onMouseEnter={() => handleToggle(3)} onMouseLeave={() => handleToggle(3)}>
                                     <div className="services-icon" style={{ display: `${isActive.key == 3 ? "none" : "flex"}` }}>
                                         <img src="/assets/img/icon/services_icon03.svg" alt="" />
@@ -131,7 +131,7 @@ export default function Services1() {
                                     <div className="services-overlay-content" style={{ display: `${isActive.key == 3 ? "block" : "none"}` }}>
                                         <h2 className="title">Carports</h2>
                                         <p>Discover the advantages of our cutting-edge carports</p>
-                                        <Link href={"/services/pergolas/" + "7862"} className="read-more">Read More <i className="fas fa-arrow-right" /></Link>
+                                        <Link href={"/services/pergolas/" + "7864"} className="read-more">Read More <i className="fas fa-arrow-right" /></Link>
                                     </div>
                                 </div>
                             </Link>

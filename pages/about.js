@@ -3,6 +3,9 @@ import Layout from "@/components/layout/Layout"
 import Brand3 from "@/components/sections/Brand3"
 import Link from "next/link"
 import Slider from "react-slick"
+import GoogleReviews from "@/components/google/reviews";
+
+
 const settings = {
     dots: true,
     autoplay: true,
@@ -149,9 +152,11 @@ export default function About() {
                         </div>
                     </div>
                 </section>
+
+                <GoogleReviews />
                 {/* work-area-end */}
                 {/* history-area */}
-                <section className="history-area pt-120 pb-120">
+                {/* <section className="history-area pt-120 pb-120">
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-lg-6">
@@ -178,234 +183,223 @@ export default function About() {
                                     </div>
                                     <p>After that, we will refine the design and get the materials ready for your project, all the while keeping you informed about the project’s timeline. We strive to keep the lead time at roughly six weeks, which is highly competitive.</p>
                                     <p>One of our knowledgeable teams will deliver all the ready-made materials to the location and construct your outdoor solution according to the precise measurements of the area. Depending on the project’s size and complexity, this could take one to five days to finish.</p>
-                                    {/* <div className="history-list">
-                                        <ul className="list-wrap">
-                                            <li><i className="fas fa-check-circle" />Technology management</li>
-                                            <li><i className="fas fa-check-circle" />Roofing Solutions</li>
-                                            <li><i className="fas fa-check-circle" />Modern Worker Working here</li>
-                                            <li><i className="fas fa-check-circle" />Quick Response</li>
-                                        </ul>
-                                    </div> */}
+                               
                                 </div>
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
                 {/* history-area-end */}
                 {/* area-bg */}
-                <div className="area-bg-five" data-background="/assets/img/bg/area_bg05.jpg">
-                    {/* team-area */}
-                    <section className="inner-team-area pb-90">
-                        <div className="container">
-                            <div className="row justify-content-center">
-                                <div className="col-lg-8">
-                                    <div className="section-title text-center mb-60">
-                                        <span className="sub-title">Professional Team</span>
-                                        <h2 className="title">Professional Team Member</h2>
+                    {/* <div className="area-bg-five" data-background="/assets/img/bg/area_bg05.jpg">
+                        <section className="inner-team-area pb-90">
+                            <div className="container">
+                                <div className="row justify-content-center">
+                                    <div className="col-lg-8">
+                                        <div className="section-title text-center mb-60">
+                                            <span className="sub-title">Professional Team</span>
+                                            <h2 className="title">Professional Team Member</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="row justify-content-center">
+                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-10">
+                                        <div className="team-item">
+                                            <div className="team-thumb">
+                                                <Link href="/team-details"><img src="/assets/img/team/team_img01.jpg" alt="" /></Link>
+                                                <div className="team-social">
+                                                    <ul className="list-wrap">
+                                                        <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>
+                                                        <li><Link href="#"><i className="fab fa-linkedin-in" /></Link></li>
+                                                        <li><Link href="#"><i className="fab fa-twitter" /></Link></li>
+                                                        <li><Link href="#"><i className="fab fa-instagram" /></Link></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div className="team-content">
+                                                <h2 className="title"><Link href="/team-details">Robert C. Simmons</Link></h2>
+                                                <span>Roof Engineer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-10">
+                                        <div className="team-item">
+                                            <div className="team-thumb">
+                                                <Link href="/team-details"><img src="/assets/img/team/team_img02.jpg" alt="" /></Link>
+                                                <div className="team-social">
+                                                    <ul className="list-wrap">
+                                                        <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>
+                                                        <li><Link href="#"><i className="fab fa-linkedin-in" /></Link></li>
+                                                        <li><Link href="#"><i className="fab fa-twitter" /></Link></li>
+                                                        <li><Link href="#"><i className="fab fa-instagram" /></Link></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div className="team-content">
+                                                <h2 className="title"><Link href="/team-details">Christopher Jhon</Link></h2>
+                                                <span>Roof Engineer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-10">
+                                        <div className="team-item">
+                                            <div className="team-thumb">
+                                                <Link href="/team-details"><img src="/assets/img/team/team_img03.jpg" alt="" /></Link>
+                                                <div className="team-social">
+                                                    <ul className="list-wrap">
+                                                        <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>
+                                                        <li><Link href="#"><i className="fab fa-linkedin-in" /></Link></li>
+                                                        <li><Link href="#"><i className="fab fa-twitter" /></Link></li>
+                                                        <li><Link href="#"><i className="fab fa-instagram" /></Link></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div className="team-content">
+                                                <h2 className="title"><Link href="/team-details">Karikoka Ahli</Link></h2>
+                                                <span>Roof Engineer</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-10">
+                                        <div className="team-item">
+                                            <div className="team-thumb">
+                                                <Link href="/team-details"><img src="/assets/img/team/team_img04.jpg" alt="" /></Link>
+                                                <div className="team-social">
+                                                    <ul className="list-wrap">
+                                                        <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>
+                                                        <li><Link href="#"><i className="fab fa-linkedin-in" /></Link></li>
+                                                        <li><Link href="#"><i className="fab fa-twitter" /></Link></li>
+                                                        <li><Link href="#"><i className="fab fa-instagram" /></Link></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div className="team-content">
+                                                <h2 className="title"><Link href="/team-details">Dickerson MH</Link></h2>
+                                                <span>Roof Engineer</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div className="row justify-content-center">
-                                <div className="col-xl-3 col-lg-4 col-md-6 col-sm-10">
-                                    <div className="team-item">
-                                        <div className="team-thumb">
-                                            <Link href="/team-details"><img src="/assets/img/team/team_img01.jpg" alt="" /></Link>
-                                            <div className="team-social">
-                                                <ul className="list-wrap">
-                                                    <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>
-                                                    <li><Link href="#"><i className="fab fa-linkedin-in" /></Link></li>
-                                                    <li><Link href="#"><i className="fab fa-twitter" /></Link></li>
-                                                    <li><Link href="#"><i className="fab fa-instagram" /></Link></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div className="team-content">
-                                            <h2 className="title"><Link href="/team-details">Robert C. Simmons</Link></h2>
-                                            <span>Roof Engineer</span>
+                        </section>
+                        <section className="inner-testimonial-area parallax pb-120 position-relative">
+                            <div className="container">
+                                <div className="row justify-content-center">
+                                    <div className="col-xl-6">
+                                        <div className="section-title text-center mb-50">
+                                            <span className="sub-title">Our Testimonial</span>
+                                            <h2 className="title">What Our Client Feedback</h2>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-xl-3 col-lg-4 col-md-6 col-sm-10">
-                                    <div className="team-item">
-                                        <div className="team-thumb">
-                                            <Link href="/team-details"><img src="/assets/img/team/team_img02.jpg" alt="" /></Link>
-                                            <div className="team-social">
-                                                <ul className="list-wrap">
-                                                    <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>
-                                                    <li><Link href="#"><i className="fab fa-linkedin-in" /></Link></li>
-                                                    <li><Link href="#"><i className="fab fa-twitter" /></Link></li>
-                                                    <li><Link href="#"><i className="fab fa-instagram" /></Link></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div className="team-content">
-                                            <h2 className="title"><Link href="/team-details">Christopher Jhon</Link></h2>
-                                            <span>Roof Engineer</span>
+                                <div className="row justify-content-center">
+                                    <div className="col-lg-10">
+                                        <div className="testimonial-inner">
+                                            <Slider {...settings} className="testimonial-active-two">
+                                                <div className="testimonial-item-two">
+                                                    <div className="testimonial-avatar-two">
+                                                        <img src="/assets/img/images/h2_testi_avatar01.png" alt="" />
+                                                    </div>
+                                                    <div className="testimonial-content-two">
+                                                        <div className="content-top">
+                                                            <div className="icon">
+                                                                <i className="fas fa-quote-left" />
+                                                            </div>
+                                                            <div className="rating">
+                                                                <i className="fas fa-star" />
+                                                                <i className="fas fa-star" />
+                                                                <i className="fas fa-star" />
+                                                                <i className="fas fa-star" />
+                                                                <i className="fas fa-star" />
+                                                            </div>
+                                                        </div>
+                                                        <p>There are many varation of paissages of Lorem as the Ipum available but our majority have sufferied alterations in some form, by our by injected hsumour randomised worids which don't looks even slightly there as believable. If you going to use a passage of Lorem Ipsum.</p>
+                                                        <div className="content-bottom">
+                                                            <h4 className="title">Darrell Steward</h4>
+                                                            <span>Roofing Expert</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="testimonial-item-two">
+                                                    <div className="testimonial-avatar-two">
+                                                        <img src="/assets/img/images/h2_testi_avatar02.png" alt="" />
+                                                    </div>
+                                                    <div className="testimonial-content-two">
+                                                        <div className="content-top">
+                                                            <div className="icon">
+                                                                <i className="fas fa-quote-left" />
+                                                            </div>
+                                                            <div className="rating">
+                                                                <i className="fas fa-star" />
+                                                                <i className="fas fa-star" />
+                                                                <i className="fas fa-star" />
+                                                                <i className="fas fa-star" />
+                                                                <i className="fas fa-star" />
+                                                            </div>
+                                                        </div>
+                                                        <p>Lorem Ipsum are many varation of paissages of Lorem as the Ipum available but our majority have sufferied alterations in some form, by our by injected hsumour randomised worids which don't looks even slightly there as believable. If you going to use a passage of Lorem Ipsum.</p>
+                                                        <div className="content-bottom">
+                                                            <h4 className="title">Robert C. Simmons</h4>
+                                                            <span>Roofing Expert</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div className="testimonial-item-two">
+                                                    <div className="testimonial-avatar-two">
+                                                        <img src="/assets/img/images/h2_testi_avatar03.png" alt="" />
+                                                    </div>
+                                                    <div className="testimonial-content-two">
+                                                        <div className="content-top">
+                                                            <div className="icon">
+                                                                <i className="fas fa-quote-left" />
+                                                            </div>
+                                                            <div className="rating">
+                                                                <i className="fas fa-star" />
+                                                                <i className="fas fa-star" />
+                                                                <i className="fas fa-star" />
+                                                                <i className="fas fa-star" />
+                                                                <i className="fas fa-star" />
+                                                            </div>
+                                                        </div>
+                                                        <p>Lorem Ipsum are many varation of paissages of Lorem as the Ipum available but our majority have sufferied alterations in some form, by our by injected hsumour randomised worids which don't looks even slightly there as believable. If you going to use a passage of Lorem Ipsum.</p>
+                                                        <div className="content-bottom">
+                                                            <h4 className="title">Karikoka Ahli</h4>
+                                                            <span>Executive Manager</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </Slider>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-xl-3 col-lg-4 col-md-6 col-sm-10">
-                                    <div className="team-item">
-                                        <div className="team-thumb">
-                                            <Link href="/team-details"><img src="/assets/img/team/team_img03.jpg" alt="" /></Link>
-                                            <div className="team-social">
-                                                <ul className="list-wrap">
-                                                    <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>
-                                                    <li><Link href="#"><i className="fab fa-linkedin-in" /></Link></li>
-                                                    <li><Link href="#"><i className="fab fa-twitter" /></Link></li>
-                                                    <li><Link href="#"><i className="fab fa-instagram" /></Link></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div className="team-content">
-                                            <h2 className="title"><Link href="/team-details">Karikoka Ahli</Link></h2>
-                                            <span>Roof Engineer</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-xl-3 col-lg-4 col-md-6 col-sm-10">
-                                    <div className="team-item">
-                                        <div className="team-thumb">
-                                            <Link href="/team-details"><img src="/assets/img/team/team_img04.jpg" alt="" /></Link>
-                                            <div className="team-social">
-                                                <ul className="list-wrap">
-                                                    <li><Link href="#"><i className="fab fa-facebook-f" /></Link></li>
-                                                    <li><Link href="#"><i className="fab fa-linkedin-in" /></Link></li>
-                                                    <li><Link href="#"><i className="fab fa-twitter" /></Link></li>
-                                                    <li><Link href="#"><i className="fab fa-instagram" /></Link></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div className="team-content">
-                                            <h2 className="title"><Link href="/team-details">Dickerson MH</Link></h2>
-                                            <span>Roof Engineer</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    {/* team-area-end */}
-                    {/* testimonial-area */}
-                    <section className="inner-testimonial-area parallax pb-120 position-relative">
-                        <div className="container">
-                            <div className="row justify-content-center">
-                                <div className="col-xl-6">
-                                    <div className="section-title text-center mb-50">
-                                        <span className="sub-title">Our Testimonial</span>
-                                        <h2 className="title">What Our Client Feedback</h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="row justify-content-center">
-                                <div className="col-lg-10">
-                                    <div className="testimonial-inner">
-                                        <Slider {...settings} className="testimonial-active-two">
-                                            <div className="testimonial-item-two">
-                                                <div className="testimonial-avatar-two">
-                                                    <img src="/assets/img/images/h2_testi_avatar01.png" alt="" />
-                                                </div>
-                                                <div className="testimonial-content-two">
-                                                    <div className="content-top">
-                                                        <div className="icon">
-                                                            <i className="fas fa-quote-left" />
-                                                        </div>
-                                                        <div className="rating">
-                                                            <i className="fas fa-star" />
-                                                            <i className="fas fa-star" />
-                                                            <i className="fas fa-star" />
-                                                            <i className="fas fa-star" />
-                                                            <i className="fas fa-star" />
-                                                        </div>
-                                                    </div>
-                                                    <p>There are many varation of paissages of Lorem as the Ipum available but our majority have sufferied alterations in some form, by our by injected hsumour randomised worids which don't looks even slightly there as believable. If you going to use a passage of Lorem Ipsum.</p>
-                                                    <div className="content-bottom">
-                                                        <h4 className="title">Darrell Steward</h4>
-                                                        <span>Roofing Expert</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="testimonial-item-two">
-                                                <div className="testimonial-avatar-two">
-                                                    <img src="/assets/img/images/h2_testi_avatar02.png" alt="" />
-                                                </div>
-                                                <div className="testimonial-content-two">
-                                                    <div className="content-top">
-                                                        <div className="icon">
-                                                            <i className="fas fa-quote-left" />
-                                                        </div>
-                                                        <div className="rating">
-                                                            <i className="fas fa-star" />
-                                                            <i className="fas fa-star" />
-                                                            <i className="fas fa-star" />
-                                                            <i className="fas fa-star" />
-                                                            <i className="fas fa-star" />
-                                                        </div>
-                                                    </div>
-                                                    <p>Lorem Ipsum are many varation of paissages of Lorem as the Ipum available but our majority have sufferied alterations in some form, by our by injected hsumour randomised worids which don't looks even slightly there as believable. If you going to use a passage of Lorem Ipsum.</p>
-                                                    <div className="content-bottom">
-                                                        <h4 className="title">Robert C. Simmons</h4>
-                                                        <span>Roofing Expert</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="testimonial-item-two">
-                                                <div className="testimonial-avatar-two">
-                                                    <img src="/assets/img/images/h2_testi_avatar03.png" alt="" />
-                                                </div>
-                                                <div className="testimonial-content-two">
-                                                    <div className="content-top">
-                                                        <div className="icon">
-                                                            <i className="fas fa-quote-left" />
-                                                        </div>
-                                                        <div className="rating">
-                                                            <i className="fas fa-star" />
-                                                            <i className="fas fa-star" />
-                                                            <i className="fas fa-star" />
-                                                            <i className="fas fa-star" />
-                                                            <i className="fas fa-star" />
-                                                        </div>
-                                                    </div>
-                                                    <p>Lorem Ipsum are many varation of paissages of Lorem as the Ipum available but our majority have sufferied alterations in some form, by our by injected hsumour randomised worids which don't looks even slightly there as believable. If you going to use a passage of Lorem Ipsum.</p>
-                                                    <div className="content-bottom">
-                                                        <h4 className="title">Karikoka Ahli</h4>
-                                                        <span>Executive Manager</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </Slider>
-                                    </div>
+                                <div className="testimonial-avatar-wrap">
+                                    <ul className="list-wrap">
+                                        <li>
+                                            <img src="/assets/img/images/h4_testi_avatar01.png" className="layer" data-depth="0.1" alt="" />
+                                        </li>
+                                        <li>
+                                            <img src="/assets/img/images/h4_testi_avatar02.png" className="layer" data-depth="0.2" alt="" />
+                                        </li>
+                                        <li>
+                                            <img src="/assets/img/images/h4_testi_avatar03.png" className="layer" data-depth="0.05" alt="" />
+                                        </li>
+                                        <li>
+                                            <img src="/assets/img/images/h4_testi_avatar03.png" className="layer" data-depth="0.2" alt="" />
+                                        </li>
+                                        <li>
+                                            <img src="/assets/img/images/h4_testi_avatar02.png" className="layer" data-depth="0.05" alt="" />
+                                        </li>
+                                        <li>
+                                            <img src="/assets/img/images/h4_testi_avatar01.png" className="layer" data-depth="0.1" alt="" />
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div className="testimonial-avatar-wrap">
-                                <ul className="list-wrap">
-                                    <li>
-                                        <img src="/assets/img/images/h4_testi_avatar01.png" className="layer" data-depth="0.1" alt="" />
-                                    </li>
-                                    <li>
-                                        <img src="/assets/img/images/h4_testi_avatar02.png" className="layer" data-depth="0.2" alt="" />
-                                    </li>
-                                    <li>
-                                        <img src="/assets/img/images/h4_testi_avatar03.png" className="layer" data-depth="0.05" alt="" />
-                                    </li>
-                                    <li>
-                                        <img src="/assets/img/images/h4_testi_avatar03.png" className="layer" data-depth="0.2" alt="" />
-                                    </li>
-                                    <li>
-                                        <img src="/assets/img/images/h4_testi_avatar02.png" className="layer" data-depth="0.05" alt="" />
-                                    </li>
-                                    <li>
-                                        <img src="/assets/img/images/h4_testi_avatar01.png" className="layer" data-depth="0.1" alt="" />
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section>
-                    {/* testimonial-area-end */}
-                </div>
+                        </section>
+                    </div> */}
                 {/* area-bg-end */}
                 {/* brand-area */}
-                <Brand3 />
+                {/* <Brand3 /> */}
 
 
             </Layout>

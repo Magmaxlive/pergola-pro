@@ -30,7 +30,7 @@ export default function Banner1() {
                     <div className="banner-content">
                         <h2 className="title wow fadeInDown" data-wow-delay=".2s">Tauranga's Most Popular Pergola Brand</h2>
                         <p className="" data-wow-delay=".2s" style={{fontSize: "16px"}}>Discover why thousands of homeowners trust us to elevate their homes. </p>
-                        <Link href="/project" className="btn wow fadeInUp" data-wow-delay=".4s">Discover More</Link>
+                        <Link href="/contact" className="btn wow fadeInUp" data-wow-delay=".4s">Get your free quote</Link>
                     </div>
                     <div className="banner-tooltip-wrap">
                         <div className={isActive.key == 1 ? "tooltip-item top active" : "tooltip-item top"} onClick={() => handleToggle(1)}>

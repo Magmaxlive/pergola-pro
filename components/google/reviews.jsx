@@ -355,22 +355,22 @@ const GoogleReviews = () => {
           <h3 className="h3 text-muted">What our customers say about us</h3>
 
           {/* Average Rating */}
-          {/* <div className="d-flex align-items-center justify-content-center gap-3 mt-4">
+          <div className="d-flex align-items-center justify-content-center gap-3 mt-4">
             <div className="d-flex align-items-center">
               {renderStars(5)}
               <span className="h4 fw-bold text-dark ms-2 mb-0">5.0</span>
             </div>
             <span className="text-muted">•</span>
             <span className="text-muted">{reviews.length} reviews</span>
-          </div> */}
+          </div>
         </div>
 
         {/* Reviews Container with Navigation */}
         <div className="position-relative">
           {/* Navigation Buttons */}
-          <button
+          {/* <button
             onClick={scrollLeft}
-            className="btn btn-light position-absolute top-50 start-0 translate-middle-y z-3 rounded shadow-lg p-3 d-none d-lg-block"
+            className="btn btn-light position-absolute top-50 start-0 translate-middle-y z-3 rounded-circle shadow-lg p-3 d-none d-lg-block"
             aria-label="Scroll left"
           >
             <i className="fas fa-chevron-left text-dark"></i>
@@ -378,11 +378,11 @@ const GoogleReviews = () => {
 
           <button
             onClick={scrollRight}
-            className="btn btn-light position-absolute top-50 end-0 translate-middle-y z-3 rounded shadow-lg p-3 d-none d-lg-block"
+            className="btn btn-light position-absolute top-50 end-0 translate-middle-y z-3 rounded-circle shadow-lg p-3 d-none d-lg-block"
             aria-label="Scroll right"
           >
             <i className="fas fa-chevron-right text-dark"></i>
-          </button>
+          </button> */}
 
           {/* Reviews Scroll Container */}
           <div
@@ -392,14 +392,12 @@ const GoogleReviews = () => {
               scrollbarWidth: 'none',
               msOverflowStyle: 'none',
               scrollSnapType: 'x mandatory'
-            }}
-          >
+            }} >
             {reviews.map((review) => (
               <div
                 key={review.id}
                 className="flex-shrink-0 col-12 col-md-6 col-lg-4 col-xl-3"
-                style={{ scrollSnapAlign: 'start' }}
-              >
+                style={{ scrollSnapAlign: 'start' }} >
                 <div className="card h-100 shadow-sm border-0 hover-shadow transition-all">
                   <div className="card-body d-flex flex-column p-4">
                     {/* Header */}
@@ -410,11 +408,7 @@ const GoogleReviews = () => {
                           alt={review.reviewer.name}
                           className="rounded-circle"
                           style={{ width: '50px', height: '50px', objectFit: 'cover' }}
-                          onError={(e) => {
-                            // Fallback to initial if image fails to load
-                            e.target.style.display = 'none';
-                            e.target.nextSibling.style.display = 'flex';
-                          }}
+                        
                         />
                         {/* <div
                           className="rounded-circle bg-gradient-primary d-flex align-items-center justify-content-center text-white fw-bold"
@@ -423,8 +417,7 @@ const GoogleReviews = () => {
                             height: '50px',
                             background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
                             display: 'none'
-                          }}
-                        >
+                          }} >
                           {review.reviewer.name.charAt(0)}
                         </div> */}
                       </div>
@@ -440,8 +433,7 @@ const GoogleReviews = () => {
                                 height="16"
                                 viewBox="0 0 24 24"
                                 fill={index < review.rating ? "#FFD700" : "#E4E5E9"}
-                                className="me-1"
-                              >
+                                className="me-1" >
                                 <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
                               </svg>
                             ))}

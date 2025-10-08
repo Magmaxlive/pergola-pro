@@ -28,12 +28,12 @@ export default function Footer1() {
                                         <h2 className="fw-title">Our Services</h2>
                                         <div className="footer-link">
                                             <ul className="list-wrap">
-                                                <li><Link href="/project"><i className="fas fa-angle-double-right" />Pergolas</Link></li>
-                                                <li><Link href="/project"><i className="fas fa-angle-double-right" />Roller Blinds</Link></li>
-                                                <li><Link href="/project"><i className="fas fa-angle-double-right" />Carports</Link></li>
-                                                <li><Link href="/project"><i className="fas fa-angle-double-right" />Louvre Roof Systems</Link></li>
-                                                <li><Link href="/project"><i className="fas fa-angle-double-right" />Canopies</Link></li>
-                                                <li><Link href="/project"><i className="fas fa-angle-double-right" />Fencing & Decking</Link></li>
+                                                <li><Link href="/services/pergolas/1804"><i className="fas fa-angle-double-right" />Pergolas</Link></li>
+                                                <li><Link href="/services/pergolas/7863"><i className="fas fa-angle-double-right" />Roller Blinds</Link></li>
+                                                <li><Link href="/services/pergolas/7864"><i className="fas fa-angle-double-right" />Carports</Link></li>
+                                                <li><Link href="/services/pergolas/7865"><i className="fas fa-angle-double-right" />Louvre Roof Systems</Link></li>
+                                                <li><Link href="services/pergolas/7862"><i className="fas fa-angle-double-right" />Canopies</Link></li>
+                                                <li><Link href="/services/pergolas/8120"><i className="fas fa-angle-double-right" />Fencing & Decking</Link></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -43,9 +43,9 @@ export default function Footer1() {
                                         <h2 className="fw-title">Quick Links</h2>
                                         <div className="footer-link">
                                             <ul className="list-wrap">
-                                                <li><Link href="/contact"><i className="fas fa-angle-double-right" />Terms  Conditions</Link></li>
+                                                {/* <li><Link href="/contact"><i className="fas fa-angle-double-right" />Terms  Conditions</Link></li>
                                                 <li><Link href="/contact"><i className="fas fa-angle-double-right" />Refund Policy</Link></li>
-                                                <li><Link href="/contact"><i className="fas fa-angle-double-right" />Sitemap</Link></li>
+                                                <li><Link href="/contact"><i className="fas fa-angle-double-right" />Sitemap</Link></li> */}
                                                 <li><Link href="/contact"><i className="fas fa-angle-double-right" />Contact Us</Link></li>
                                             </ul>
                                         </div>
@@ -93,7 +93,7 @@ export default function Footer1() {
                                             </div>
                                             <div className="content">
                                                 <span>Phone No</span>
-                                                <Link href="/tel:+64273928106">+64 27 392 8106</Link>
+                                                <Link href="tel:+64273928106">+64 27 392 8106</Link>
                                             </div>
                                         </div>
                                     </div>

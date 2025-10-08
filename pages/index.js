@@ -34,7 +34,6 @@ export default function Home() {
                 </div>
                 <Support1 />
                 <Faq1 />
-               
             </Layout>
         </>
     )

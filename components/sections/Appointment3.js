@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export default function Appointment3() {
     const [formData, setFormData] = useState({
-        firstName: '',
+        fullName: '',
         lastName: '',
         email: '',
         phone: '',
@@ -19,7 +19,7 @@ export default function Appointment3() {
         setResponse(null);
 
         // Client-side validation
-        if (!formData.firstName || !formData.lastName || !formData.email || !formData.message) {
+        if (!formData.fullName || !formData.phone || !formData.email || !formData.message) {
             setResponse({
                 success: false,
                 message: 'Please fill in all required fields',
@@ -36,7 +36,7 @@ export default function Appointment3() {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
-                    name: `${formData.firstName} ${formData.lastName}`.trim(),
+                    name: `${formData.fullName}`,
                     email: formData.email,
                     phone: formData.phone,
                     address: formData.address,
@@ -56,8 +56,7 @@ export default function Appointment3() {
             if (data.success) {
                 // Reset form on success
                 setFormData({
-                    firstName: '',
-                    lastName: '',
+                    fullName: '',
                     email: '',
                     phone: '',
                     subject: '',
@@ -113,21 +112,21 @@ export default function Appointment3() {
                                 <div className="appointment-form">
                                     <form onSubmit={handleSubmit}>
                                         <div className="row">
-                                            <div className="col-md-6">
+                                            <div className="col-md-12">
                                                 <div className="form-grp">
                                                     <input
-                                                        id="firstName" // Changed from id="name"
+                                                        id="fullName" // Changed from id="name"
                                                         type="text"
-                                                        placeholder="First Name"
-                                                        value={formData.firstName}
+                                                        placeholder="Full Name"
+                                                        value={formData.fullName}
                                                         onChange={handleChange}
                                                         required
                                                         disabled={isSubmitting}
                                                     />
-                                                    <label htmlFor="firstName"><i className="fas fa-user" /></label>
+                                                    <label htmlFor="fullName"><i className="fas fa-user" /></label>
                                                 </div>
                                             </div>
-                                            <div className="col-md-6">
+                                            {/* <div className="col-md-6">
                                                 <div className="form-grp">
                                                     <input
                                                         id="lastName"
@@ -140,7 +139,7 @@ export default function Appointment3() {
                                                     />
                                                     <label htmlFor="lastName"><i className="fas fa-user" /></label>
                                                 </div>
-                                            </div>
+                                            </div> */}
                                             <div className="col-md-6">
                                                 <div className="form-grp">
                                                     <input
