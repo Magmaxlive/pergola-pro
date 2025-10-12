@@ -15,7 +15,7 @@ export default function ServiceDetails() {
                             <GoogleReviews />
 
                             <div className="row justify-content-center">
-                                <div className="col-xl-8">
+                                <div className="col-xl-12">
                                     <div className="services-details-wrap">
                                         <div className="services-details-thumb">
                                             <img src="/assets/img/services/services_details01.jpg" alt="" />
@@ -143,7 +143,7 @@ export default function ServiceDetails() {
 
                                     </div>
                                 </div>
-                                <div className="col-xl-4 col-lg-6">
+                                {/* <div className="col-xl-4 col-lg-6">
                                     <aside className="services-sidebar">
                                         <div className="services-widget">
                                             <h4 className="widget-title">Our All Service</h4>
@@ -157,7 +157,7 @@ export default function ServiceDetails() {
                                                 </ul>
                                             </div>
                                         </div>
-                                        {/* <div className="services-widget widget-bg" data-background="/assets/img/services/sw_bg.jpg">
+                                        <div className="services-widget widget-bg" data-background="/assets/img/services/sw_bg.jpg">
                                             <h4 className="widget-title">Get a free quote</h4>
                                             <form action="#" className="sidebar-form">
                                                 <div className="form-grp">
@@ -171,7 +171,7 @@ export default function ServiceDetails() {
                                                 </div>
                                                 <button type="submit" className="btn btn-two">Contact Us</button>
                                             </form>
-                                        </div> */}
+                                        </div>
                                         <div className="services-widget">
                                             <h4 className="widget-title">Our Brochures Download</h4>
                                             <div className="download-wrap">
@@ -180,7 +180,7 @@ export default function ServiceDetails() {
                                             </div>
                                         </div>
                                     </aside>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </section>

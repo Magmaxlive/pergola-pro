@@ -119,14 +119,14 @@ export default function Footer1() {
                                         <p>© Copyright {new Date().getFullYear()}. All Right Reserved</p>
                                     </div>
                                 </div>
-                                <div className="col-md-6">
+                                {/* <div className="col-md-6">
                                     <div className="footer-bootom-menu">
                                         <ul className="list-wrap">
                                             <li><Link href="/contact" style={{fontSize: "14px"}}>Privacy Policy</Link></li>
                                             <li><Link href="/contact" style={{fontSize: "14px"}}>Terms  Conditions</Link></li>
                                         </ul>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>

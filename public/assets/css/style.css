@@ -38,6 +38,200 @@
 ============================
 */
 
+/* Services Details Content Styling */
+.services-details-content {
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.services-details-content .title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.services-details-content .title-two {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.services-details-content p {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.services-details-content .services-process-wrap {
+  margin: 40px 0;
+  padding: 30px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.services-details-content .services-process-img {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.services-details-content .services-process-img img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.services-details-content .services-process-content .list-wrap {
+  list-style: none;
+  padding: 0;
+}
+
+.services-details-content .services-process-content .list-wrap li {
+  margin-bottom: 25px;
+}
+
+.services-details-content .services-process-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.services-details-content .services-process-item .icon {
+  flex: 0 0 60px;
+  margin-right: 20px;
+}
+
+.services-details-content .services-process-item .icon img {
+  width: 60px;
+  height: 60px;
+}
+
+.services-details-content .services-process-item .content h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.services-details-content .service-benefits-wrap {
+  margin: 40px 0;
+  padding: 30px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.services-details-content .benefits-img {
+  position: relative;
+}
+
+.services-details-content .benefits-img img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.services-details-content .benefits-content .list-wrap {
+  list-style: none;
+  padding: 0;
+}
+
+.services-details-content .benefits-content .list-wrap li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+}
+
+.services-details-content .benefits-content .list-wrap li i {
+  color: #4CAF50;
+  margin-right: 10px;
+}
+
+.services-details-content .list-wrap {
+  list-style: none;
+  padding: 0;
+}
+
+.services-details-content .list-wrap li {
+  margin-bottom: 10px;
+  padding: 8px 0;
+}
+
+/* Auto-inserted images styling */
+.services-details-content .auto-inserted-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.services-details-content .inserted-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.services-details-content .inserted-image:hover {
+  transform: translateY(-5px);
+}
+
+/* Last element background color */
+.services-details-content .last-element-highlight {
+  padding: 30px;
+  border-radius: 12px;
+  margin-top: 30px;
+}
+/* Responsive adjustments */
+@media (max-width: 991px) {
+  .services-details-content h2 {
+    font-size: 24px;
+  }
+  
+  .services-details-content .services-process-item {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .services-details-content .services-process-item .icon {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  
+  .services-details-content .services-process-wrap,
+  .services-details-content .service-benefits-wrap {
+    padding: 20px;
+  }
+  
+  .services-details-content .auto-inserted-images {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .services-details-content .inserted-image {
+    height: 200px;
+  }
+  
+  .services-details-content .last-element-highlight {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-details-content .auto-inserted-images {
+    grid-template-columns: 1fr;
+  }
+  
+  .services-details-content .inserted-image {
+    height: 180px;
+  }
+}
+
 
 
 /*=============================
