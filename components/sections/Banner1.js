@@ -27,47 +27,16 @@ export default function Banner1() {
             <section className="banner-area">
                 <div className="banner-shape" data-background="/assets/img/banner/banner.jpeg" />
                 <div className="banner-bg" data-background="/assets/img/banner/banner.jpeg">
+
                     <div className="banner-content">
                         <h2 className="title wow fadeInDown" data-wow-delay=".2s">Tauranga's Most Popular Pergola Brand</h2>
-                        <p className="" data-wow-delay=".2s" style={{fontSize: "16px"}}>Discover why thousands of homeowners trust us to elevate their homes. </p>
+                        <p className="" data-wow-delay=".2s" style={{ fontSize: "16px" }}>Discover why thousands of homeowners trust us to elevate their homes. </p>
                         <Link href="/contact" className="btn wow fadeInUp" data-wow-delay=".4s">Get your free quote</Link>
                     </div>
-                    <div className="banner-tooltip-wrap">
-                        <div className={isActive.key == 1 ? "tooltip-item top active" : "tooltip-item top"} onClick={() => handleToggle(1)}>
-                            {/* <div className="tooltip-btn pulse">
-                                <i className="fas fa-plus" />
-                            </div> */}
-                            <div className="tooltip-content">
-                                <h2 className="title">Combustion Roof Vent</h2>
-                                <p>Suffered alteration in some a goody form, by injected humor, or into the randomized word.</p>
-                            </div>
-                        </div>
-                        <div className={isActive.key == 2 ? "tooltip-item active" : "tooltip-item"} onClick={() => handleToggle(2)}>
-                            {/* <div className="tooltip-btn pulse">
-                                <i className="fas fa-plus" />
-                            </div> */}
-                            <div className="tooltip-content">
-                                <h2 className="title">Combustion Roof Vent</h2>
-                                <p>Suffered alteration in some a goody form, by injected humor, or into the randomized word.</p>
-                            </div>
-                        </div>
-                        <div className={isActive.key == 3 ? "tooltip-item active" : "tooltip-item"} onClick={() => handleToggle(3)}>
-                            {/* <div className="tooltip-btn pulse">
-                                <i className="fas fa-plus" />
-                            </div> */}
-                            <div className="tooltip-content">
-                                <h2 className="title">Combustion Roof Vent</h2>
-                                <p>Suffered alteration in some a goody form, by injected humor, or into the randomized word.</p>
-                            </div>
-                        </div>
-                        <CTAFormsOne />                        
+                    <div className="banner-tooltip-wrap" style={{marginLeft: "60px"}}>
+                        <CTAFormsOne />
                     </div>
-
-                    
                 </div>
-                {/* brand-area */}
-                {/* <Brand1 /> */}
-                {/* brand-area-end */}
             </section>
 
         </>

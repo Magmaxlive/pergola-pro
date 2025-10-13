@@ -8,7 +8,7 @@ export default function About1() {
                     <div className="row align-items-center">
                         <div className="col-xl-7 col-lg-6 order-0 order-lg-2">
                             <div className="about-img-wrap">
-                                <img src="/assets/img/about/2.jpg" style={{maxWidth:"369px"}} alt="" className="wow fadeInRight" data-wow-delay=".4s" />
+                                <img src="/assets/img/about/2.jpg" style={{minWidth:"269px"}} alt="" className="wow fadeInRight" data-wow-delay=".4s" />
                                 <img src="/assets/img/about/1.jpg" alt="" style={{maxWidth:"369px"}}  className="wow fadeInRight" data-wow-delay=".2s" />
                                 <div className="about-experiences-wrap">
                                     <div className="experiences-item">

@@ -59,7 +59,7 @@ export default function Service() {
                     <div className="area-bg">
                         <div className="area-background-img jarallax" data-background="/assets/img/bg/area_bg01.jpg" />
                         {/* counter-area */}
-                        <Counter2 />
+                        {/* <Counter2 /> */}
                         {/* counter-area-end */}
                         {/* appointment-area */}
                         <Appointment3 />

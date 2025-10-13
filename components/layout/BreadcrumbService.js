@@ -4,21 +4,25 @@ import CTAFormsOne from "@/components/forms/cta";
 export default function Breadcrumb({ breadcrumbTitle, pageTitle, imageURL }) {
     return (
         <>
-            <section 
-                className="breadcrumb-area breadcrumb-bg position-relative" 
-                style={{ 
+            <section
+                className="breadcrumb-area breadcrumb-bg position-relative"
+                style={{
                     backgroundImage: `url(${imageURL})`,
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
-                    minHeight: '400px',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundAttachment: 'fixed', // Optional: creates parallax effect
+                    height: '100vh',
                     display: 'flex',
                     alignItems: 'center',
-                    padding: '60px 0',
-                    objectFit: "cover"
-                }}  >
-                <div 
-                    className="breadcrumb-shape" 
-                    style={{ 
+                    justifyContent: 'center',
+                    padding: '0',
+                    margin: '0',
+                    position: 'relative',
+                }} >
+                <div
+                    className="breadcrumb-shape"
+                    style={{
                         backgroundImage: `url(/assets/img/images/breadcrumb_shape.png)`,
                         opacity: 0.3,
                         position: 'absolute',
@@ -27,7 +31,7 @@ export default function Breadcrumb({ breadcrumbTitle, pageTitle, imageURL }) {
                         width: '100%',
                         height: '100%',
                         backgroundSize: 'cover'
-                    }} 
+                    }}
                 />
                 <div className="container position-relative">
                     <div className="row align-items-center">
@@ -43,9 +47,9 @@ export default function Breadcrumb({ breadcrumbTitle, pageTitle, imageURL }) {
                                                 Home
                                             </Link>
                                         </li>
-                                        <li 
-                                            className="breadcrumb-item active" 
-                                            aria-current="page" 
+                                        <li
+                                            className="breadcrumb-item active"
+                                            aria-current="page"
                                             style={{ color: '#ddd', fontSize: '1.1rem' }}  >
                                             {pageTitle}
                                         </li>
@@ -55,9 +59,9 @@ export default function Breadcrumb({ breadcrumbTitle, pageTitle, imageURL }) {
                         </div>
                         <div className="col-lg-6 col-md-12">
                             <aside className=" p-4">
-                                
-                              <CTAFormsOne />
-                               
+
+                                <CTAFormsOne />
+
                             </aside>
                         </div>
                     </div>

@@ -38,7 +38,7 @@ export default function About() {
                         <div className="row align-items-center">
                             <div className="col-xl-7 col-lg-6 order-0 order-lg-2">
                                 <div className="about-img-wrap">
-                                    <img src="/assets/img/about/2.jpg" alt=""  style={{maxWidth:"369px"}}  className="wow fadeInRight" data-wow-delay=".4s" />
+                                    <img src="/assets/img/about/2.jpg" alt=""  style={{maxWidth:"309px"}}  className="wow fadeInRight" data-wow-delay=".4s" />
                                     <img src="/assets/img/about/1.jpg" alt=""  style={{maxWidth:"369px"}}  className="wow fadeInRight" data-wow-delay=".2s" />
                                     <div className="about-experiences-wrap">
                                         <div className="experiences-item">

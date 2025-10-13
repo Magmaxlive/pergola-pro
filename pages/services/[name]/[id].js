@@ -194,9 +194,9 @@ export default function ServiceDetails() {
                                 <div className="col-xl-12">
                                     <div className="services-details-wrap">
                                         <div className="services-details-thumb">
-                                            <img 
+                                            {/* <img 
                                                 src={servicePost?.yoast_head_json?.og_image ? servicePost?.yoast_head_json?.og_image[0].url : null || `/assets/img/blog/default.jpg`} 
-                                                alt={servicePost?.title?.rendered || 'Blog post image'}   />
+                                                alt={servicePost?.title?.rendered || 'Blog post image'}   /> */}
                                         </div>
                                         <div className="services-details-content">
                                             <h2 className="title" dangerouslySetInnerHTML={{ __html: servicePost?.title?.rendered || '' }} />
