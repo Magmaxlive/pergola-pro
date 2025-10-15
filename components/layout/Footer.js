@@ -5,8 +5,7 @@ import { useRouter } from "next/navigation";
 import Slugify from "@/components/validators/slugify";
 
 export default function Footer1() {
-
-
+    
     const [blogsData, setNewsData] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
     const cachedData = useRef([]);

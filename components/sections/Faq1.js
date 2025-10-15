@@ -25,7 +25,7 @@ export default function Faq1() {
                         <div className="col-lg-10">
                             <div className="section-title text-center mb-60">
                                 <span className="sub-title">Our Faqs</span>
-                                <h2 className="title">Have Any Questions  Answer?</h2>
+                                <h3 className="title">Have Any Questions  Answer?</h3>
                             </div>
                         </div>
                     </div>

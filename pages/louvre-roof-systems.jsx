@@ -12,34 +12,36 @@ const serviceContent = {
         title: "Why Choose Pergola Pro's Louvre Roof Systems?",
         features: [
             {
+                icon: "/assets/img/icon/sp_icon01.svg",
                 title: "Adjustable Roof Panels for Full Control",
-                description: "Open the panels for sunlight and ventilation or close them to block out rain. Motorized systems allow you to adjust the angle of the panels with a remote or smartphone app. Built-in rain sensors can automatically close the roof when it starts to rain.",
-                icon: "/assets/img/icon/sp_icon01.svg",
+                description: "Open the panels for sunlight and ventilation or close them to block out rain. Motorized systems allow you to adjust the angle of the panels with a remote or smartphone app. Built-in rain sensors can automatically close the roof when it starts to rain."
             },
             {
-                title: "Durable and Weather-Resistant Materials",
-                description: "Made from rust-proof aluminium that won't corrode, even in coastal areas. Powder-coated for extra protection against fading, chipping, and scratches. Designed to withstand high winds and heavy rainfall without damage.",
-                icon: "/assets/img/icon/sp_icon01.svg",
+                icon: "/assets/img/icon/sp_icon02.svg",
+                title: "Durable and Weather-Resistant Materials Frames",
+                description: "Made from rust-proof aluminium that won't corrode, even in coastal areas. Powder-coated for extra protection against fading, chipping, and scratches. Designed to withstand high winds and heavy rainfall without damage."
             },
             {
+                icon: "/assets/img/icon/sp_icon01.svg",
                 title: "Custom Designs for Every Space",
-                description: "Choose from different sizes, colors, and styles to match your home's look. Custom options for integrated lighting, privacy screens, and heaters to make your space usable all year round. Our design experts will help you create a louvre roof that fits your space and needs perfectly.",
-                icon: "/assets/img/icon/sp_icon01.svg",
+                description: "Choose from different sizes, colors, and styles to match your home's look. Custom options for integrated lighting, privacy screens, and heaters to make your space usable all year round. Our design experts will help you create a louvre roof that fits your space and needs perfectly."
             },
             {
+                icon: "/assets/img/icon/sp_icon01.svg",
                 title: "Quick and Professional Installation",
-                description: "Our experienced team handles everything—from measuring your space to final installation. Most louvre roofs are installed within 2–3 days. Detailed instructions for easy maintenance and care.",
-                icon: "/assets/img/icon/sp_icon01.svg",
+                description: "Our experienced team handles everything—from measuring your space to final installation. Most louvre roofs are installed within 2–3 days. Detailed instructions for easy maintenance and care."
             },
             {
-                title: "Flexible Financing Options",
-                description: "Pay over time with 0% interest for the first 12 months. Easy application and quick approval process. Choose from weekly, bi-weekly, or monthly payments that fit your budget.",
                 icon: "/assets/img/icon/sp_icon01.svg",
+                title: "Flexible Financing Options",
+                description: "Pay over time with 0% interest for the first 12 months. Easy application and quick approval process. Choose from weekly, bi-weekly, or monthly payments that fit your budget."
             }
         ]
     },
+
     benefits: {
         title: "Benefits of Installing a Louvre Roof System?",
+        description: "",
         items: [
             "Year-Round Use: Adjust the roof to handle sun, wind, and rain, so you can use your outdoor space in any season.",
             "Energy Savings: Block direct sunlight to keep your home cooler, reducing air conditioning costs.",
@@ -52,6 +54,7 @@ const serviceContent = {
             "/assets/img/services/sb_img02.jpg"
         ]
     },
+
     installation: {
         title: "Our Easy Installation Process",
         steps: [
@@ -73,9 +76,28 @@ const serviceContent = {
             }
         ]
     },
+
+    financing: {
+        title: "Financing Your Louvre Roof",
+        description: "We know a louvre roof is a big investment. That's why we offer:",
+        options: [
+            {
+                title: "0% Interest for 12 Months",
+                description: "Spread the cost with no extra charges."
+            },
+            {
+                title: "Flexible Payment Plans",
+                description: "Choose to pay weekly, bi-weekly, or monthly—whatever works for you."
+            },
+            {
+                title: "Quick Approval",
+                description: "Simple application process with fast response times."
+            }
+        ]
+    },
+
     maintenance: {
         title: "Maintenance Tips for Your Louvre Roof",
-        description: "Keep your louvre roof in perfect condition with these simple maintenance practices that ensure long-lasting performance and beauty.",
         tips: [
             {
                 title: "Clean the Panels Twice a Year",
@@ -95,24 +117,7 @@ const serviceContent = {
             }
         ]
     },
-    financing: {
-        title: "Financing Your Louvre Roof",
-        description: "We make quality louvre roofs accessible with flexible payment options designed to fit your budget and financial needs.",
-        options: [
-            {
-                title: "0% Interest for 12 Months",
-                description: "Spread the cost with no extra charges."
-            },
-            {
-                title: "Flexible Payment Plans",
-                description: "Choose to pay weekly, bi-weekly, or monthly—whatever works for you."
-            },
-            {
-                title: "Quick Approval",
-                description: "Simple application process with fast response times."
-            }
-        ]
-    },
+
     cta: {
         title: "Ready to Upgrade Your Outdoor Space?",
         description: "Contact us today to schedule a free consultation and quote for a louvre roof system. With Pergola Pro, you can make your outdoor space more comfortable and stylish—without the stress!",
@@ -123,11 +128,12 @@ const serviceContent = {
     }
 };
 
+
 export default function ServiceDetails() {
     return (
         <>
             <Layout
-                breadcrumbTitle="Modified roofing beautiful wooden house with big windows"
+                breadcrumbTitle={serviceContent.title}
                 imageURL={`https://pergolapro.co.nz/wp-content/uploads/2023/12/louvre.jpg`}
                 pageTitle="Service Details"
                 isService={true}

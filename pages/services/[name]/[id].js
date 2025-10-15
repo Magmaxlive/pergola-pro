@@ -32,7 +32,8 @@ export default function ServiceDetails() {
             }
 
             const postData = await response.json()
-            setBlogPost(postData)
+            setBlogPost(postData);
+            console.log(postData);
         } catch (err) {
             setError(err.message)
             console.error('Error fetching blog post:', err)

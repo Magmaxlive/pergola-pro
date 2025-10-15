@@ -30,7 +30,7 @@ export default function About() {
                         <div className="col-lg-6">
                             <div className="section-title text-center mb-50 tg-heading-subheading animation-style3">
                                 <span className="sub-title tg-element-title">About</span>
-                                <h2 className="title tg-element-title">Signature Attributes of Pergola Pro Tauranga</h2>
+                                <h2 className="title tg-element-title">Tauranga&apos;s Premier Experts in Custom Pergolas & Outdoor Design</h2>
                             </div>
                         </div>
                     </div>
@@ -54,7 +54,7 @@ export default function About() {
                                                 <img src="/assets/img/icon/about_icon02.svg" alt="" />
                                             </div>
                                             <div className="content">
-                                                <h6 className="title">We use professional and experienced person</h6>
+                                                <h6 className="title">Professional & Experienced Local Tauranga Team</h6>
                                             </div>
                                         </div>
                                     </div>
@@ -77,7 +77,7 @@ export default function About() {
                                             <li><i className="fas fa-check" />Provide the best roof services</li>
                                         </ul>
                                     </div> */}
-                                    <Link href="/about" className="btn">Learn More</Link>
+                                    <Link href="/contact" className="btn">Learn More</Link>
                                 </div>
                             </div>
                         </div>
@@ -85,7 +85,7 @@ export default function About() {
                 </section>
                 {/* about-area-end */}
                 {/* work-area */}
-                <section className="work-area">
+                {/* <section className="work-area">
                     <div className="container">
                         <div className="row justify-content-center">
                             <div className="col-lg-8">
@@ -151,7 +151,7 @@ export default function About() {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
 
                 <GoogleReviews />
                 {/* work-area-end */}

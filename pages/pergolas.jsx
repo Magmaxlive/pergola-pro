@@ -5,72 +5,44 @@ import GoogleReviews from "@/components/google/reviews";
 
 // Content payload in JSON format
 const serviceContent = {
-    title: "Louvre Roof Systems Tauranga: Control Sun and Shade Effortlessly",
-    description: "With Pergola Pro's Louvre Roof Systems, you can take full control of your outdoor space—whether you want sunlight, shade, or protection from rain. Our louvre roofs feature adjustable panels that open and close at the touch of a button, letting you enjoy your patio, deck, or pergola in any weather. Made from high-quality aluminium and built to last, our louvre systems are the perfect mix of style and function.",
+    title: "Pergolas Tauranga: Stylish Outdoor Living Made Easy",
+    description: "At Pergola Pro, we specialize in designing and installing high-quality <a target='_blank' href='https://pergolapro.co.nz/'>Outdoor Pergolas</a>  that transform ordinary outdoor spaces into stylish retreats. Our pergolas are crafted from premium aluminium and UV-resistant polycarbonate, ensuring durability and a modern aesthetic. Whether you want a cozy spot for family gatherings or an elegant extension of your living space, our pergolas offer the perfect balance of functionality and design. As motorised pergola specialists in New Zealand, we bring innovative solutions that blend convenience with luxury—giving you complete control over your outdoor environment with just the touch of a button.",
 
-    whyChoose: {
-        title: "Why Choose Pergola Pro's Louvre Roof Systems?",
+    keyFeatures: {
+        title: "Key Features of Pergola Pro's Pergolas",
         features: [
             {
-                icon: "/assets/img/icon/sp_icon01.svg",
-                title: "Adjustable Roof Panels for Full Control",
-                description: "Open the panels for sunlight and ventilation or close them to block out rain. Motorized systems allow you to adjust the angle of the panels with a remote or smartphone app. Built-in rain sensors can automatically close the roof when it starts to rain."
+                title: "UV-Resistant Polycarbonate Panels",
+                description: "Allows natural light while blocking harmful UV rays. Durable and weather-resistant with a minimum 10-year lifespan. Available in multiple shades and finishes to suit your style."
             },
             {
-                icon: "/assets/img/icon/sp_icon02.svg",
-                title: "Durable and Weather-Resistant Materials Frames",
-                description: "Made from rust-proof aluminium that won't corrode, even in coastal areas. Powder-coated for extra protection against fading, chipping, and scratches. Designed to withstand high winds and heavy rainfall without damage."
+                title: "Rust-Proof Aluminium Frames",
+                description: "Made from high-grade aluminium that resists corrosion and oxidation. Lightweight yet sturdy, ensuring a long-lasting structure. Powder-coated for an extra layer of protection."
             },
             {
-                icon: "/assets/img/icon/sp_icon01.svg",
-                title: "Custom Designs for Every Space",
-                description: "Choose from different sizes, colors, and styles to match your home's look. Custom options for integrated lighting, privacy screens, and heaters to make your space usable all year round. Our design experts will help you create a louvre roof that fits your space and needs perfectly."
+                title: "Easy Installation",
+                description: "The professional team handles everything from site assessment to final setup. No heavy construction is required; most installations are completed within 1–2 days. Detailed post-installation guidelines for easy maintenance."
             },
             {
-                icon: "/assets/img/icon/sp_icon01.svg",
-                title: "Quick and Professional Installation",
-                description: "Our experienced team handles everything—from measuring your space to final installation. Most louvre roofs are installed within 2–3 days. Detailed instructions for easy maintenance and care."
-            },
-            {
-                icon: "/assets/img/icon/sp_icon01.svg",
                 title: "Flexible Financing Options",
-                description: "Pay over time with 0% interest for the first 12 months. Easy application and quick approval process. Choose from weekly, bi-weekly, or monthly payments that fit your budget."
+                description: "Budget-friendly plans with 0% interest for the first 12 months. Easy application process with quick approvals. Customized payment options to suit your financial needs."
             }
         ]
     },
 
     benefits: {
-        title: "Benefits of Installing a Louvre Roof System?",
-        description: "There are many variations of passages of Lorem by injected humour, or randomised words whic Lorem Ipsum, you need to.",
+        title: "Benefits of Installing a Pergola?",
+        description: "",
         items: [
-            "Year-Round Use: Adjust the roof to handle sun, wind, and rain, so you can use your outdoor space in any season.",
-            "Energy Savings: Block direct sunlight to keep your home cooler, reducing air conditioning costs.",
-            "Enhanced Privacy: Add optional side screens to block the view from neighbors.",
-            "Boosts Property Value: A louvre roof adds a sleek, modern look that can increase your home's market value.",
-            "Low Maintenance: Built from rust-proof and UV-resistant materials that require little upkeep."
+            "Enhanced Outdoor Living: Create a comfortable and stylish space for dining, relaxing, or entertaining guests.",
+            "Increased Property Value: A well-designed pergola can boost your home's curb appeal and market value.",
+            "Energy Efficiency: Reduces direct sunlight on windows, helping to lower cooling costs.",
+            "Privacy and Shade: Optional roller blinds for added privacy and protection from the sun.",
+            "Low Maintenance: Requires minimal cleaning and upkeep due to rust-proof and UV-resistant materials."
         ],
         images: [
             "/assets/img/services/sb_img01.jpg",
             "/assets/img/services/sb_img02.jpg"
-        ]
-    },
-
-    financing: {
-        title: "Finance Your Dream Pergola with Ease",
-        description: "We believe that everyone should have access to beautiful outdoor spaces without financial stress.",
-        options: [
-            {
-                title: "That's why we offer",
-                description: "0% Interest Financing: Spread the cost over 12 months with no interest."
-            },
-            {
-                title: "Flexible Payment Plans",
-                description: "Choose between weekly, bi-weekly, or monthly payments."
-            },
-            {
-                title: "Quick Approvals",
-                description: "Get approved in minutes with our simple online application."
-            }
         ]
     },
 
@@ -96,6 +68,25 @@ const serviceContent = {
         ]
     },
 
+    financing: {
+        title: "Finance Your Dream Pergola with Ease",
+        description: "We believe that everyone should have access to beautiful outdoor spaces without financial stress.",
+        options: [
+            {
+                title: "0% Interest Financing",
+                description: "Spread the cost over 12 months with no interest."
+            },
+            {
+                title: "Flexible Payment Plans",
+                description: "Choose between weekly, bi-weekly, or monthly payments."
+            },
+            {
+                title: "Quick Approvals",
+                description: "Get approved in minutes with our simple online application."
+            }
+        ]
+    },
+
     maintenance: {
         title: "Care and Maintenance Tips",
         tips: [
@@ -116,7 +107,7 @@ const serviceContent = {
 
     cta: {
         title: "Ready to Enhance Your Outdoor Space?",
-        description: "Ready to enhance your outdoor living space? Contact us now to schedule a free consultation or to learn more about our financing options. With Pergola Pro, your dream outdoor space is just a call away!",
+        description: "Ready to enhance your outdoor living space? Contact us now to schedule a free consultation or to learn more about our financing options. With Pergola Pro, your dream outdoor space is just a call away! Dial at +64 27 392 8106 or email info@pergolapro.co.nz for more details.",
         contact: {
             phone: "+64 27 392 8106",
             email: "info@pergolapro.co.nz"
@@ -128,7 +119,7 @@ export default function ServiceDetails() {
     return (
         <>
             <Layout
-                breadcrumbTitle="Modified roofing beautiful wooden house with big windows"
+                breadcrumbTitle={serviceContent.title}
                 imageURL={`https://pergolapro.co.nz/wp-content/uploads/2023/12/canopies.jpg`}
                 pageTitle="Service Details"
                 isService={true}
@@ -142,9 +133,9 @@ export default function ServiceDetails() {
                                     <div className="services-details-wrap">
                                         <div className="services-details-content mt-50">
                                             <h2 className="title">{serviceContent.title}</h2>
-                                            <p>{serviceContent.description}</p>
+                                            <p dangerouslySetInnerHTML={{ __html: serviceContent.description }} />
 
-
+                                            {/* Key Features Section */}
                                             <div className="services-process-wrap">
                                                 <div className="row justify-content-center align-items-center">
                                                     <div className="col-lg-6 col-md-8">
@@ -154,14 +145,14 @@ export default function ServiceDetails() {
                                                     </div>
                                                     <div className="col-lg-6">
                                                         <div className="services-process-content">
-                                                            <h2 className="title">{serviceContent.whyChoose.title}</h2>
+                                                            <h2 className="title">{serviceContent.keyFeatures.title}</h2>
                                                             <ul className="list-wrap">
-                                                                {serviceContent.whyChoose.features.map((feature, index) => (
+                                                                {serviceContent.keyFeatures.features.map((feature, index) => (
                                                                     <li key={index}>
                                                                         <div className="services-process-item">
-                                                                            <div className="icon">
-                                                                                <img src={feature.icon} alt="" />
-                                                                            </div>
+                                                                            {/* <div className="icon">
+                                                                                <img src={feature.icon || "/assets/img/icon/default_icon.svg"} alt="" />
+                                                                            </div> */}
                                                                             <div className="content">
                                                                                 <h4 className="title">{feature.title}</h4>
                                                                                 <p>{feature.description}</p>
@@ -174,6 +165,39 @@ export default function ServiceDetails() {
                                                     </div>
                                                 </div>
                                             </div>
+
+                                            {/* Why Choose Section (if exists) */}
+                                            {serviceContent.whyChoose && (
+                                                <div className="services-process-wrap">
+                                                    <div className="row justify-content-center align-items-center">
+                                                        <div className="col-lg-6 col-md-8">
+                                                            <div className="services-process-img">
+                                                                <img src="/assets/img/services/sp_img02.jpg" alt="" />
+                                                            </div>
+                                                        </div>
+                                                        <div className="col-lg-6">
+                                                            <div className="services-process-content">
+                                                                <h2 className="title">{serviceContent.whyChoose.title}</h2>
+                                                                <ul className="list-wrap">
+                                                                    {serviceContent.whyChoose.features.map((feature, index) => (
+                                                                        <li key={index}>
+                                                                            <div className="services-process-item">
+                                                                                <div className="icon">
+                                                                                    <img src={feature.icon} alt="" />
+                                                                                </div>
+                                                                                <div className="content">
+                                                                                    <h4 className="title">{feature.title}</h4>
+                                                                                    <p>{feature.description}</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                    ))}
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            )}
 
                                             <div className="service-benefits-wrap">
                                                 <div className="row">
@@ -201,7 +225,6 @@ export default function ServiceDetails() {
                                                 </div>
                                             </div>
                                         </div>
-
 
                                         {/* Installation Process Section */}
                                         <div className="col-lg-12 mb-100">
@@ -250,8 +273,6 @@ export default function ServiceDetails() {
                                                 </ul>
                                             </div>
                                         </div>
-
-
 
                                         {/* Maintenance Tips Section */}
                                         <div className="col-lg-12 mb-100">

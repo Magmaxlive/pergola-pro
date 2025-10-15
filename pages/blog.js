@@ -64,8 +64,8 @@ export default function Blog() {
                         <div className="row justify-content-center">
                             <div className="col-lg-6">
                                 <div className="section-title text-center mb-50 tg-heading-subheading animation-style3">
-                                    <span className="sub-title tg-element-title">News & Blogs</span>
-                                    <h2 className="title tg-element-title">Signature Attributes of Pergola Pro Tauranga</h2>
+                                    <span className="sub-title tg-element-title">Latest Pergola Insights</span>
+                                    <h1 className="title tg-element-title">News & Blogs</h1>
                                 </div>
                             </div>
                         </div>

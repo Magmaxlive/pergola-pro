@@ -12,34 +12,36 @@ const serviceContent = {
         title: "Why Choose Pergola Pro Roller Blinds in Tauranga?",
         features: [
             {
+                icon: "/assets/img/icon/sp_icon01.svg",
                 title: "High-Quality Materials",
-                description: "Made from UV-resistant and waterproof fabrics that can handle harsh sunlight and rain without fading or tearing. Tracks and fittings are built from rust-proof aluminium for long-lasting performance. Available in different colors and opacity levels, so you can pick the look and coverage that suits your space.",
-                icon: "/assets/img/icon/sp_icon01.svg",
+                description: "Made from UV-resistant and waterproof fabrics that can handle harsh sunlight and rain without fading or tearing. Tracks and fittings are built from rust-proof aluminium for long-lasting performance. Available in different colors and opacity levels, so you can pick the look and coverage that suits your space."
             },
             {
+                icon: "/assets/img/icon/sp_icon02.svg",
                 title: "Enhanced Privacy and Sun Protection",
-                description: "Blocks up to 95% of UV rays to protect your skin and outdoor furniture. Provides privacy without making your space feel dark or closed in. Helps keep your outdoor areas cool by blocking direct sunlight.",
-                icon: "/assets/img/icon/sp_icon01.svg",
+                description: "Blocks up to 95% of UV rays to protect your skin and outdoor furniture. Provides privacy without making your space feel dark or closed in. Helps keep your outdoor areas cool by blocking direct sunlight."
             },
             {
+                icon: "/assets/img/icon/sp_icon01.svg",
                 title: "Manual and Motorized Options",
-                description: "Choose between crank handle or spring-assisted manual controls for easy operation. For extra convenience, go for our motorized blinds that you can control with a remote or smartphone app. Smooth and quiet operation, with no tugging or jamming.",
-                icon: "/assets/img/icon/sp_icon01.svg",
+                description: "Choose between crank handle or spring-assisted manual controls for easy operation. For extra convenience, go for our motorized blinds that you can control with a remote or smartphone app. Smooth and quiet operation, with no tugging or jamming."
             },
             {
+                icon: "/assets/img/icon/sp_icon01.svg",
                 title: "Custom Fit for Every Space",
-                description: "Our blinds are custom-made to fit your exact measurements, ensuring no awkward gaps or overhangs. Options for guided tracks to keep blinds steady in the wind or no-track systems for a cleaner look. Free consultation to help you pick the right materials, colors, and styles.",
-                icon: "/assets/img/icon/sp_icon01.svg",
+                description: "Our blinds are custom-made to fit your exact measurements, ensuring no awkward gaps or overhangs. Options for guided tracks to keep blinds steady in the wind or no-track systems for a cleaner look. Free consultation to help you pick the right materials, colors, and styles."
             },
             {
-                title: "Flexible Financing Options",
-                description: "Spread the cost over 12 months with 0% interest financing. Quick and simple approval process. Choose from weekly, bi-weekly, or monthly payments based on your budget.",
                 icon: "/assets/img/icon/sp_icon01.svg",
+                title: "Flexible Financing Options",
+                description: "Spread the cost over 12 months with 0% interest financing. Quick and simple approval process. Choose from weekly, bi-weekly, or monthly payments based on your budget."
             }
         ]
     },
+
     benefits: {
         title: "Benefits of Installing Roller Blinds?",
+        description: "",
         items: [
             "Keeps Outdoor Spaces Cool: Blocks direct sunlight to reduce heat buildup.",
             "Increased Privacy: Ideal for homes with close neighbors or busy streets.",
@@ -52,6 +54,7 @@ const serviceContent = {
             "/assets/img/services/sb_img02.jpg"
         ]
     },
+
     installation: {
         title: "Our Simple Installation Process",
         steps: [
@@ -68,11 +71,31 @@ const serviceContent = {
                 description: "Our trained team handles everything from mounting brackets to testing controls. Most installations are completed within a few hours, with no mess left behind."
             },
             {
-                title: "After Sale Support",
+                title: "After-Sale Support",
                 description: "Includes a 2-year warranty on materials and installation. Free maintenance tips and customer support for any questions or adjustments."
             }
         ]
     },
+
+    financing: {
+        title: "Financing Your Roller Blinds",
+        description: "We understand that adding roller blinds can be a big investment. That's why we offer:",
+        options: [
+            {
+                title: "0% Interest Financing",
+                description: "Pay over 12 months with no extra costs."
+            },
+            {
+                title: "Flexible Payment Plans",
+                description: "Choose to pay weekly, bi-weekly, or monthly."
+            },
+            {
+                title: "Quick Approval",
+                description: "Apply online or during your consultation for a fast response."
+            }
+        ]
+    },
+
     maintenance: {
         title: "Maintenance Tips for Roller Blinds",
         tips: [
@@ -94,24 +117,7 @@ const serviceContent = {
             }
         ]
     },
-    financing: {
-        title: "Financing Your Louvre Roof",
-        description: "We understand that adding roller blinds can be a big investment. That's why we offer:",
-        options: [
-            {
-                title: "0% Interest Financing",
-                description: "Pay over 12 months with no extra costs."
-            },
-            {
-                title: "Flexible Payment Plans",
-                description: "Choose to pay weekly, bi-weekly, or monthly."
-            },
-            {
-                title: "Quick Approval",
-                description: "Apply online or during your consultation for a fast response."
-            }
-        ]
-    },
+
     cta: {
         title: "Ready for More Privacy and Comfort?",
         description: "Contact us today to schedule a free measure and quote or to learn more about our financing options. With Pergola Pro, upgrading your outdoor space is simple and affordable!",
@@ -126,7 +132,7 @@ export default function ServiceDetails() {
     return (
         <>
             <Layout
-                breadcrumbTitle="Modified roofing beautiful wooden house with big windows"
+                breadcrumbTitle={serviceContent.title}
                 imageURL={`https://pergolapro.co.nz/wp-content/uploads/2023/12/roller.jpg`}
                 pageTitle="Service Details"
                 isService={true}

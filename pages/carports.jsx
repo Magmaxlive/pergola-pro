@@ -12,45 +12,49 @@ const serviceContent = {
         title: "Why Choose Pergola Pro Carports?",
         features: [
             {
+                icon: "/assets/img/icon/sp_icon01.svg",
                 title: "Durable and Rust-Free Materials",
-                description: "Our carports are built from high-grade aluminium that won't rust or corrode, even in coastal areas. The roofing is made from UV-resistant polycarbonate that blocks harmful rays while allowing natural light to pass through. Powder-coated finishes add extra protection against fading and chipping.",
-                icon: "/assets/img/icon/sp_icon01.svg",
+                description: "Our carports are built from high-grade aluminium that won't rust or corrode, even in coastal areas. The roofing is made from UV-resistant polycarbonate that blocks harmful rays while allowing natural light to pass through. Powder-coated finishes add extra protection against fading and chipping."
             },
             {
+                icon: "/assets/img/icon/sp_icon02.svg",
                 title: "Custom Sizes and Styles",
-                description: "Choose from different sizes, styles, and roof designs to fit your driveway or backyard. Options for attached, freestanding, or semi-attached carports based on your needs. Custom colors and finishes are available to match your home's look.",
-                icon: "/assets/img/icon/sp_icon01.svg",
+                description: "Choose from different sizes, styles, and roof designs to fit your driveway or backyard. Options for attached, freestanding, or semi-attached carports based on your needs. Custom colors and finishes are available to match your home's look."
             },
             {
+                icon: "/assets/img/icon/sp_icon01.svg",
                 title: "Quick and Easy Installation",
-                description: "Most carports are installed within a day by our experienced team. No heavy construction or complicated permits are needed in most areas. Our team takes care of everything, from site preparation to final assembly.",
-                icon: "/assets/img/icon/sp_icon01.svg",
+                description: "Most carports are installed within a day by our experienced team. No heavy construction or complicated permits are needed in most areas. Our team takes care of everything, from site preparation to final assembly."
             },
             {
+                icon: "/assets/img/icon/sp_icon01.svg",
                 title: "Protection Against All Weathers",
-                description: "Shields your car from sun, rain, hail, and tree sap, helping maintain your vehicle's paint and resale value. Open sides for proper ventilation to reduce heat buildup. Built to withstand high winds and heavy rainfall without damage.",
-                icon: "/assets/img/icon/sp_icon01.svg",
+                description: "Shields your car from sun, rain, hail, and tree sap, helping maintain your vehicle's paint and resale value. Open sides for proper ventilation to reduce heat buildup. Built to withstand high winds and heavy rainfall without damage."
             },
             {
-                title: "Flexible Financing Options",
-                description: "Pay over time with 0% interest for the first 12 months. Simple application process with quick approvals. Flexible payment plans to fit your budget—weekly, bi-weekly, or monthly.",
                 icon: "/assets/img/icon/sp_icon01.svg",
+                title: "Flexible Financing Options",
+                description: "Pay over time with 0% interest for the first 12 months. Simple application process with quick approvals. Flexible payment plans to fit your budget—weekly, bi-weekly, or monthly."
             }
         ]
     },
+
     benefits: {
-        title: "Benefits of Installing a Carport",
-        items: ["Keeps Your Car Cool: Blocks direct sunlight to prevent your car's interior from overheating.",
+        title: "Benefits of Installing a Carport?",
+        description: "",
+        items: [
+            "Keeps Your Car Cool: Blocks direct sunlight to prevent your car's interior from overheating.",
             "Reduces Maintenance Costs: Protects your car from sun damage, rust, and fading, saving you money on repairs.",
             "Extra Storage Space: Use the carport to store bikes, tools, or other outdoor equipment.",
-            "Boosts Property Value:A well-designed carport can add to your home's curb appeal and market value. ",
-            "Low Maintenance: Built from rust-proof and UV-resistant materials that require minimal upkeep.",
+            "Boosts Property Value: A well-designed carport can add to your home's curb appeal and market value.",
+            "Low Maintenance: Built from rust-proof and UV-resistant materials that require minimal upkeep."
         ],
         images: [
             "/assets/img/services/sb_img01.jpg",
             "/assets/img/services/sb_img02.jpg"
         ]
     },
+
     installation: {
         title: "Our Easy Installation Process",
         steps: [
@@ -72,6 +76,26 @@ const serviceContent = {
             }
         ]
     },
+
+    financing: {
+        title: "Financing Your Carport",
+        description: "We understand that adding a carport is a big investment. That's why we offer:",
+        options: [
+            {
+                title: "0% Interest for 12 Months",
+                description: "Pay over time without any extra costs."
+            },
+            {
+                title: "Flexible Payment Plans",
+                description: "Choose weekly, bi-weekly, or monthly payments that fit your budget."
+            },
+            {
+                title: "Quick Approval",
+                description: "Apply online or during your consultation for fast approval."
+            }
+        ]
+    },
+
     maintenance: {
         title: "Maintenance Tips for Your Carport",
         tips: [
@@ -93,24 +117,7 @@ const serviceContent = {
             }
         ]
     },
-    financing: {
-        title: "Financing Your Carport",
-        description: "We understand that adding a carport is a big investment. That's why we offer:",
-        options: [
-            {
-                title: "0% Interest for 12 Months",
-                description: "Pay over time without any extra costs."
-            },
-            {
-                title: "Flexible Payment Plans",
-                description: "Choose weekly, bi-weekly, or monthly payments that fit your budget."
-            },
-            {
-                title: "Quick Approval",
-                description: "Apply online or during your consultation for fast approval."
-            }
-        ]
-    },
+
     cta: {
         title: "Ready to Protect Your Car in Style?",
         description: "Get in touch with us today for a free consultation and quote. With Pergola Pro, getting a strong and stylish carport is easy and affordable!",
@@ -125,7 +132,7 @@ export default function ServiceDetails() {
     return (
         <>
             <Layout
-                breadcrumbTitle="Modified roofing beautiful wooden house with big windows"
+                breadcrumbTitle={serviceContent.title}
                 imageURL={`https://pergolapro.co.nz/wp-content/uploads/2023/12/carports.jpg`}
                 pageTitle="Service Details"
                 isService={true}

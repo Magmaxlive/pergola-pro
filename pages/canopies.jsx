@@ -128,7 +128,7 @@ export default function ServiceDetails() {
     return (
         <>
             <Layout
-                breadcrumbTitle="Modified roofing beautiful wooden house with big windows"
+                breadcrumbTitle={serviceContent.title}
                 imageURL={`https://pergolapro.co.nz/wp-content/uploads/2023/12/canopies.jpg`}
                 pageTitle="Service Details"
                 isService={true}

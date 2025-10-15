@@ -8,8 +8,8 @@ export default function Work1() {
                     <div className="row justify-content-center">
                         <div className="col-lg-8">
                             <div className="section-title text-center mb-50 tg-heading-subheading animation-style3">
-                                <span className="sub-title tg-element-title">Working Plan</span>
-                                <h2 className="title tg-element-title">Roof Plan Working Process</h2>
+                                {/* <span className="sub-title tg-element-title">Working Plan</span> */}
+                                <h2 className="title tg-element-title">Signature Attributes of Pergola Pro Tauranga</h2>
                             </div>
                         </div>
                     </div>

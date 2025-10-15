@@ -5,8 +5,8 @@ export default function Support1() {
         <>
             <section className="support-area pt-115 pb-70">
                 <div className="container">
-                    <h1>Why Choose Pergola Pro?
-                        Built to Last, Designed to Impress</h1>
+                    <h3>Why Choose Pergola Pro?
+                        Built to Last, Designed to Impress</h3>
                     <p>To guarantee that your outdoor pergola not only looks amazing but also endures over time, our skilled team only uses the best materials and construction methods. Whether you&#8217;re after a complete <strong >pergola installation in Tauranga</strong> or a fully tailored custom pergola to suit your style and space, we deliver quality that lasts. With some of the greatest pergola designs Auckland has to offer, you can turn your outdoor space into a comfortable and useful haven that raises the value of your house. </p>
                    <br /> <br />
                     <div className="row justify-content-center"> 

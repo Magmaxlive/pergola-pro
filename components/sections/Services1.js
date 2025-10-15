@@ -31,7 +31,8 @@ export default function Services1() {
                         <div className="col-lg-6">
                             <div className="section-title text-center mb-50 tg-heading-subheading animation-style3">
                                 <span className="sub-title tg-element-title">Services</span>
-                                <h2 className="title tg-element-title">Signature Attributes of Pergola Pro Tauranga</h2>
+                                <h1 className="title tg-element-title"> Tauranga&apos;s Custom Pergola, Carport & Outdoor Solutions </h1>
+                                <p className="mt-50">At Pergola Pro, we offer a wide range of outdoor solutions designed to enhance your home&apos;s beauty and functionality. Our services include custom canopies, adjustable louvres, durable carports, elegant pergolas, and versatile roller blinds. Each solution is crafted with precision and tailored to your unique needs, ensuring that your outdoor space is both beautiful and practical. Whether you’re looking to create shade, increase privacy, or add a stylish feature to your home, our team of experts is dedicated to delivering quality craftsmanship and exceptional service.</p>
                             </div>
                         </div>
                     </div>

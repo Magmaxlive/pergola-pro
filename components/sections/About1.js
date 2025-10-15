@@ -16,7 +16,7 @@ export default function About1() {
                                             <img src="/assets/img/icon/about_icon01.svg" alt="" />
                                         </div>
                                         <div className="content">
-                                            <h6 className="title">Custom Pergolas & Outdoor Living Solutions in Tauranga</h6>
+                                            <h2 className="title">Award-Winning Custom Pergola Builders in Tauranga</h2>
                                         </div>
                                     </div>
                                     <div className="experiences-item">
@@ -24,7 +24,7 @@ export default function About1() {
                                             <img src="/assets/img/icon/about_icon02.svg" alt="" />
                                         </div>
                                         <div className="content">
-                                            <h6 className="title">We use professional and experienced person</h6>
+                                            <h6 className="title">1000+ Happy Customers ⭐⭐⭐⭐⭐ 4.9/5 Stars</h6>
                                         </div>
                                     </div>
                                 </div>

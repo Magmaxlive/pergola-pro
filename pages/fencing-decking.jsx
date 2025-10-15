@@ -12,34 +12,36 @@ const serviceContent = {
         title: "Why Choose Pergola Pro's Fencing and Decking?",
         features: [
             {
+                icon: "/assets/img/icon/sp_icon01.svg",
                 title: "Durable and Long-Lasting Materials",
-                description: "Our fences and decks are made from high-quality pine that's treated to resist rot, termites, and harsh weather. We also offer composite decking options for a low-maintenance, long-lasting solution. All wood is sealed to prevent warping, cracking, and fading, ensuring your fence and deck look new for years.",
-                icon: "/assets/img/icon/sp_icon01.svg",
+                description: "Our fences and decks are made from high-quality pine that's treated to resist rot, termites, and harsh weather. We also offer composite decking options for a low-maintenance, long-lasting solution. All wood is sealed to prevent warping, cracking, and fading, ensuring your fence and deck look new for years."
             },
             {
+                icon: "/assets/img/icon/sp_icon02.svg",
                 title: "Custom Designs for Every Space",
-                description: "Choose from a variety of styles, including privacy fences, picket fences, and horizontal slate designs. Custom decking options with different board sizes, colors, and finishes to suit your home's look. Our design experts will help you pick the right style and materials for your space.",
-                icon: "/assets/img/icon/sp_icon01.svg",
+                description: "Choose from a variety of styles, including privacy fences, picket fences, and horizontal slate designs. Custom decking options with different board sizes, colors, and finishes to suit your home's look. Our design experts will help you pick the right style and materials for your space."
             },
             {
+                icon: "/assets/img/icon/sp_icon01.svg",
                 title: "Quick and Professional Installation",
-                description: "Our experienced team handles everything—from measuring your space to building and finishing your fence or deck. Most installations are completed within 2–3 days with no mess left behind. We also provide detailed maintenance tips to help you keep your fence and deck in top shape.",
-                icon: "/assets/img/icon/sp_icon01.svg",
+                description: "Our experienced team handles everything—from measuring your space to building and finishing your fence or deck. Most installations are completed within 2–3 days with no mess left behind. We also provide detailed maintenance tips to help you keep your fence and deck in top shape."
             },
             {
+                icon: "/assets/img/icon/sp_icon01.svg",
                 title: "Protection and Privacy",
-                description: "Our fences provide complete privacy and security for your backyard. Decking options with anti-slip surfaces to keep your family safe. Built to withstand heavy use, foot traffic, and harsh weather conditions.",
-                icon: "/assets/img/icon/sp_icon01.svg",
+                description: "Our fences provide complete privacy and security for your backyard. Decking options with anti-slip surfaces to keep your family safe. Built to withstand heavy use, foot traffic, and harsh weather conditions."
             },
             {
-                title: "Flexible Financing Options",
-                description: "Pay for your fencing and decking over 12 months with 0% interest financing. Quick and simple approval process. Choose from weekly, bi-weekly, or monthly payments based on your budget.",
                 icon: "/assets/img/icon/sp_icon01.svg",
+                title: "Flexible Financing Options",
+                description: "Pay for your fencing and decking over 12 months with 0% interest financing. Quick and simple approval process. Choose from weekly, bi-weekly, or monthly payments based on your budget."
             }
         ]
     },
+
     benefits: {
         title: "Benefits of Installing Fencing and Decking?",
+        description: "",
         items: [
             "Enhanced Privacy and Security: Keep your backyard secluded from neighbors and passersby.",
             "Increased Property Value: A well-designed fence and deck can boost your home's curb appeal and market value.",
@@ -52,9 +54,9 @@ const serviceContent = {
             "/assets/img/services/sb_img02.jpg"
         ]
     },
+
     installation: {
         title: "Our Easy Installation Process",
-        description: "From initial consultation to final construction, our professional team ensures your fencing and decking project is completed efficiently and to the highest standards.",
         steps: [
             {
                 title: "Free Consultation and Quote",
@@ -74,9 +76,28 @@ const serviceContent = {
             }
         ]
     },
+
+    financing: {
+        title: "Financing Your Fence and Deck",
+        description: "We understand that fencing and decking can be a big investment. That's why we offer:",
+        options: [
+            {
+                title: "0% Interest for 12 Months",
+                description: "Spread the cost without any extra charges."
+            },
+            {
+                title: "Flexible Payment Plans",
+                description: "Choose weekly, bi-weekly, or monthly payments that fit your budget."
+            },
+            {
+                title: "Quick Approval",
+                description: "Simple application process with fast response times."
+            }
+        ]
+    },
+
     maintenance: {
         title: "Maintenance Tips for Your Fence and Deck",
-        description: "Keep your fencing and decking in excellent condition with these simple maintenance practices that ensure long-lasting durability and beauty.",
         tips: [
             {
                 title: "Seal Your Deck Annually",
@@ -96,24 +117,7 @@ const serviceContent = {
             }
         ]
     },
-    financing: {
-        title: "Financing Your Fence and Deck",
-        description: "We understand that fencing and decking can be a big investment. That's why we offer flexible payment options designed to fit your budget and financial needs.",
-        options: [
-            {
-                title: "0% Interest for 12 Months",
-                description: "Spread the cost without any extra charges."
-            },
-            {
-                title: "Flexible Payment Plans",
-                description: "Choose weekly, bi-weekly, or monthly payments that fit your budget."
-            },
-            {
-                title: "Quick Approval",
-                description: "Simple application process with fast response times."
-            }
-        ]
-    },
+
     cta: {
         title: "Ready to Enhance Your Outdoor Space?",
         description: "Get in touch with us today for a free consultation and quote for custom fencing and decking. With Pergola Pro, getting a strong and stylish fence or deck is easy and affordable!",
@@ -124,11 +128,12 @@ const serviceContent = {
     }
 };
 
+
 export default function ServiceDetails() {
     return (
         <>
             <Layout
-                breadcrumbTitle="Modified roofing beautiful wooden house with big windows"
+                breadcrumbTitle={serviceContent.title}
                 imageURL={`https://pergolapro.co.nz/wp-content/uploads/2024/08/fence.png`}
                 pageTitle="Service Details"
                 isService={true}
