@@ -29,7 +29,7 @@ export default function Banner1() {
                 <div className="banner-bg" data-background="/assets/img/banner/banner.jpeg">
 
                     <div className="banner-content">
-                        <h1 className="title wow fadeInDown" data-wow-delay=".2s">Tauranga's Most Popular Pergola Brand</h1>
+                        <h1 className="title wow fadeInDown" data-wow-delay=".2s">#1 Tauranga's Most Popular Pergola Brand</h1>
                         <p className="" data-wow-delay=".2s" style={{ fontSize: "16px" }}>Discover why thousands of homeowners trust us to elevate their homes. </p>
                         <Link href="/contact" className="btn wow fadeInUp" data-wow-delay=".4s">Get your free quote</Link>
                     </div>

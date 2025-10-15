@@ -6,7 +6,7 @@ import Services1 from "@/components/sections/Services1"
 import Script from 'next/script';
 import Appointment3 from "@/components/sections/Appointment3"
 
-export default function Service() {
+export default function Service({isService}) {
     const [isActive, setIsActive] = useState({
         status: false,
         key: "",
@@ -53,7 +53,7 @@ export default function Service() {
 
 
                 <div>
-                    <Services1 />
+                    <Services1 isService={true} />
                     {/* services-area-end */}
                     {/* area-bg */}
                     <div className="area-bg">

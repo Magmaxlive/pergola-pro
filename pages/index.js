@@ -17,7 +17,7 @@ export default function Home() {
                  <GoogleReviews />
                 <About1 />
                 {/* <Features1 /> */}
-                <Services1 />
+                <Services1 isService={false} />
                 <Work1 />
                 <div className="area-bg">
                     <div className="area-background-img jarallax" data-background="/assets/img/bg/area_bg01.jpg" />

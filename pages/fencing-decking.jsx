@@ -5,6 +5,7 @@ import GoogleReviews from "@/components/google/reviews";
 
 // Content payload in JSON format
 const serviceContent = {
+    mainTitle: "Fencing and Decking",
     title: "Fencing and Decking: Define and Enhance Your Outdoor Space in Tauranga",
     description: "At Pergola Pro, we specialize in high-quality fencing and decking solutions that add privacy, security, and style to your home. Our fences and decks are built from authentic pine and other durable materials, ensuring they stay strong and look great for years. Whether you want a cozy barbecue deck or a privacy fence to keep your backyard secluded, we can design and install the perfect solution for your space and budget. As a trusted pergola builder in Tauranga, we're here to bring your outdoor vision to life.",
 
@@ -133,7 +134,7 @@ export default function ServiceDetails() {
     return (
         <>
             <Layout
-                breadcrumbTitle={serviceContent.title}
+                breadcrumbTitle={serviceContent.mainTitle}
                 imageURL={`https://pergolapro.co.nz/wp-content/uploads/2024/08/fence.png`}
                 pageTitle="Service Details"
                 isService={true}
@@ -164,9 +165,9 @@ export default function ServiceDetails() {
                                                                 {serviceContent.whyChoose.features.map((feature, index) => (
                                                                     <li key={index}>
                                                                         <div className="services-process-item">
-                                                                            <div className="icon">
+                                                                            {/* <div className="icon">
                                                                                 <img src={feature.icon} alt="" />
-                                                                            </div>
+                                                                            </div> */}
                                                                             <div className="content">
                                                                                 <h4 className="title">{feature.title}</h4>
                                                                                 <p>{feature.description}</p>
@@ -262,11 +263,11 @@ export default function ServiceDetails() {
                                         <div className="col-lg-12 mb-100">
                                             <div className="services-process-content">
                                                 <div className="row align-items-center">
-                                                    <div className="col-lg-8">
+                                                    <div className="col-lg-12">
                                                         <h2 className="title mb-4">{serviceContent.maintenance.title}</h2>
                                                         <div className="row">
                                                             {serviceContent.maintenance.tips.map((tip, index) => (
-                                                                <div key={index} className="col-md-4 mb-3">
+                                                                <div key={index} className="col-md-3 mb-3">
                                                                     <div className="d-flex align-items-start">
                                                                         <i className="fas fa-check mt-1 me-3" style={{ color: "#FE5D14" }}></i>
                                                                         <div>
@@ -278,7 +279,7 @@ export default function ServiceDetails() {
                                                             ))}
                                                         </div>
                                                     </div>
-                                                    <div className="col-lg-4">
+                                                    {/* <div className="col-lg-4">
                                                         <div className="text-center">
                                                             <div className="bg-light rounded p-4">
                                                                 <i className="fas fa-tools mb-3" style={{ fontSize: '48px', color: "#FE5D14" }}></i>
@@ -288,7 +289,7 @@ export default function ServiceDetails() {
                                                                 </p>
                                                             </div>
                                                         </div>
-                                                    </div>
+                                                    </div> */}
                                                 </div>
                                             </div>
                                         </div>

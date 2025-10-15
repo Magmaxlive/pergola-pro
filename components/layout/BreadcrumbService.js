@@ -40,7 +40,7 @@ export default function Breadcrumb({ breadcrumbTitle, pageTitle, imageURL }) {
                                 <h2 className="title mb-3" style={{ color: '#fff', fontSize: '2.5rem', fontWeight: '700' }}>
                                     {breadcrumbTitle}
                                 </h2>
-                                <nav aria-label="breadcrumb">
+                                {/* <nav aria-label="breadcrumb">
                                     <ol className="breadcrumb mb-0 d-flex justify-content-center justify-content-lg-start">
                                         <li className="breadcrumb-item">
                                             <Link href="/" style={{ color: '#fff', textDecoration: 'none', fontSize: '1.1rem' }}>
@@ -54,7 +54,7 @@ export default function Breadcrumb({ breadcrumbTitle, pageTitle, imageURL }) {
                                             {pageTitle}
                                         </li>
                                     </ol>
-                                </nav>
+                                </nav> */}
                             </div>
                         </div>
                         <div className="col-lg-6 col-md-12">

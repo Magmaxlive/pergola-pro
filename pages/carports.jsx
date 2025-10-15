@@ -5,6 +5,7 @@ import GoogleReviews from "@/components/google/reviews";
 
 // Content payload in JSON format
 const serviceContent = {
+    mainTitle: "Carports",
     title: "Carports: Protect Your Vehicles with Style in Tauranga",
     description: "At Pergola Pro, we build strong and stylish carports to protect your vehicles from the sun, rain, and other weather conditions. Made from high-quality aluminium and polycarbonate roofing, our carports are designed to last without needing much maintenance. Whether you need a simple carport for one car or a larger setup for multiple vehicles, we can customize it to fit your space and budget.",
 
@@ -132,7 +133,7 @@ export default function ServiceDetails() {
     return (
         <>
             <Layout
-                breadcrumbTitle={serviceContent.title}
+                breadcrumbTitle={serviceContent.mainTitle}
                 imageURL={`https://pergolapro.co.nz/wp-content/uploads/2023/12/carports.jpg`}
                 pageTitle="Service Details"
                 isService={true}
@@ -163,9 +164,9 @@ export default function ServiceDetails() {
                                                                 {serviceContent.whyChoose.features.map((feature, index) => (
                                                                     <li key={index}>
                                                                         <div className="services-process-item">
-                                                                            <div className="icon">
+                                                                            {/* <div className="icon">
                                                                                 <img src={feature.icon} alt="" />
-                                                                            </div>
+                                                                            </div> */}
                                                                             <div className="content">
                                                                                 <h4 className="title">{feature.title}</h4>
                                                                                 <p>{feature.description}</p>
@@ -261,11 +262,11 @@ export default function ServiceDetails() {
                                         <div className="col-lg-12 mb-100">
                                             <div className="services-process-content">
                                                 <div className="row align-items-center">
-                                                    <div className="col-lg-8">
+                                                    <div className="col-lg-12">
                                                         <h2 className="title mb-4">{serviceContent.maintenance.title}</h2>
                                                         <div className="row">
                                                             {serviceContent.maintenance.tips.map((tip, index) => (
-                                                                <div key={index} className="col-md-4 mb-3">
+                                                                <div key={index} className="col-md-3 mb-3">
                                                                     <div className="d-flex align-items-start">
                                                                         <i className="fas fa-check mt-1 me-3" style={{ color: "#FE5D14" }}></i>
                                                                         <div>
@@ -277,17 +278,7 @@ export default function ServiceDetails() {
                                                             ))}
                                                         </div>
                                                     </div>
-                                                    <div className="col-lg-4">
-                                                        <div className="text-center">
-                                                            <div className="bg-light rounded p-4">
-                                                                <i className="fas fa-tools mb-3" style={{ fontSize: '48px', color: "#FE5D14" }}></i>
-                                                                <h5 className="" style={{ color: "#FE5D14" }}>Easy Maintenance</h5>
-                                                                <p className="mb-0" style={{ fontSize: '14px' }}>
-                                                                    Simple care routines to keep your louvre roof looking new for years
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                    
                                                 </div>
                                             </div>
                                         </div>

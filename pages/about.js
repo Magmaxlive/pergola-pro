@@ -63,8 +63,8 @@ export default function About() {
                             <div className="col-xl-5 col-lg-6">
                                 <div className="about-content">
                                     <div className="section-title mb-25">
-                                        <span className="sub-title">About Our Company</span>
-                                        <h2 className="title">V BUILDERS VENTURE FOR: CURATING THE PERFECT LIVING SPACE</h2>
+                                        {/* <span className="sub-title">About Our Company</span> */}
+                                        <h2 className="title">About Our Company</h2>
                                     </div>
                                     <p>Pergola Pro expertly creates outdoor areas that are tailored to each house. Under the direction of our in-house architectural designer, every client is able to express their distinct vision during the design phase. We then turn that vision into a remarkable final product, which significantly enhances the value of your property and lifestyle with comprehensive outdoor solutions.</p>
                                     <p>

@@ -5,6 +5,7 @@ import GoogleReviews from "@/components/google/reviews";
 
 // Content payload in JSON format
 const serviceContent = {
+    mainTitle: "Pergolas",
     title: "Pergolas Tauranga: Stylish Outdoor Living Made Easy",
     description: "At Pergola Pro, we specialize in designing and installing high-quality <a target='_blank' href='https://pergolapro.co.nz/'>Outdoor Pergolas</a>  that transform ordinary outdoor spaces into stylish retreats. Our pergolas are crafted from premium aluminium and UV-resistant polycarbonate, ensuring durability and a modern aesthetic. Whether you want a cozy spot for family gatherings or an elegant extension of your living space, our pergolas offer the perfect balance of functionality and design. As motorised pergola specialists in New Zealand, we bring innovative solutions that blend convenience with luxury—giving you complete control over your outdoor environment with just the touch of a button.",
 
@@ -101,13 +102,17 @@ const serviceContent = {
             {
                 title: "Seasonal Care",
                 description: "Remove leaves and debris from the roof during fall."
+            },
+            {
+                title: "Low Maintenance",
+                description: "Effortless care to preserve your pergola’s beauty for years to come."
             }
         ]
     },
 
     cta: {
         title: "Ready to Enhance Your Outdoor Space?",
-        description: "Ready to enhance your outdoor living space? Contact us now to schedule a free consultation or to learn more about our financing options. With Pergola Pro, your dream outdoor space is just a call away! Dial at +64 27 392 8106 or email info@pergolapro.co.nz for more details.",
+        description: "Ready to enhance your outdoor living space? Contact us now to schedule a free consultation or to learn more about our financing options. With Pergola Pro, your dream outdoor space is just a call away.",
         contact: {
             phone: "+64 27 392 8106",
             email: "info@pergolapro.co.nz"
@@ -119,7 +124,7 @@ export default function ServiceDetails() {
     return (
         <>
             <Layout
-                breadcrumbTitle={serviceContent.title}
+                breadcrumbTitle={serviceContent.mainTitle}
                 imageURL={`https://pergolapro.co.nz/wp-content/uploads/2023/12/canopies.jpg`}
                 pageTitle="Service Details"
                 isService={true}
@@ -278,11 +283,11 @@ export default function ServiceDetails() {
                                         <div className="col-lg-12 mb-100">
                                             <div className="services-process-content">
                                                 <div className="row align-items-center">
-                                                    <div className="col-lg-8">
+                                                    <div className="col-lg-12">
                                                         <h2 className="title mb-4">{serviceContent.maintenance.title}</h2>
                                                         <div className="row">
                                                             {serviceContent.maintenance.tips.map((tip, index) => (
-                                                                <div key={index} className="col-md-4 mb-3">
+                                                                <div key={index} className="col-md-3 mb-3">
                                                                     <div className="d-flex align-items-start">
                                                                         <i className="fas fa-check mt-1 me-3" style={{ color: "#FE5D14" }}></i>
                                                                         <div>
@@ -294,7 +299,7 @@ export default function ServiceDetails() {
                                                             ))}
                                                         </div>
                                                     </div>
-                                                    <div className="col-lg-4">
+                                                    {/* <div className="col-lg-4">
                                                         <div className="text-center">
                                                             <div className="bg-light rounded p-4">
                                                                 <i className="fas fa-tools mb-3" style={{ fontSize: '48px', color: "#FE5D14" }}></i>
@@ -304,7 +309,7 @@ export default function ServiceDetails() {
                                                                 </p>
                                                             </div>
                                                         </div>
-                                                    </div>
+                                                    </div> */}
                                                 </div>
                                             </div>
                                         </div>
