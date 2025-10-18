@@ -92,12 +92,12 @@ export default function Footer1() {
                                         <h2 className="fw-title">Our Services</h2>
                                         <div className="footer-link">
                                             <ul className="list-wrap">
-                                                <li><Link href="/services/pergolas/1804"><i className="fas fa-angle-double-right" />Pergolas</Link></li>
-                                                <li><Link href="/services/pergolas/7863"><i className="fas fa-angle-double-right" />Roller Blinds</Link></li>
-                                                <li><Link href="/services/pergolas/7864"><i className="fas fa-angle-double-right" />Carports</Link></li>
-                                                <li><Link href="/services/pergolas/7865"><i className="fas fa-angle-double-right" />Louvre Roof Systems</Link></li>
-                                                <li><Link href="services/pergolas/7862"><i className="fas fa-angle-double-right" />Canopies</Link></li>
-                                                <li><Link href="/services/pergolas/8120"><i className="fas fa-angle-double-right" />Fencing & Decking</Link></li>
+                                                <li><Link href="/pergolas"><i className="fas fa-angle-double-right" />Pergolas</Link></li>
+                                                <li><Link href="/roller-blinds"><i className="fas fa-angle-double-right" />Roller Blinds</Link></li>
+                                                <li><Link href="/carports"><i className="fas fa-angle-double-right" />Carports</Link></li>
+                                                <li><Link href="/louvre-roof-systems"><i className="fas fa-angle-double-right" />Louvre Roof Systems</Link></li>
+                                                <li><Link href="/canopies"><i className="fas fa-angle-double-right" />Canopies</Link></li>
+                                                <li><Link href="/fencing-decking"><i className="fas fa-angle-double-right" />Fencing & Decking</Link></li>
                                             </ul>
                                         </div>
                                     </div>
