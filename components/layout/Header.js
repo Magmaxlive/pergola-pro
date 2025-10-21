@@ -1,18 +1,28 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { useRouter } from "next/router"; // Import useRouter
+import { useRouter } from "next/router";
 import Sidebar from "./Sidebar";
 
 export default function Header({ headerCls, headerTop }) {
   const [scroll, setScroll] = useState(0);
   const [isToggled, setToggled] = useState(false);
-  const router = useRouter(); // Initialize useRouter
+  const [servicesDropdown, setServicesDropdown] = useState(false);
+  const [mobileServicesDropdown, setMobileServicesDropdown] = useState(false);
+  const router = useRouter();
 
   const handleToggled = () => {
     setToggled(!isToggled);
     !isToggled
       ? document.body.classList.add("mobile-menu-visible")
       : document.body.classList.remove("mobile-menu-visible");
+  };
+
+  const toggleServicesDropdown = () => {
+    setServicesDropdown(!servicesDropdown);
+  };
+
+  const toggleMobileServicesDropdown = () => {
+    setMobileServicesDropdown(!mobileServicesDropdown);
   };
 
   useEffect(() => {
@@ -23,15 +33,27 @@ export default function Header({ headerCls, headerTop }) {
       }
     };
     document.addEventListener("scroll", handleScroll);
-    return () => document.removeEventListener("scroll", handleScroll); // Cleanup
+    return () => document.removeEventListener("scroll", handleScroll);
   }, [scroll]);
 
   // Define menu items with their paths
   const menuItems = [
     { path: "/", label: "Home" },
-    { path: "/about", label: "About us" },
-    { path: "/services", label: "Services" },
+    { 
+      path: "/services", 
+      label: "Services",
+      dropdown: true,
+      submenu: [
+        { path: "/pergolas", label: "Pergolas" },
+        { path: "/roller-blinds", label: "Roller Blinds" },
+        { path: "/carports", label: "Carports" },
+        { path: "/louvre-roof-systems", label: "Louvre Roof Systems" },
+        { path: "/canopies", label: "Canopies" },
+        { path: "/fencing-decking", label: "Fencing & Decking" },
+      ]
+    },
     { path: "/gallery", label: "Gallery" },
+    { path: "/about", label: "About us" },
     { path: "/blog", label: "Blog" },
     { path: "/contact", label: "Contact" },
   ];
@@ -79,9 +101,6 @@ export default function Header({ headerCls, headerTop }) {
                         aria-labelledby="dropdownMenuButton1"
                       >
                         <Link className="dropdown-item" href="/">
-                          <img src="assets/img/icon/russia.jpg" alt="" /> Russia
-                        </Link>
-                        <Link className="dropdown-item" href="/">
                           <img src="assets/img/icon/india.jpg" alt="" /> India
                         </Link>
                         <Link className="dropdown-item" href="/">
@@ -124,8 +143,7 @@ export default function Header({ headerCls, headerTop }) {
       <header>
         <div
           id="sticky-header"
-          className={`menu-area ${scroll ? "sticky-menu" : ""} ${headerCls ? headerCls : ""
-            }`}
+          className={`menu-area ${scroll ? "sticky-menu" : ""} ${headerCls ? headerCls : ""}`}
         >
           <div className="container">
             <div className="row">
@@ -144,26 +162,28 @@ export default function Header({ headerCls, headerTop }) {
                         />
                       </Link>
                     </div>
-                    <div className="logo d-none">
-                      <Link href="/">
-                        <img
-                          src="/assets/img/logo/logo_02.png"
-                          alt="Logo"
-                          style={{ width: "110px" }}
-                        />
-                      </Link>
-                    </div>
                     <div className="navbar-wrap main-menu d-none d-lg-flex">
                       <ul className="navigation">
                         {menuItems.map((item) => (
                           <li
                             key={item.path}
-                            className={`menu-item ${router.pathname === item.path ? "active" : ""
-                              }`}
+                            className={`menu-item ${router.pathname === item.path ? "active" : ""} ${item.dropdown ? 'menu-item-has-children' : ''}`}
+                            onMouseEnter={() => item.dropdown && setServicesDropdown(true)}
+                            onMouseLeave={() => item.dropdown && setServicesDropdown(false)}
                           >
                             <Link href={item.path} style={{ fontSize: "14px" }}>
                               {item.label}
+                              {item.dropdown}
                             </Link>
+                            {item.dropdown && (
+                              <ul className={`sub-menu ${servicesDropdown ? 'show' : ''}`}>
+                                {item.submenu.map((subItem) => (
+                                  <li key={subItem.path}>
+                                    <Link href={subItem.path}>{subItem.label}</Link>
+                                  </li>
+                                ))}
+                              </ul>
+                            )}
                           </li>
                         ))}
                       </ul>
@@ -179,7 +199,8 @@ export default function Header({ headerCls, headerTop }) {
                     </div>
                   </nav>
                 </div>
-                {/* Mobile Menu  */}
+                
+                  {/* Mobile Menu  */}
                 <div className="mobile-menu">
                   <nav className="menu-box">
                     <div className="close-btn" onClick={handleToggled}>
@@ -209,6 +230,78 @@ export default function Header({ headerCls, headerTop }) {
           </div>
         </div>
       </header>
+
+      <style jsx>{`
+        .menu-item-has-children {
+          position: relative;
+        }
+        
+        .sub-menu {
+          position: absolute;
+          top: 100%;
+          left: 0;
+          background: #fff;
+          min-width: 220px;
+          box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+          border-radius: 4px;
+          padding: 10px 0;
+          opacity: 0;
+          visibility: hidden;
+          transform: translateY(10px);
+          transition: all 0.3s ease;
+          z-index: 1000;
+        }
+        
+        .sub-menu.show {
+          opacity: 1;
+          visibility: visible;
+          transform: translateY(0);
+        }
+        
+        .sub-menu li {
+          margin: 0;
+        }
+        
+        .sub-menu a {
+          display: block;
+          padding: 8px 20px;
+          color: #333;
+          text-decoration: none;
+          transition: all 0.3s ease;
+          font-size: 14px;
+        }
+        
+        .sub-menu a:hover {
+          background: #f8f9fa;
+          color: #007bff;
+        }
+        
+        /* Mobile sub-menu styles */
+        .mobile-navigation .sub-menu {
+          position: static;
+          background: transparent;
+          box-shadow: none;
+          padding-left: 20px;
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.3s ease;
+        }
+        
+        .mobile-navigation .sub-menu.show {
+          max-height: 500px;
+        }
+        
+        .mobile-navigation .sub-menu a {
+          padding: 8px 0;
+          color: #666;
+        }
+        
+        .menu-link {
+          padding: 10px 0;
+          color: #333;
+          text-decoration: none;
+        }
+      `}</style>
     </>
   );
 }
