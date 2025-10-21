@@ -36,7 +36,7 @@ export default function Breadcrumb({ breadcrumbTitle, pageTitle, imageURL }) {
                 <div className="container position-relative">
                     <div className="row align-items-center">
                         <div className="col-lg-6 col-md-12 mb-4 mb-lg-0">
-                            <div className="breadcrumb-content text-center text-lg-start">
+                            <div className="breadcrumb-content text-center text-lg-start">  <br />  <br />
                                 <h2 className="title mb-3" style={{ color: '#fff', fontSize: '2.5rem', fontWeight: '700' }}>
                                     {breadcrumbTitle}
                                 </h2>

@@ -131,12 +131,13 @@ export default function ServiceDetails() {
             >
                 <div>
                     <section className="services-details-area pt-120">
+                       
                         <div className="container">
                             <GoogleReviews />
                             <div className="row justify-content-center">
                                 <div className="col-xl-12">
                                     <div className="services-details-wrap">
-                                        <div className="services-details-content mt-50">
+                                        <div className="services-details-content mt-50"> 
                                             <h2 className="title">{serviceContent.title}</h2>
                                             <p dangerouslySetInnerHTML={{ __html: serviceContent.description }} />
 

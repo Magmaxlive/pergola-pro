@@ -46,7 +46,7 @@ export default function Services1({ isService }) {
                                         <img src="/assets/img/icon/services_icon02.svg" alt="" />
                                     </div>
                                     <div className="services-content">
-                                        <h2 className="title" style={{ display: `${isActive.key == 2 ? "none" : "block"}` }}><Link href="/services-details">Pergolas</Link></h2>
+                                        <h2 className="title" style={{ display: `${isActive.key == 2 ? "none" : "block"}` }}><Link href="/pergolas">Pergolas</Link></h2>
                                         <h2 className="number">01</h2>
                                     </div>
                                     <div className="services-overlay-content" style={{ display: `${isActive.key == 2 ? "block" : "none"}` }}>
@@ -66,7 +66,7 @@ export default function Services1({ isService }) {
                                         <img src="/assets/img/icon/services_icon03.svg" alt="" />
                                     </div>
                                     <div className="services-content">
-                                        <h2 className="title" style={{ display: `${isActive.key == 3 ? "none" : "block"}` }}><Link href="/services-details">Carports</Link></h2>
+                                        <h2 className="title" style={{ display: `${isActive.key == 3 ? "none" : "block"}` }}><Link href="/carports">Carports</Link></h2>
                                         <h2 className="number">02</h2>
                                     </div>
                                     <div className="services-overlay-content" style={{ display: `${isActive.key == 3 ? "block" : "none"}` }}>
@@ -86,7 +86,7 @@ export default function Services1({ isService }) {
                                         <img src="/assets/img/icon/services_icon02.svg" alt="" />
                                     </div>
                                     <div className="services-content">
-                                        <h2 className="title" style={{ display: `${isActive.key == 2 ? "none" : "block"}` }}><Link href="/services-details">Roller Blinds</Link></h2>
+                                        <h2 className="title" style={{ display: `${isActive.key == 2 ? "none" : "block"}` }}><Link href="/roller-blinds">Roller Blinds</Link></h2>
                                         <h2 className="number">03</h2>
                                     </div>
                                     <div className="services-overlay-content" style={{ display: `${isActive.key == 2 ? "block" : "none"}` }}>
@@ -105,7 +105,7 @@ export default function Services1({ isService }) {
                                         <img src="/assets/img/icon/services_icon04.svg" alt="" />
                                     </div>
                                     <div className="services-content">
-                                        <h2 className="title" style={{ display: `${isActive.key == 4 ? "none" : "block"}` }}><Link href="/services-details">Louvre Roof Systems</Link></h2>
+                                        <h2 className="title" style={{ display: `${isActive.key == 4 ? "none" : "block"}` }}><Link href="/louvre-roof-systems">Louvre Roof Systems</Link></h2>
                                         <h2 className="number">04</h2>
                                     </div>
                                     <div className="services-overlay-content" style={{ display: `${isActive.key == 4 ? "block" : "none"}` }}>
@@ -124,7 +124,7 @@ export default function Services1({ isService }) {
                                         <img src="/assets/img/icon/services_icon05.svg" alt="" />
                                     </div>
                                     <div className="services-content">
-                                        <h2 className="title" style={{ display: `${isActive.key == 5 ? "none" : "block"}` }}><Link href="/services-details">Canopies</Link></h2>
+                                        <h2 className="title" style={{ display: `${isActive.key == 5 ? "none" : "block"}` }}><Link href="/canopies">Canopies</Link></h2>
                                         <h2 className="number">05</h2>
                                     </div>
                                     <div className="services-overlay-content" style={{ display: `${isActive.key == 5 ? "block" : "none"}` }}>
@@ -142,7 +142,7 @@ export default function Services1({ isService }) {
                                         <img src="/assets/img/icon/services_icon06.svg" alt="" />
                                     </div>
                                     <div className="services-content">
-                                        <h2 className="title" style={{ display: `${isActive.key == 6 ? "none" : "block"}` }}><Link href="/services-details">Fencing & Decking</Link></h2>
+                                        <h2 className="title" style={{ display: `${isActive.key == 6 ? "none" : "block"}` }}><Link href="/fencing-decking">Fencing & Decking</Link></h2>
                                         <h2 className="number">06</h2>
                                     </div>
                                     <div className="services-overlay-content" style={{ display: `${isActive.key == 6 ? "block" : "none"}` }}>
