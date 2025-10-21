@@ -130,7 +130,7 @@ export default function ServiceDetails() {
         <>
             <Layout
                 breadcrumbTitle={serviceContent.mainTitle}
-                imageURL={`https://pergolapro.co.nz/wp-content/uploads/2023/12/canopies.jpg`}
+                imageURL={`https://server.pergolapro.co.nz/wp-content/uploads/2023/12/canopies.jpg`}
                 pageTitle="Service Details"
                 isService={true}
             >
@@ -240,7 +240,7 @@ export default function ServiceDetails() {
                                                     <p>{serviceContent.financing.description}</p>
                                                     {serviceContent.financing.options.map((option, index) => (
                                                         <div key={index} className="col-md-4">
-                                                            <div className="services-process-item">
+                                                            <div className="services-process-item mt-10" style={{height: "125px"}}>
                                                                 <div className="content">
                                                                     <h4 className="title">{option.title}</h4>
                                                                     <p>{option.description}</p>
