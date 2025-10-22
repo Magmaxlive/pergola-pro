@@ -72,7 +72,7 @@ export default function Layout({ headerCls, headerTop, headTitle, breadcrumbTitl
                     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"></link>
 
                 </head>
-                <PageHead headTitle={headTitle} />
+                {/* <PageHead headTitle={headTitle} /> */}
                 <body className={``}>
                     <GTMNoScript gtmId={gtmId} />
                     <GoogleAnalytics trackPageViews gaMeasurementId="G-F4F1ZYYNZR" />
