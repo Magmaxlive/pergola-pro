@@ -28,10 +28,11 @@ export default function Layout({ headerCls, headerTop, headTitle, breadcrumbTitl
         <>
             <html lang="en">
                 <head>
-                    <meta name="author" content="Laralink" />
                     <link rel="icon" href="/images/favicon.ico" sizes="any" />
                     {/* <title>Magmax - Communication Branding and Marketing Agency</title> */}
                     <meta name="google-site-verification" content="Vwx11lciX8sFPCvdtJJiOKoUiHImUD5Jw02PtRJTFEA" />
+                    <meta charset="UTF-8" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
                     <GoogleTagManager gtmId={gtmId} />
                     <JsonLdSchema />
 

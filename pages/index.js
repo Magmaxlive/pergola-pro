@@ -7,14 +7,22 @@ import Appointment3 from "@/components/sections/Appointment3"
 import Support1 from "@/components/sections/Support1"
 import Faq1 from "@/components/sections/Faq1"
 import GoogleReviews from "@/components/google/reviews";
+import Head from "next/head"
+
 
 export default function Home() {
 
     return (
         <>
+            <Head>
+                <title>#1 Pergola Tauranga, Custom Pergola Builder | Pergola Pro NZ</title>
+                <meta name="title" content="#1 Pergola Tauranga, Custom Pergola Builder | Pergola Pro NZ"></meta>
+                <meta name="description" content="Tauranga’s No.1 Pergola Builder for custom pergolas, awnings & outdoor blinds. Transform your outdoor space with Pergola Pro NZ – Call +64 27 392 8106."></meta>
+            </Head>
+
             <Layout headerCls="transparent-header">
                 <Banner1 />
-                 <GoogleReviews />
+                <GoogleReviews />
                 <About1 />
                 {/* <Features1 /> */}
                 <Services1 isService={false} />

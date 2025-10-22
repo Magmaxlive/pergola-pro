@@ -8,12 +8,12 @@ export default function About1() {
                     <div className="row align-items-center">
                         <div className="col-xl-7 col-lg-6 order-0 order-lg-2">
                             <div className="about-img-wrap">
-                                <img src="/assets/img/about/2.jpg" style={{minWidth:"269px"}} alt="" className="wow fadeInRight" data-wow-delay=".4s" />
-                                <img src="/assets/img/about/1.jpg" alt="" style={{maxWidth:"369px"}}  className="wow fadeInRight" data-wow-delay=".2s" />
+                                <img src="/assets/img/about/2.jpg" style={{minWidth:"269px"}} alt="Man installing pergola" className="wow fadeInRight" data-wow-delay=".4s" />
+                                <img src="/assets/img/about/1.jpg"  alt=" Kids enjoying outdoor pergola space" style={{maxWidth:"369px"}}  className="wow fadeInRight" data-wow-delay=".2s" />
                                 <div className="about-experiences-wrap">
                                     <div className="experiences-item">
                                         <div className="icon">
-                                            <img src="/assets/img/icon/about_icon01.svg" alt="" />
+                                            <img src="/assets/img/icon/about_icon01.svg" alt="Orange icon representing custom pergolas and outdoor living solutions"  />
                                         </div>
                                         <div className="content">
                                             <h2 className="title">Award-Winning Custom Pergola Builders in Tauranga</h2>
@@ -21,7 +21,7 @@ export default function About1() {
                                     </div>
                                     <div className="experiences-item">
                                         <div className="icon">
-                                            <img src="/assets/img/icon/about_icon02.svg" alt="" />
+                                            <img src="/assets/img/icon/about_icon02.svg" alt="Orange icon representing professional and experienced staff" />
                                         </div>
                                         <div className="content">
                                             <h6 className="title">1000+ Happy Customers ⭐⭐⭐⭐⭐ 4.9/5 Stars</h6>

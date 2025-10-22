@@ -1,6 +1,7 @@
 import Layout from "@/components/layout/Layout"
 import Link from "next/link"
 import { useState } from "react"
+import Head from "next/head"
 
 export default function Contact() {
     const [formData, setFormData] = useState({
@@ -46,7 +47,7 @@ export default function Contact() {
             })
 
             const data = await res.json()
-            
+
             setResponse({
                 success: data.success,
                 message: data.message,
@@ -83,25 +84,30 @@ export default function Contact() {
 
     return (
         <>
+            <Head>
+                <title>DecContact Pergola Pro Tauranga | Outdoor Living Experts</title>
+                <meta name="title" content="Contact Pergola Pro Tauranga | Outdoor Living Experts"></meta>
+                <meta name="description" content="Get in touch with Pergola Pro, Tauranga’s outdoor living specialists. Call +64 27 392 8106 or message us today to discuss your project."></meta>
+            </Head>
             <Layout breadcrumbTitle="Contact Us">
                 <section className="contact-area pt-30 pb-120">
                     <div className="container">
 
                         <div className="row justify-content-center">
-                        <div className="col-lg-6">
-                            <div className="section-title text-center mb-50 tg-heading-subheading animation-style3">
-                                <span className="sub-title tg-element-title">Get in Touch</span>
-                                <h1 className="title tg-element-title">Contact</h1>
+                            <div className="col-lg-6">
+                                <div className="section-title text-center mb-50 tg-heading-subheading animation-style3">
+                                    <span className="sub-title tg-element-title">Get in Touch</span>
+                                    <h1 className="title tg-element-title">Contact</h1>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
                         <div className="row justify-content-center">
                             <div className="col-xl-6 col-lg-10">
                                 <div className="contact-form-wrap" data-background="/assets/img/images/contact_form_bg.jpg">
                                     <h2 className="title">Contact With Us</h2>
                                     <p>Send us a message and we'll respond as soon as possible</p>
-                                    
+
                                     {/* Response Messages */}
                                     {response && (
                                         <div className={`alert ${response.success ? 'alert-success' : 'alert-danger'} mb-4`}>
@@ -131,10 +137,10 @@ export default function Contact() {
                                         <div className="row">
                                             <div className="col-md-6">
                                                 <div className="form-grp">
-                                                    <input 
-                                                        id="firstName" 
-                                                        type="text" 
-                                                        placeholder="First Name*" 
+                                                    <input
+                                                        id="firstName"
+                                                        type="text"
+                                                        placeholder="First Name*"
                                                         value={formData.firstName}
                                                         onChange={handleChange}
                                                         required
@@ -144,10 +150,10 @@ export default function Contact() {
                                             </div>
                                             <div className="col-md-6">
                                                 <div className="form-grp">
-                                                    <input 
-                                                        id="lastName" 
-                                                        type="text" 
-                                                        placeholder="Last Name*" 
+                                                    <input
+                                                        id="lastName"
+                                                        type="text"
+                                                        placeholder="Last Name*"
                                                         value={formData.lastName}
                                                         onChange={handleChange}
                                                         required
@@ -157,10 +163,10 @@ export default function Contact() {
                                             </div>
                                             <div className="col-md-6">
                                                 <div className="form-grp">
-                                                    <input 
-                                                        id="email" 
-                                                        type="email" 
-                                                        placeholder="Email Address*" 
+                                                    <input
+                                                        id="email"
+                                                        type="email"
+                                                        placeholder="Email Address*"
                                                         value={formData.email}
                                                         onChange={handleChange}
                                                         required
@@ -170,10 +176,10 @@ export default function Contact() {
                                             </div>
                                             <div className="col-md-6">
                                                 <div className="form-grp">
-                                                    <input 
-                                                        id="phone" 
-                                                        type="text" 
-                                                        placeholder="Phone Number*" 
+                                                    <input
+                                                        id="phone"
+                                                        type="text"
+                                                        placeholder="Phone Number*"
                                                         value={formData.phone}
                                                         onChange={handleChange}
                                                         required
@@ -183,19 +189,19 @@ export default function Contact() {
                                             </div>
                                         </div>
                                         <div className="form-grp">
-                                            <input 
-                                                id="subject" 
-                                                type="text" 
-                                                placeholder="Subject" 
+                                            <input
+                                                id="subject"
+                                                type="text"
+                                                placeholder="Subject"
                                                 value={formData.subject}
                                                 onChange={handleChange}
                                                 disabled={isSubmitting}
                                             />
                                         </div>
                                         <div className="form-grp">
-                                            <textarea 
-                                                id="message" 
-                                                placeholder="Your Message here*" 
+                                            <textarea
+                                                id="message"
+                                                placeholder="Your Message here*"
                                                 value={formData.message}
                                                 onChange={handleChange}
                                                 required
@@ -203,8 +209,8 @@ export default function Contact() {
                                                 rows="5"
                                             />
                                         </div>
-                                        <button 
-                                            className="btn" 
+                                        <button
+                                            className="btn"
                                             type="submit"
                                             disabled={isSubmitting}
                                         >
@@ -253,13 +259,13 @@ export default function Contact() {
                                 </div>
                                 {/* contact-map */}
                                 <div id="contact-map">
-                                    <iframe 
-                                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6310.74631726463!2d176.199884!3d-37.734389!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6dd9c39d41c8bf%3A0xfd604850881b1962!2s11%20Aurora%20Avenue%2C%20Welcome%20Bay%2C%20Tauranga%203112%2C%20New%20Zealand!5e0!3m2!1sen!2sus!4v1758554591384!5m2!1sen!2sus" 
-                                        height={570} 
-                                        style={{ border: 0, width: "100%" }} 
-                                        allowFullScreen 
-                                        loading="lazy" 
-                                        referrerPolicy="no-referrer-when-downgrade" 
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6310.74631726463!2d176.199884!3d-37.734389!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6dd9c39d41c8bf%3A0xfd604850881b1962!2s11%20Aurora%20Avenue%2C%20Welcome%20Bay%2C%20Tauranga%203112%2C%20New%20Zealand!5e0!3m2!1sen!2sus!4v1758554591384!5m2!1sen!2sus"
+                                        height={570}
+                                        style={{ border: 0, width: "100%" }}
+                                        allowFullScreen
+                                        loading="lazy"
+                                        referrerPolicy="no-referrer-when-downgrade"
                                     />
                                 </div>
                             </div>

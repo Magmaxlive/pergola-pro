@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Slugify from "@/components/validators/slugify";
 import { useState } from "react";
+import Head from "next/head"
 
 export default function BlogCard1({ item }) {
     const [slugnName, SlugName] = useState(item?.title.rendered ? Slugify(item?.title.rendered) : null)
@@ -13,9 +14,14 @@ export default function BlogCard1({ item }) {
             year: 'numeric'
         })
     }
-
+    console.log(item);
     return (
         <>
+            <Head>
+                <title>{item.yoast_head_json.title ? item.yoast_head_json.title : ""}</title>
+                <meta name="title" content={item.yoast_head_json.title ? item.yoast_head_json.title : ""}></meta>
+                <meta name="description" content={item.yoast_head_json.description ? item.yoast_head_json.description : ""}></meta>
+            </Head>
             {/* <div className="inner-blog-item">
                 <div className="inner-blog-thumb">
                     <Link href={`/blog/${item.id}`}><img src={`/assets/img/blog/${item.img}`} alt="" /></Link>
@@ -53,7 +59,7 @@ export default function BlogCard1({ item }) {
                                 <li><i className="fas fa-calendar-alt" />{formatDate(item.date)}</li>
                             </ul>
                         </div>
-                        <h2 className="title"><Link href={`/blog/${slugnName}/${item.id}`}>{item.title.rendered ? item.title.rendered.substring(0, 55): null}</Link>
+                        <h2 className="title"><Link href={`/blog/${slugnName}/${item.id}`}>{item.title.rendered ? item.title.rendered.substring(0, 55) : null}</Link>
                         </h2>
                         <Link href={`/blog/${slugnName}/${item.id}`} className="link-btn">Read More<i className="fas fa-arrow-right" /></Link>
                     </div>

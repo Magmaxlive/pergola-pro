@@ -157,7 +157,7 @@ export default function Header({ headerCls, headerTop }) {
                       <Link href="/">
                         <img
                           src="/assets/img/logo/logo_02.png"
-                          alt="Logo"
+                          alt="Pergola Pro Logo"
                           style={{ width: "120px" }}
                         />
                       </Link>

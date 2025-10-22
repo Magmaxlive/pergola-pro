@@ -13,7 +13,7 @@ export default function Support1() {
                         <div className="col-xl-4 col-md-6">
                             <div className="support-item">
                                 <div className="support-icon">
-                                    <img src="/assets/img/icon/support_icon01.svg" alt="" />
+                                    <img src="/assets/img/icon/support_icon01.svg" alt="Icon representing UV resistance or sun protection" />
                                 </div>
                                 <div className="support-content">
                                     <h4 className="title">UV RESISTANT</h4>
@@ -24,7 +24,7 @@ export default function Support1() {
                         <div className="col-xl-4 col-md-6">
                             <div className="support-item">
                                 <div className="support-icon">
-                                    <img src="/assets/img/icon/support_icon02.svg" alt="" />
+                                    <img src="/assets/img/icon/support_icon02.svg" alt="Icon representing wind resistance or strong structure" />
                                 </div>
                                 <div className="support-content">
                                     <h4 className="title">WIND RESISTANT</h4>
@@ -35,7 +35,7 @@ export default function Support1() {
                         <div className="col-xl-4 col-md-6">
                             <div className="support-item">
                                 <div className="support-icon">
-                                    <img src="/assets/img/icon/support_icon03.svg" alt="" />
+                                    <img src="/assets/img/icon/support_icon03.svg" alt="Icon representing workmanship, quality, or experience" />
                                 </div>
                                 <div className="support-content">
                                     <h4 className="title">10 YEARS OF WORKMANSHIP</h4>
@@ -47,7 +47,7 @@ export default function Support1() {
                         <div className="col-xl-4 col-md-6">
                             <div className="support-item">
                                 <div className="support-icon">
-                                    <img src="/assets/img/icon/support_icon01.svg" alt="" />
+                                    <img src="/assets/img/icon/support_icon01.svg" alt="Icon representing finance, money, or payment options" />
                                 </div>
                                 <div className="support-content">
                                     <h4 className="title">EASY FINANCE OPTIONS</h4>
@@ -58,7 +58,7 @@ export default function Support1() {
                         <div className="col-xl-4 col-md-6">
                             <div className="support-item">
                                 <div className="support-icon">
-                                    <img src="/assets/img/icon/support_icon02.svg" alt="" />
+                                    <img src="/assets/img/icon/support_icon02.svg" alt="Icon representing a customised design or tailored solution" />
                                 </div>
                                 <div className="support-content">
                                     <h4 className="title">CUSTOMISED DESIGN</h4>
@@ -69,7 +69,7 @@ export default function Support1() {
                         <div className="col-xl-4 col-md-6">
                             <div className="support-item">
                                 <div className="support-icon">
-                                    <img src="/assets/img/icon/support_icon03.svg" alt="" />
+                                    <img src="/assets/img/icon/support_icon03.svg" alt="Icon representing quality or a premium product" />
                                 </div>
                                 <div className="support-content">
                                     <h4 className="title">FINEST QUALITY</h4>

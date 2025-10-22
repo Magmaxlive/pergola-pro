@@ -4,6 +4,7 @@ import { useRouter } from "next/router"
 import { useEffect, useState, useRef } from "react"
 import { baseURL } from "@/auth/auth";
 import Slugify from "@/components/validators/slugify";
+import Head from "next/head"
 
 export default function BlogDetails() {
     let Router = useRouter()
@@ -127,6 +128,11 @@ export default function BlogDetails() {
 
     return (
         <>
+            <Head>
+                <title>{blogPost.yoast_head_json.title ? blogPost.yoast_head_json.title : ""}</title>
+                <meta name="title" content={blogPost.yoast_head_json.title ? blogPost.yoast_head_json.title : ""}></meta>
+                <meta name="description" content={blogPost.yoast_head_json.description ? blogPost.yoast_head_json.description : ""}></meta>
+            </Head>
             <Layout breadcrumbTitle="Blog Details">
                 {blogPost && (
                     <section className="blog-details-area pt-120 pb-120">
@@ -325,7 +331,7 @@ export default function BlogDetails() {
                                                         <>
                                                             <div className="rc-post-item">
                                                                 <div className="rc-post-thumb">
-                                                                    <Link href={`/blog/${slugnName}/${data.id}`}><img src={`${data?.yoast_head_json?.og_image ? data?.yoast_head_json?.og_image[0].url : null}`} 
+                                                                    <Link href={`/blog/${slugnName}/${data.id}`}><img src={`${data?.yoast_head_json?.og_image ? data?.yoast_head_json?.og_image[0].url : null}`}
                                                                         style={{ width: "100%", height: "90px", objectFit: "cover" }} alt={data?.title.rendered ? Slugify(data?.title.rendered) : ""} /></Link>
                                                                 </div>
                                                                 <div className="rc-post-content">

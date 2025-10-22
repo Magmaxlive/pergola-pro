@@ -2,6 +2,7 @@ import Layout from "@/components/layout/Layout";
 import Brand3 from "@/components/sections/Brand3";
 import Link from "next/link";
 import GoogleReviews from "@/components/google/reviews";
+import Head from "next/head"
 
 // Content payload in JSON format
 const serviceContent = {
@@ -132,12 +133,16 @@ const serviceContent = {
 export default function ServiceDetails() {
     return (
         <>
+            <Head>
+                <title>Roller Blinds Tauranga | Custom Outdoor Blinds | Pergola Pro</title>
+                <meta name="title" content="Roller Blinds Tauranga | Custom Outdoor Blinds | Pergola Pro"></meta>
+                <meta name="description" content="Discover premium roller blinds in Tauranga. Pergola Pro installs custom outdoor blinds for shade, privacy, and modern aesthetics. Call: +64 27 392 8106."></meta>
+            </Head>
             <Layout
                 breadcrumbTitle={serviceContent.mainTitle}
                 imageURL={`https://server.pergolapro.co.nz/wp-content/uploads/2023/12/roller.jpg`}
                 pageTitle="Service Details"
-                isService={true}
-            >
+                isService={true} >
                 <div>
                     <section className="services-details-area pt-120">
                         <div className="container">
@@ -242,7 +247,7 @@ export default function ServiceDetails() {
                                                     <p>{serviceContent.financing.description}</p>
                                                     {serviceContent.financing.options.map((option, index) => (
                                                         <div key={index} className="col-md-4">
-                                                            <div className="services-process-item mt-10" style={{height: "125px"}}>
+                                                            <div className="services-process-item mt-10" style={{ height: "125px" }}>
                                                                 <div className="content">
                                                                     <h4 className="title">{option.title}</h4>
                                                                     <p>{option.description}</p>

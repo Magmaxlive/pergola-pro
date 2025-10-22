@@ -2,6 +2,7 @@ import Layout from "@/components/layout/Layout";
 import Brand3 from "@/components/sections/Brand3";
 import Link from "next/link";
 import GoogleReviews from "@/components/google/reviews";
+import Head from "next/head"
 
 // Content payload in JSON format
 const serviceContent = {
@@ -132,12 +133,18 @@ const serviceContent = {
 export default function ServiceDetails() {
     return (
         <>
+
+            <Head>
+                <title>Carport Builders Tauranga | Durable & Stylish | Pergola Pro</title>
+                <meta name="title" content="Tauranga’s trusted carport builders. Pergola Pro NZ designs and installs durable, stylish carports tailored to protect your vehicle year-round."></meta>
+                <meta name="description" content="Tauranga’s trusted carport builders. Pergola Pro NZ designs and installs durable, stylish carports tailored to protect your vehicle year-round."></meta>
+            </Head>
+
             <Layout
                 breadcrumbTitle={serviceContent.mainTitle}
                 imageURL={`https://server.pergolapro.co.nz/wp-content/uploads/2023/12/carports.jpg`}
                 pageTitle="Service Details"
-                isService={true}
-            >
+                isService={true} >
                 <div>
                     <section className="services-details-area pt-120">
                         <div className="container">
@@ -244,7 +251,7 @@ export default function ServiceDetails() {
                                                     <p>{serviceContent.financing.description}</p>
                                                     {serviceContent.financing.options.map((option, index) => (
                                                         <div key={index} className="col-md-4">
-                                                            <div className="services-process-item mt-10" style={{height: "125px"}}>
+                                                            <div className="services-process-item mt-10" style={{ height: "125px" }}>
                                                                 <div className="content">
                                                                     <h4 className="title">{option.title}</h4>
                                                                     <p>{option.description}</p>
@@ -278,7 +285,7 @@ export default function ServiceDetails() {
                                                             ))}
                                                         </div>
                                                     </div>
-                                                    
+
                                                 </div>
                                             </div>
                                         </div>

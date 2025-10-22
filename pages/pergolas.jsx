@@ -2,6 +2,7 @@ import Layout from "@/components/layout/Layout";
 import Brand3 from "@/components/sections/Brand3";
 import Link from "next/link";
 import GoogleReviews from "@/components/google/reviews";
+import Head from "next/head"
 
 // Content payload in JSON format
 const serviceContent = {
@@ -123,6 +124,12 @@ const serviceContent = {
 export default function ServiceDetails() {
     return (
         <>
+            <Head>
+                <title>Quality Custom Pergola Builders Tauranga | Pergola Pro NZ</title>
+                <meta name="title" content="Quality Custom Pergola Builders Tauranga | Pergola Pro NZ"></meta>
+                <meta name="description" content="Build your dream pergola in Tauranga with Pergola Pro NZ. We craft durable, stylish and custom pergolas tailored to your outdoor lifestyle. Free quotes today."></meta>
+            </Head>
+
             <Layout
                 breadcrumbTitle={serviceContent.mainTitle}
                 imageURL={`https://server.pergolapro.co.nz/wp-content/uploads/2023/12/canopies.jpg`}
@@ -131,13 +138,13 @@ export default function ServiceDetails() {
             >
                 <div>
                     <section className="services-details-area pt-120">
-                       
+
                         <div className="container">
                             <GoogleReviews />
                             <div className="row justify-content-center">
                                 <div className="col-xl-12">
                                     <div className="services-details-wrap">
-                                        <div className="services-details-content mt-50"> 
+                                        <div className="services-details-content mt-50">
                                             <h2 className="title">{serviceContent.title}</h2>
                                             <p dangerouslySetInnerHTML={{ __html: serviceContent.description }} />
 
@@ -268,7 +275,7 @@ export default function ServiceDetails() {
                                                     <p>{serviceContent.financing.description}</p>
                                                     {serviceContent.financing.options.map((option, index) => (
                                                         <div key={index} className="col-md-4">
-                                                           <div className="services-process-item mt-10" style={{height: "125px"}}>
+                                                            <div className="services-process-item mt-10" style={{ height: "125px" }}>
                                                                 <div className="content">
                                                                     <h4 className="title">{option.title}</h4>
                                                                     <p>{option.description}</p>

@@ -17,7 +17,7 @@ export default function Work1() {
                         <div className="col-xl-3 col-md-6">
                             <div className="work-item">
                                 <div className="work-thumb">
-                                    <img src="/assets/img/images/work_img01.png" alt="" />
+                                    <img src="/assets/img/images/work_img01.png" alt="Icon representing advanced construction materials or a building worker" />
                                     <h4 className="number">01</h4>
                                 </div>
                                 <div className="work-content">
@@ -29,7 +29,7 @@ export default function Work1() {
                         <div className="col-xl-3 col-md-6">
                             <div className="work-item">
                                 <div className="work-thumb">
-                                    <img src="/assets/img/images/work_img02.png" alt="" />
+                                    <img src="/assets/img/images/work_img02.png" alt="Icon representing a superior drainage system or pipe" />
                                     <h4 className="number">02</h4>
                                 </div>
                                 <div className="work-content">
@@ -41,7 +41,7 @@ export default function Work1() {
                         <div className="col-xl-3 col-md-6">
                             <div className="work-item">
                                 <div className="work-thumb">
-                                    <img src="/assets/img/images/work_img03.png" alt="" />
+                                    <img src="/assets/img/images/work_img03.png" alt="Icon representing a fully customizable canopy or design options" />
                                     <h4 className="number">03</h4>
                                 </div>
                                 <div className="work-content">
@@ -55,7 +55,7 @@ export default function Work1() {
                         <div className="col-xl-3 col-md-6">
                             <div className="work-item">
                                 <div className="work-thumb">
-                                    <img src="/assets/img/images/work_img04.png" alt="" />
+                                    <img src="/assets/img/images/work_img04.png" alt="Icon representing safety and protection in construction or a secure canopy" />
                                     <h4 className="number">04</h4>
                                 </div>
                                 <div className="work-content">

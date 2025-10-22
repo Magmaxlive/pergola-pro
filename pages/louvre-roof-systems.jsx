@@ -2,6 +2,7 @@ import Layout from "@/components/layout/Layout";
 import Brand3 from "@/components/sections/Brand3";
 import Link from "next/link";
 import GoogleReviews from "@/components/google/reviews";
+import Head from "next/head"
 
 // Content payload in JSON format
 const serviceContent = {
@@ -133,12 +134,16 @@ const serviceContent = {
 export default function ServiceDetails() {
     return (
         <>
+             <Head>
+                <title>Louvre Roof Systems Tauranga | Custom Installs | Pergola Pro</title>
+                <meta name="title" content="Louvre Roof Systems Tauranga | Custom Installs | Pergola Pro"></meta>
+                <meta name="description" content="Upgrade with custom louvre roof systems in Tauranga. Pergola Pro designs and installs adjustable, stylish shade solutions. Request a quote now."></meta>
+            </Head>
             <Layout
                 breadcrumbTitle={serviceContent.mainTitle}
                 imageURL={`https://server.pergolapro.co.nz/wp-content/uploads/2023/12/louvre.jpg`}
                 pageTitle="Service Details"
-                isService={true}
-            >
+                isService={true} >
                 <div>
                     <section className="services-details-area pt-120">
                         <div className="container">

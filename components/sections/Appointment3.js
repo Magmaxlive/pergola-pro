@@ -201,7 +201,7 @@ export default function Appointment3() {
                             </div>
                             <div className="col-xl-5">
                                 <div className="appointment-img">
-                                    <img src="/assets/img/images/appointment_img.png" alt="" />
+                                    <img src="/assets/img/images/appointment_img.png" alt="Construction worker in hard hat and safety vest smiling" />
                                 </div>
                             </div>
                         </div>

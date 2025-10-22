@@ -4,6 +4,7 @@ import Brand3 from "@/components/sections/Brand3"
 import Link from "next/link"
 import Slider from "react-slick"
 import GoogleReviews from "@/components/google/reviews";
+import Head from "next/head"
 
 
 const settings = {
@@ -19,27 +20,32 @@ const settings = {
 
 export default function About() {
 
-  
+
     return (
         <>
+            <Head>
+                <title>About Pergola Pro | Tauranga’s Trusted Outdoor Living Experts</title>
+                <meta name="title" content="About Pergola Pro | Tauranga’s Trusted Outdoor Living Experts"></meta>
+                <meta name="description" content="Discover Pergola Pro’s story, values, and commitment to creating stylish outdoor spaces across Tauranga and the Bay of Plenty. Quality you can trust."></meta>
+            </Head>
             <Layout breadcrumbTitle="About Us">
 
                 <section className="about-area inner-about-area pt-30 pb-120">
                     <div className="container">
                         <div className="row justify-content-center">
-                        <div className="col-lg-6">
-                            <div className="section-title text-center mb-50 tg-heading-subheading animation-style3">
-                                <span className="sub-title tg-element-title">About</span>
-                                <h2 className="title tg-element-title">Tauranga&apos;s Premier Experts in Custom Pergolas & Outdoor Design</h2>
+                            <div className="col-lg-6">
+                                <div className="section-title text-center mb-50 tg-heading-subheading animation-style3">
+                                    <span className="sub-title tg-element-title">About</span>
+                                    <h2 className="title tg-element-title">Tauranga&apos;s Premier Experts in Custom Pergolas & Outdoor Design</h2>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
                         <div className="row align-items-center">
                             <div className="col-xl-7 col-lg-6 order-0 order-lg-2">
                                 <div className="about-img-wrap">
-                                    <img src="/assets/img/about/2.jpg" alt=""  style={{maxWidth:"309px"}}  className="wow fadeInRight" data-wow-delay=".4s" />
-                                    <img src="/assets/img/about/1.jpg" alt=""  style={{maxWidth:"369px"}}  className="wow fadeInRight" data-wow-delay=".2s" />
+                                    <img src="/assets/img/about/2.jpg" alt="" style={{ maxWidth: "309px" }} className="wow fadeInRight" data-wow-delay=".4s" />
+                                    <img src="/assets/img/about/1.jpg" alt="" style={{ maxWidth: "369px" }} className="wow fadeInRight" data-wow-delay=".2s" />
                                     <div className="about-experiences-wrap">
                                         <div className="experiences-item">
                                             <div className="icon">
@@ -191,7 +197,7 @@ export default function About() {
                 </section> */}
                 {/* history-area-end */}
                 {/* area-bg */}
-                    {/* <div className="area-bg-five" data-background="/assets/img/bg/area_bg05.jpg">
+                {/* <div className="area-bg-five" data-background="/assets/img/bg/area_bg05.jpg">
                         <section className="inner-team-area pb-90">
                             <div className="container">
                                 <div className="row justify-content-center">

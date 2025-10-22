@@ -1,29 +1,30 @@
 import Layout from "@/components/layout/Layout";
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import Head from "next/head"
 
 export default function Project() {
   const images = [
-    "/assets/img/gallery/1.jpg",
-    "/assets/img/gallery/2.png",
-    "/assets/img/gallery/3.png",
-    "/assets/img/gallery/4.png",
-    "/assets/img/gallery/5.png",
-    "/assets/img/gallery/6.png",
-    "/assets/img/gallery/7.png",
-    "/assets/img/gallery/8.png",
-    "/assets/img/gallery/9.png",
-    "/assets/img/gallery/10.png",
-    "/assets/img/gallery/11.png",
-    "/assets/img/gallery/12.png",
-    "/assets/img/gallery/13.png",
-    "/assets/img/gallery/14.png",
-    "/assets/img/gallery/15.png",
-    "/assets/img/gallery/16.png",
-    "/assets/img/gallery/17.png",
-    "/assets/img/gallery/18.png",
-    "/assets/img/gallery/19.png",
-    "/assets/img/gallery/20.jpg",
+    { src: "/assets/img/gallery/1.jpg", alt: "Pergola installation with adjustable louvre roof system in Tauranga, New Zealand" },
+    { src: "/assets/img/gallery/2.png", alt: "Modern glass-enclosed office space under louvre pergola roof" },
+    { src: "/assets/img/gallery/3.png", alt: "Small wooden deck with pergola where kids play outdoors" },
+    { src: "/assets/img/gallery/4.png", alt: "Contemporary outdoor dining area with full glass pergola enclosure" },
+    { src: "/assets/img/gallery/5.png", alt: "Louvre roof pergola installed beside a modern home with patio furniture" },
+    { src: "/assets/img/gallery/6.png", alt: "Outdoor entertainment pergola with retractable louvre roof and seating" },
+    { src: "/assets/img/gallery/7.png", alt: "Stylish outdoor dining setup under aluminum pergola in backyard" },
+    { src: "/assets/img/gallery/8.png", alt: "Glass sliding pergola enclosure for modern outdoor lounge" },
+    { src: "/assets/img/gallery/9.png", alt: "Poolside pergola providing shade for outdoor dining area" },
+    { src: "/assets/img/gallery/10.png", alt: "Louvre roof pergola shading patio with outdoor seating" },
+    { src: "/assets/img/gallery/11.png", alt: "White aluminum pergola with enclosed glass walls beside house" },
+    { src: "/assets/img/gallery/12.png", alt: "Outdoor barbecue area under custom pergola in wooden patio" },
+    { src: "/assets/img/gallery/13.png", alt: "Elegant backyard dining pergola with tiled flooring and garden view" },
+    { src: "/assets/img/gallery/14.png", alt: "Louvre roof pergola with glass walls and rattan furniture setup" },
+    { src: "/assets/img/gallery/15.png", alt: "Modern poolside pergola with adjustable roof and sun loungers" },
+    { src: "/assets/img/gallery/16.png", alt: "Woman relaxing under automated louvre pergola roof in sunny backyard" },
+    { src: "/assets/img/gallery/17.png", alt: "Enclosed pergola sunroom with white frame and modern outdoor décor" },
+    { src: "/assets/img/gallery/18.png", alt: "Outdoor kitchen and BBQ space covered by sturdy pergola" },
+    { src: "/assets/img/gallery/19.png", alt: "Compact garden pergola with cozy outdoor seating and plants" },
+    { src: "/assets/img/gallery/20.jpg", alt: "Luxury pergola with warm lighting for evening backyard gatherings" },
   ];
 
   const [selectedImageIndex, setSelectedImageIndex] = useState(null);
@@ -72,6 +73,11 @@ export default function Project() {
 
   return (
     <>
+      <Head>
+        <title>Pergola Pro Gallery | Outdoor Living Inspiration in Tauranga</title>
+        <meta name="title" content="Pergola Pro Gallery | Outdoor Living Inspiration in Tauranga"></meta>
+        <meta name="description" content="Explore our gallery of pergolas, carports, and louvre roofs built across Tauranga and NZ. Get inspired for your next outdoor project."></meta>
+      </Head>
       <Layout breadcrumbTitle="Projects">
         <section className="inner-project-area pt-30 pb-90">
           <div className="container">
@@ -84,15 +90,15 @@ export default function Project() {
               </div>
             </div>
             <div className="row justify-content-center">
-              {images.map((imgSrc, index) => (
+              {images.map((image, index) => (
                 <div key={index} className="col-lg-4 col-md-6 col-sm-10">
                   <div className="project-item-two">
                     <div className="project-thumb-two">
                       <Link href="/project-details">
                         <img
-                          src={imgSrc}
-                          alt={`Project ${index + 1}`}
-                          style={{ cursor: "pointer", maxWidth: "600px", height:"300px", objectFit: "cover" }}
+                          src={image.src}
+                          alt={image.alt}
+                          style={{ cursor: "pointer", maxWidth: "600px", height: "300px", objectFit: "cover" }}
                           onClick={(e) => {
                             e.preventDefault();
                             handleImageClick(index);
@@ -135,8 +141,8 @@ export default function Project() {
               onClick={(e) => e.stopPropagation()}
             >
               <img
-                src={images[selectedImageIndex]}
-                alt={`Project ${selectedImageIndex + 1}`}
+                src={images[selectedImageIndex].src}
+                alt={images[selectedImageIndex].alt}
                 style={{ width: "100%", height: "auto", maxHeight: "100vh" }}
               />
               <button

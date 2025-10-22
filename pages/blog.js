@@ -5,6 +5,7 @@ import { useEffect, useState, useRef } from "react"
 import { baseURL } from "@/auth/auth";
 import { useRouter } from "next/navigation";
 import Slugify from "@/components/validators/slugify";
+import Head from "next/head"
 
 export default function Blog() {
 
@@ -57,6 +58,11 @@ export default function Blog() {
 
     return (
         <>
+            <Head>
+                <title>Pergola Pro Blog | Outdoor Living Tips & Design Ideas NZ</title>
+                <meta name="title" content="Pergola Pro Blog | Outdoor Living Tips & Design Ideas NZ"></meta>
+                <meta name="description" content="Stay updated with expert advice, pergola design trends, and outdoor living inspiration from Pergola Pro – Tauranga’s trusted pergola specialists."></meta>
+            </Head>
             <Layout breadcrumbTitle="Blog">
                 <section className="inner-blog-area pt-30 pb-120">
                     <div className="container">
