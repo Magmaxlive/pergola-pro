@@ -92,12 +92,12 @@ export default function Footer1() {
                                         <h2 className="fw-title">Our Services</h2>
                                         <div className="footer-link">
                                             <ul className="list-wrap">
-                                                <li><Link href="/pergolas"><i className="fas fa-angle-double-right" />Pergolas</Link></li>
-                                                <li><Link href="/roller-blinds"><i className="fas fa-angle-double-right" />Roller Blinds</Link></li>
-                                                <li><Link href="/carports"><i className="fas fa-angle-double-right" />Carports</Link></li>
-                                                <li><Link href="/louvre-roof-systems"><i className="fas fa-angle-double-right" />Louvre Roof Systems</Link></li>
-                                                <li><Link href="/canopies"><i className="fas fa-angle-double-right" />Canopies</Link></li>
-                                                <li><Link href="/fencing-decking"><i className="fas fa-angle-double-right" />Fencing & Decking</Link></li>
+                                                <li><Link href="/pergolas/"><i className="fas fa-angle-double-right" />Pergolas</Link></li>
+                                                <li><Link href="/roller-blinds/"><i className="fas fa-angle-double-right" />Roller Blinds</Link></li>
+                                                <li><Link href="/carports/"><i className="fas fa-angle-double-right" />Carports</Link></li>
+                                                <li><Link href="/louvre-roof-systems/"><i className="fas fa-angle-double-right" />Louvre Roof Systems</Link></li>
+                                                <li><Link href="/canopies/"><i className="fas fa-angle-double-right" />Canopies</Link></li>
+                                                <li><Link href="/fencing-decking/"><i className="fas fa-angle-double-right" />Fencing & Decking</Link></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -110,7 +110,7 @@ export default function Footer1() {
                                                 {/* <li><Link href="/contact"><i className="fas fa-angle-double-right" />Terms  Conditions</Link></li>
                                                 <li><Link href="/contact"><i className="fas fa-angle-double-right" />Refund Policy</Link></li>
                                                 <li><Link href="/contact"><i className="fas fa-angle-double-right" />Sitemap</Link></li> */}
-                                                <li><Link href="/contact"><i className="fas fa-angle-double-right" />Contact Us</Link></li>
+                                                <li><Link href="/contact/"><i className="fas fa-angle-double-right" />Contact Us</Link></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -126,7 +126,7 @@ export default function Footer1() {
                                                     return (
                                                         <>
                                                             <li>
-                                                                <Link href={`/blog/${slugnName}/${data.id}`}><img src={`${data?.yoast_head_json?.og_image ? data?.yoast_head_json?.og_image[0].url : ""}`}
+                                                                <Link href={`/blog/${slugnName}/${data.id}/`}><img src={`${data?.yoast_head_json?.og_image ? data?.yoast_head_json?.og_image[0].url : ""}`}
                                                                     alt={data?.title.rendered ? Slugify(data?.title.rendered) : ""} style={{width: "100px", height: "100px", objectFit:"cover"}} /></Link>
                                                             </li>
                                                         </>

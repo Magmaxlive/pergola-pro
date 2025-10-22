@@ -1,5 +1,4 @@
 // components/StructuredData.js
-import Head from 'next/head';
 import React from 'react';
 
 const StructuredData = () => {
@@ -7,13 +6,13 @@ const StructuredData = () => {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Pergola Pro",
-    "image": "https://pergolapro.co.nz/path-to-your-image.jpg",
-    "@id": "https://pergolapro.co.nz/#localbusiness",
-    "url": "https://pergolapro.co.nz",
+    "image": "https://www.pergolapro.co.nz/assets/img/logo/logo_02.png",
+    "@id": "https://www.pergolapro.co.nz/#localbusiness",
+    "url": "https://www.pergolapro.co.nz",
     "telephone": "+64 27 392 8106",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "1 Aurora Avenue, Welcome Bay",
+      "streetAddress": "11 Aurora Avenue",
       "addressLocality": "Tauranga",
       "addressRegion": "Bay of Plenty",
       "postalCode": "3175",
@@ -21,54 +20,32 @@ const StructuredData = () => {
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": -37.731780344867765,
-      "longitude": 176.20022327603627
+      "latitude": -37.73431637773662,
+      "longitude": 176.19987277116428
     },
     "openingHoursSpecification": [
       {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Monday",
-        "opens": "09:00",
-        "closes": "17:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Tuesday",
-        "opens": "09:00",
-        "closes": "17:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Wednesday",
-        "opens": "09:00",
-        "closes": "17:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Thursday",
-        "opens": "09:00",
-        "closes": "17:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Friday",
-        "opens": "09:00",
-        "closes": "17:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": "Saturday",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
         "opens": "09:00",
         "closes": "17:00"
       }
+    ],
+    "openingHours": [
+      "Mo-Sa 09:00-17:00"
     ],
     "sameAs": [
       "https://www.facebook.com/PergolaPro",
       "https://www.instagram.com/PergolaPro",
       "https://www.linkedin.com/company/pergola-pro"
-    ],
-
-    //"description": "360VR Studio Ltd is Auckland's trusted partner for photography, videography, SEO, branding, and digital marketing services. From immersive visuals to strategic campaigns, we help brands create impact."
+    ]
   };
 
   return (
