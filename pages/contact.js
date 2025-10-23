@@ -5,8 +5,7 @@ import Head from "next/head"
 
 export default function Contact() {
     const [formData, setFormData] = useState({
-        firstName: '',
-        lastName: '',
+        fullName: '',
         email: '',
         phone: '',
         subject: '',
@@ -21,7 +20,7 @@ export default function Contact() {
         setResponse(null)
 
         // Client-side validation
-        if (!formData.firstName || !formData.lastName || !formData.email || !formData.message) {
+        if (!formData.fullName || !formData.email || !formData.message) {
             setResponse({
                 success: false,
                 message: 'Please fill in all required fields',
@@ -38,7 +37,7 @@ export default function Contact() {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
-                    name: `${formData.firstName} ${formData.lastName}`.trim(),
+                    name: `${formData.fullName}`,
                     email: formData.email,
                     phone: formData.phone,
                     subject: formData.subject,
@@ -57,8 +56,7 @@ export default function Contact() {
             if (data.success) {
                 // Reset form on success
                 setFormData({
-                    firstName: '',
-                    lastName: '',
+                    fullName: '',
                     email: '',
                     phone: '',
                     subject: '',
@@ -85,12 +83,12 @@ export default function Contact() {
     return (
         <>
             <Head>
-                <title>DecContact Pergola Pro Tauranga | Outdoor Living Experts</title>
+                <title>Contact Pergola Pro Tauranga | Outdoor Living Experts</title>
                 <meta name="title" content="Contact Pergola Pro Tauranga | Outdoor Living Experts"></meta>
                 <meta name="description" content="Get in touch with Pergola Pro, Tauranga’s outdoor living specialists. Call +64 27 392 8106 or message us today to discuss your project."></meta>
             </Head>
             <Layout breadcrumbTitle="Contact Us">
-                <section className="contact-area pt-30 pb-120">
+                <section className="pt-30 pb-120">
                     <div className="container">
 
                         <div className="row justify-content-center">
@@ -135,32 +133,20 @@ export default function Contact() {
                                         /> */}
 
                                         <div className="row">
-                                            <div className="col-md-6">
+                                            <div className="col-md-12">
                                                 <div className="form-grp">
                                                     <input
                                                         id="firstName"
                                                         type="text"
-                                                        placeholder="First Name*"
-                                                        value={formData.firstName}
+                                                        placeholder="Full Name*"
+                                                        value={formData.fullName}
                                                         onChange={handleChange}
                                                         required
                                                         disabled={isSubmitting}
                                                     />
                                                 </div>
                                             </div>
-                                            <div className="col-md-6">
-                                                <div className="form-grp">
-                                                    <input
-                                                        id="lastName"
-                                                        type="text"
-                                                        placeholder="Last Name*"
-                                                        value={formData.lastName}
-                                                        onChange={handleChange}
-                                                        required
-                                                        disabled={isSubmitting}
-                                                    />
-                                                </div>
-                                            </div>
+                                            
                                             <div className="col-md-6">
                                                 <div className="form-grp">
                                                     <input

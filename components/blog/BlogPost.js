@@ -92,7 +92,6 @@ export default function BlogPost({ style, showItem, showPagination }) {
     return (
         <>
 
-
             {getPaginatedProducts.length === 0 && (
                 <h3>No Products Found </h3>
             )}
@@ -101,18 +100,6 @@ export default function BlogPost({ style, showItem, showPagination }) {
                 <BlogCard1 key={i} item={news} />
             ))}
 
-            {/* {showPagination &&
-                <Pagination
-                    getPaginationGroup={
-                        getPaginationGroup
-                    }
-                    currentPage={currentPage}
-                    pages={pages}
-                    next={next}
-                    prev={prev}
-                    handleActive={handleActive}
-                />
-            } */}
         </>
     )
 }

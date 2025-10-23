@@ -64,9 +64,8 @@ export default function Blog() {
                 <meta name="description" content="Stay updated with expert advice, pergola design trends, and outdoor living inspiration from Pergola Pro – Tauranga’s trusted pergola specialists."></meta>
             </Head>
             <Layout breadcrumbTitle="Blog">
-                <section className="inner-blog-area pt-30 pb-120">
+                <section className="pt-30 pb-120">
                     <div className="container">
-
                         <div className="row justify-content-center">
                             <div className="col-lg-6">
                                 <div className="section-title text-center mb-50 tg-heading-subheading animation-style3">

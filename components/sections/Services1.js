@@ -25,7 +25,7 @@ export default function Services1({ isService }) {
 
     return (
         <>
-            <section className="services-area">
+            <section className="pt-30 pb-120">
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-lg-6">
@@ -41,7 +41,7 @@ export default function Services1({ isService }) {
 
                         <div className="col-lg-4 col-md-6 col-sm-10">
                             <Link href={"/pergolas"}>
-                                <div className="services-item wow fadeInUp" data-wow-delay=".4s" data-background="https://pergolapro.co.nz/wp-content/uploads/2023/12/canopies.jpg" onMouseEnter={() => handleToggle(2)} onMouseLeave={() => handleToggle(2)}>
+                                <div className="services-item wow fadeInUp" data-wow-delay=".4s" data-background="https://server.pergolapro.co.nz/wp-content/uploads/2023/12/canopies.jpg" onMouseEnter={() => handleToggle(2)} onMouseLeave={() => handleToggle(2)}>
                                     <div className="services-icon" style={{ display: `${isActive.key == 2 ? "none" : "flex"}` }}>
                                         <img src="/assets/img/icon/services_icon02.svg" alt="" />
                                     </div>
@@ -61,7 +61,7 @@ export default function Services1({ isService }) {
 
                         <div className="col-lg-4 col-md-6 col-sm-10">
                             <Link href={"/carports"}>
-                                <div className="services-item wow fadeInUp" data-wow-delay=".6s" data-background="https://pergolapro.co.nz/wp-content/uploads/2023/12/carports.jpg" onMouseEnter={() => handleToggle(3)} onMouseLeave={() => handleToggle(3)}>
+                                <div className="services-item wow fadeInUp" data-wow-delay=".6s" data-background="https://server.pergolapro.co.nz/wp-content/uploads/2023/12/carports.jpg" onMouseEnter={() => handleToggle(3)} onMouseLeave={() => handleToggle(3)}>
                                     <div className="services-icon" style={{ display: `${isActive.key == 3 ? "none" : "flex"}` }}>
                                         <img src="/assets/img/icon/services_icon03.svg" alt="" />
                                     </div>
@@ -81,7 +81,7 @@ export default function Services1({ isService }) {
 
                         <div className="col-lg-4 col-md-6 col-sm-10">
                             <Link href={"/roller-blinds"}>
-                                <div className="services-item wow fadeInUp" data-wow-delay=".4s" data-background="https://pergolapro.co.nz/wp-content/uploads/2023/12/roller.jpg" onMouseEnter={() => handleToggle(2)} onMouseLeave={() => handleToggle(2)}>
+                                <div className="services-item wow fadeInUp" data-wow-delay=".4s" data-background="https://server.pergolapro.co.nz/wp-content/uploads/2023/12/roller.jpg" onMouseEnter={() => handleToggle(2)} onMouseLeave={() => handleToggle(2)}>
                                     <div className="services-icon" style={{ display: `${isActive.key == 2 ? "none" : "flex"}` }}>
                                         <img src="/assets/img/icon/services_icon02.svg" alt="" />
                                     </div>
@@ -100,7 +100,7 @@ export default function Services1({ isService }) {
 
                         <div className="col-lg-4 col-md-6 col-sm-10">
                             <Link href={"/louvre-roof-systems"}>
-                                <div className="services-item wow fadeInUp" data-wow-delay=".3s" data-background="https://pergolapro.co.nz/wp-content/uploads/2023/12/louvre.jpg" onMouseEnter={() => handleToggle(4)} onMouseLeave={() => handleToggle(4)}>
+                                <div className="services-item wow fadeInUp" data-wow-delay=".3s" data-background="https://server.pergolapro.co.nz/wp-content/uploads/2023/12/louvre.jpg" onMouseEnter={() => handleToggle(4)} onMouseLeave={() => handleToggle(4)}>
                                     <div className="services-icon" style={{ display: `${isActive.key == 4 ? "none" : "flex"}` }}>
                                         <img src="/assets/img/icon/services_icon04.svg" alt="" />
                                     </div>
@@ -119,7 +119,7 @@ export default function Services1({ isService }) {
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-10">
                             <Link href={"/canopies"}>
-                                <div className="services-item wow fadeInUp" data-wow-delay=".6s" data-background="https://pergolapro.co.nz/wp-content/uploads/2023/12/canopies.jpg" onMouseEnter={() => handleToggle(5)} onMouseLeave={() => handleToggle(5)}>
+                                <div className="services-item wow fadeInUp" data-wow-delay=".6s" data-background="https://server.pergolapro.co.nz/wp-content/uploads/2023/12/canopies.jpg" onMouseEnter={() => handleToggle(5)} onMouseLeave={() => handleToggle(5)}>
                                     <div className="services-icon" style={{ display: `${isActive.key == 5 ? "none" : "flex"}` }}>
                                         <img src="/assets/img/icon/services_icon05.svg" alt="" />
                                     </div>
@@ -137,7 +137,7 @@ export default function Services1({ isService }) {
                         </div>
                         <div className="col-lg-4 col-md-6 col-sm-10">
                             <Link href={"/fencing-decking"}>
-                                <div className="services-item wow fadeInUp" data-wow-delay=".9s" data-background="https://pergolapro.co.nz/wp-content/uploads/2024/08/fence.png" onMouseEnter={() => handleToggle(6)} onMouseLeave={() => handleToggle(6)}>
+                                <div className="services-item wow fadeInUp" data-wow-delay=".9s" data-background="https://server.pergolapro.co.nz/wp-content/uploads/2024/08/fence.png" onMouseEnter={() => handleToggle(6)} onMouseLeave={() => handleToggle(6)}>
                                     <div className="services-icon" style={{ display: `${isActive.key == 6 ? "none" : "flex"}` }}>
                                         <img src="/assets/img/icon/services_icon06.svg" alt="" />
                                     </div>

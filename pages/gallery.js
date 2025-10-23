@@ -79,7 +79,7 @@ export default function Project() {
         <meta name="description" content="Explore our gallery of pergolas, carports, and louvre roofs built across Tauranga and NZ. Get inspired for your next outdoor project."></meta>
       </Head>
       <Layout breadcrumbTitle="Projects">
-        <section className="inner-project-area pt-30 pb-90">
+        <section className="pt-30 pb-90">
           <div className="container">
             <div className="row justify-content-center">
               <div className="col-lg-8">

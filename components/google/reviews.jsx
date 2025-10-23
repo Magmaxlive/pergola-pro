@@ -368,7 +368,7 @@ const GoogleReviews = () => {
         {/* Reviews Container with Navigation */}
         <div className="position-relative">
           {/* Navigation Buttons */}
-          {/* <button
+          <button
             onClick={scrollLeft}
             className="btn btn-light position-absolute top-50 start-0 translate-middle-y z-3 rounded-circle shadow-lg p-3 d-none d-lg-block"
             aria-label="Scroll left"
@@ -382,7 +382,7 @@ const GoogleReviews = () => {
             aria-label="Scroll right"
           >
             <i className="fas fa-chevron-right text-dark"></i>
-          </button> */}
+          </button>
 
           {/* Reviews Scroll Container */}
           <div
@@ -407,8 +407,7 @@ const GoogleReviews = () => {
                           src={review.reviewer.avatar}
                           alt={review.reviewer.name}
                           className="rounded-circle"
-                          style={{ width: '50px', height: '50px', objectFit: 'cover' }}
-                        
+                          style={{ width: '50px', height: '50px', objectFit: 'cover', }}
                         />
                         {/* <div
                           className="rounded-circle bg-gradient-primary d-flex align-items-center justify-content-center text-white fw-bold"
@@ -422,7 +421,7 @@ const GoogleReviews = () => {
                         </div> */}
                       </div>
                       <div className="flex-grow-1 ms-3">
-                        <h5 className="card-title fw-bold mb-1">{review.reviewer.name}</h5>
+                        <h5 className="card-title fw-bold mb-1" style={{fontSize: "16px"}}>{review.reviewer.name}</h5>
                         <div className="d-flex align-items-center flex-wrap gap-2">
                           {/* Star Rating */}
                           <div className="d-flex align-items-center">

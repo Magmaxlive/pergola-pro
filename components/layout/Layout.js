@@ -5,7 +5,7 @@ import Breadcrumb from './Breadcrumb'
 import BreadcrumbService from './BreadcrumbService'
 import Footer from './Footer'
 import Header from './Header'
-import PageHead from './PageHead'
+// import PageHead from './PageHead'
 import { GoogleAnalytics } from "nextjs-google-analytics";
 import { GoogleTagManager } from '@/components/google/GoogleTag';
 import { GTMNoScript } from '@/components/google/GTM';

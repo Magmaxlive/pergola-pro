@@ -91,15 +91,13 @@ export default function Header({ headerCls, headerTop }) {
                         id="dropdownMenuButton1"
                         data-bs-toggle="dropdown"
                         aria-haspopup="true"
-                        aria-expanded="false"
-                      >
+                        aria-expanded="false" >
                         <img src="assets/img/icon/united-states.jpg" alt="" />{" "}
                         English
                       </button>
                       <div
                         className="dropdown-menu"
-                        aria-labelledby="dropdownMenuButton1"
-                      >
+                        aria-labelledby="dropdownMenuButton1" >
                         <Link className="dropdown-item" href="/">
                           <img src="assets/img/icon/india.jpg" alt="" /> India
                         </Link>
@@ -169,8 +167,7 @@ export default function Header({ headerCls, headerTop }) {
                             key={item.path}
                             className={`menu-item ${router.pathname === item.path ? "active" : ""} ${item.dropdown ? 'menu-item-has-children' : ''}`}
                             onMouseEnter={() => item.dropdown && setServicesDropdown(true)}
-                            onMouseLeave={() => item.dropdown && setServicesDropdown(false)}
-                          >
+                            onMouseLeave={() => item.dropdown && setServicesDropdown(false)} >
                             <Link href={item.path} style={{ fontSize: "14px" }}>
                               {item.label}
                               {item.dropdown}
@@ -212,7 +209,7 @@ export default function Header({ headerCls, headerTop }) {
                       </Link>
                     </div>
                     <div className="menu-outer">
-                      <Sidebar />
+                      <Sidebar handleToggled={handleToggled} />
                     </div>
                     <div className="social-links">
                       <ul className="clearfix list-wrap">

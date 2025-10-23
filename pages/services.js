@@ -67,7 +67,7 @@ export default function Service({isService}) {
                     </div>
                     {/* area-bg-end */}
                     {/* support-area */}
-                    <section className="support-area pt-115 pb-70">
+                    <section className="support-area pt-30 pb-70">
                         <div className="container">
                             <div className="row justify-content-center">
                                 <div className="col-xl-4 col-md-6">

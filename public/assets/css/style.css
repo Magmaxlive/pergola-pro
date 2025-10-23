@@ -516,10 +516,8 @@ label {
 	height: 200%;
 	top: 110%;
 	left: 50%;
-	background: var(--tg-secondary-color);
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
-	border-radius: 50%;
 	z-index: -1;
 }
 .btn:hover:before {

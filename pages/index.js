@@ -19,7 +19,6 @@ export default function Home() {
                 <meta name="title" content="#1 Pergola Tauranga, Custom Pergola Builder | Pergola Pro NZ"></meta>
                 <meta name="description" content="Tauranga’s No.1 Pergola Builder for custom pergolas, awnings & outdoor blinds. Transform your outdoor space with Pergola Pro NZ – Call +64 27 392 8106."></meta>
             </Head>
-
             <Layout headerCls="transparent-header">
                 <Banner1 />
                 <GoogleReviews />

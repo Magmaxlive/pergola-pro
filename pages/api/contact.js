@@ -15,7 +15,7 @@ export default async function handler(req, res) {
     }
 
     // WordPress REST API credentials
-    const WORDPRESS_URL = "https://pergolapro.co.nz";
+    const WORDPRESS_URL = "https://server.pergolapro.co.nz";
     const WORDPRESS_USERNAME = "perfolaadmin";
     const WORDPRESS_APPLICATION_PASSWORD = "6txi-YEMe-XbHa-cjHq-6IXH-aCTp";
 

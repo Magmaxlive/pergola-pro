@@ -1,7 +1,7 @@
 import Link from "next/link"
 import Slugify from "@/components/validators/slugify";
 import { useState } from "react";
-import Head from "next/head"
+// import Head from "next/head"
 
 export default function BlogCard1({ item }) {
     const [slugnName, SlugName] = useState(item?.title.rendered ? Slugify(item?.title.rendered) : null)
@@ -17,11 +17,11 @@ export default function BlogCard1({ item }) {
     console.log(item);
     return (
         <>
-            <Head>
+            {/* <Head>
                 <title>{item.yoast_head_json.title ? item.yoast_head_json.title : ""}</title>
                 <meta name="title" content={item.yoast_head_json.title ? item.yoast_head_json.title : ""}></meta>
                 <meta name="description" content={item.yoast_head_json.description ? item.yoast_head_json.description : ""}></meta>
-            </Head>
+            </Head> */}
             {/* <div className="inner-blog-item">
                 <div className="inner-blog-thumb">
                     <Link href={`/blog/${item.id}`}><img src={`/assets/img/blog/${item.img}`} alt="" /></Link>
