@@ -11,6 +11,7 @@ import { GoogleTagManager } from '@/components/google/GoogleTag';
 import { GTMNoScript } from '@/components/google/GTM';
 import JsonLdSchema from "@/components/Script/local-schema";
 import Script from 'next/script';
+import Head from "next/head"
 
 
 export default function Layout({ headerCls, headerTop, headTitle, breadcrumbTitle, children, pageTitle, isService, imageURL }) {
@@ -27,12 +28,11 @@ export default function Layout({ headerCls, headerTop, headTitle, breadcrumbTitl
     return (
         <>
             <html lang="en">
-                <head>
+                <Head>
                     <link rel="icon" href="/images/favicon.ico" sizes="any" />
-                    {/* <title>Magmax - Communication Branding and Marketing Agency</title> */}
-                    <meta name="google-site-verification" content="Vwx11lciX8sFPCvdtJJiOKoUiHImUD5Jw02PtRJTFEA" />
                     <meta charset="UTF-8" />
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                    <meta name="google-site-verification" content="Vwx11lciX8sFPCvdtJJiOKoUiHImUD5Jw02PtRJTFEA" />
                     <GoogleTagManager gtmId={gtmId} />
                     <JsonLdSchema />
 
@@ -71,7 +71,7 @@ export default function Layout({ headerCls, headerTop, headTitle, breadcrumbTitl
                     />
                     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"></link>
 
-                </head>
+                </Head>
                 {/* <PageHead headTitle={headTitle} /> */}
                 <body className={``}>
                     <GTMNoScript gtmId={gtmId} />
