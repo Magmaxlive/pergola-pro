@@ -1,6 +1,6 @@
 
 export const baseURL = "https://server.pergolapro.co.nz";
-export const baseAppURL = "https://mebeat.com";
+export const baseAppURL = "https://pergolapro.co.nz";
 export const WeatherAPIKey = "25f65a7e6d5351f79e51cfd8fe03028b";
 export const WpApiKey = "6txi-YEMe-XbHa-cjHq-6IXH-aCTp";
 export const app_id = '';

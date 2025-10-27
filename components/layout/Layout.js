@@ -1,7 +1,7 @@
 import { useEffect } from "react"
 import BackToTop from '../elements/BackToTop'
 import DataBg from '../elements/DataBg'
-import Breadcrumb from './Breadcrumb'
+// import Breadcrumb from './Breadcrumb'
 import BreadcrumbService from './BreadcrumbService'
 import Footer from './Footer'
 import Header from './Header'
@@ -11,7 +11,7 @@ import { GoogleTagManager } from '@/components/google/GoogleTag';
 import { GTMNoScript } from '@/components/google/GTM';
 import JsonLdSchema from "@/components/Script/local-schema";
 import Script from 'next/script';
-import Head from "next/head"
+// import Head from "next/head"
 
 
 export default function Layout({ headerCls, headerTop, headTitle, breadcrumbTitle, children, pageTitle, isService, imageURL }) {
@@ -28,7 +28,7 @@ export default function Layout({ headerCls, headerTop, headTitle, breadcrumbTitl
     return (
         <>
             <html lang="en">
-                <Head>
+                <head>
                     <link rel="icon" href="/images/favicon.ico" sizes="any" />
                     <meta charset="UTF-8" />
                     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -71,7 +71,7 @@ export default function Layout({ headerCls, headerTop, headTitle, breadcrumbTitl
                     />
                     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"></link>
 
-                </Head>
+                </head>
                 {/* <PageHead headTitle={headTitle} /> */}
                 <body className={``}>
                     <GTMNoScript gtmId={gtmId} />
