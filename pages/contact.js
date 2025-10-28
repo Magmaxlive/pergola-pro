@@ -136,7 +136,7 @@ export default function Contact() {
                                             <div className="col-md-12">
                                                 <div className="form-grp">
                                                     <input
-                                                        id="firstName"
+                                                        id="fullName"
                                                         type="text"
                                                         placeholder="Full Name*"
                                                         value={formData.fullName}
