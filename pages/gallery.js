@@ -1,7 +1,8 @@
 import Layout from "@/components/layout/Layout";
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import Head from "next/head"
+import Head from "next/head";
+import ContactMain from "@/components/contact/main";
 
 export default function Project() {
   const images = [
@@ -28,35 +29,63 @@ export default function Project() {
   ];
 
   const [selectedImageIndex, setSelectedImageIndex] = useState(null);
+  const [showContactPopup, setShowContactPopup] = useState(false);
+  const [formSubmitted, setFormSubmitted] = useState(false);
+  const [displayedImages, setDisplayedImages] = useState([]);
+
+  // Initialize with first 6 images
+  useEffect(() => {
+    setDisplayedImages(images.slice(0, 6));
+  }, []);
+
+  // Show all images after form submission
+  useEffect(() => {
+    if (formSubmitted) {
+      setDisplayedImages(images);
+    }
+  }, [formSubmitted]);
 
   const handleImageClick = (index) => {
-    console.log("Image clicked, index:", index); // Debug
+    console.log("Image clicked, index:", index);
     setSelectedImageIndex(index);
   };
 
   const handleCloseModal = () => {
-    console.log("Closing modal"); // Debug
+    console.log("Closing modal");
     setSelectedImageIndex(null);
   };
 
   const handleNext = (e) => {
     e.stopPropagation();
-    console.log("Next clicked, current index:", selectedImageIndex); // Debug
+    console.log("Next clicked, current index:", selectedImageIndex);
     setSelectedImageIndex((prevIndex) => {
       const newIndex = prevIndex === images.length - 1 ? 0 : prevIndex + 1;
-      console.log("Next index:", newIndex); // Debug
+      console.log("Next index:", newIndex);
       return newIndex;
     });
   };
 
   const handlePrevious = (e) => {
     e.stopPropagation();
-    console.log("Previous clicked, current index:", selectedImageIndex); // Debug
+    console.log("Previous clicked, current index:", selectedImageIndex);
     setSelectedImageIndex((prevIndex) => {
       const newIndex = prevIndex === 0 ? images.length - 1 : prevIndex - 1;
-      console.log("Previous index:", newIndex); // Debug
+      console.log("Previous index:", newIndex);
       return newIndex;
     });
+  };
+
+  const handleViewMoreClick = () => {
+    setShowContactPopup(true);
+  };
+
+  const handleContactFormSuccess = () => {
+    setFormSubmitted(true);
+    setShowContactPopup(false);
+  };
+
+  const handleCloseContactPopup = () => {
+    setShowContactPopup(false);
   };
 
   // Add keyboard navigation
@@ -90,7 +119,7 @@ export default function Project() {
               </div>
             </div>
             <div className="row justify-content-center">
-              {images.map((image, index) => (
+              {displayedImages.map((image, index) => (
                 <div key={index} className="col-lg-4 col-md-6 col-sm-10">
                   <div className="project-item-two">
                     <div className="project-thumb-two">
@@ -110,10 +139,29 @@ export default function Project() {
                 </div>
               ))}
             </div>
+
+            {/* View More Button - Only show if form hasn't been submitted and we're not showing all images */}
+            {!formSubmitted && displayedImages.length < images.length && (
+              <div className="row justify-content-center mt-4">
+                <div className="col-lg-12 text-center">
+                  <button 
+                    className="btn btn-primary"
+                    onClick={handleViewMoreClick}
+                    style={{
+                      padding: "12px 30px",
+                      fontSize: "16px",
+                      fontWeight: "600"
+                    }}
+                  >
+                    View More Projects
+                  </button>
+                </div>
+              </div>
+            )}
           </div>
         </section>
 
-        {/* Custom Modal (Avoiding Bootstrap JS Dependency) */}
+        {/* Image Modal */}
         {selectedImageIndex !== null && (
           <div
             className="custom-modal"
@@ -123,13 +171,14 @@ export default function Project() {
               left: 0,
               width: "100%",
               height: "100%",
-              background: "rgba(0, 0, 0, 0.5)", // Backdrop
+              background: "rgba(0, 0, 0, 0.5)",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
               zIndex: 1050,
             }}
-            onClick={handleCloseModal} >
+            onClick={handleCloseModal}
+          >
             <div
               className="custom-modal-content"
               style={{
@@ -152,7 +201,7 @@ export default function Project() {
                   left: "10px",
                   top: "50%",
                   transform: "translateY(-50%)",
-                  zIndex: 1100, // Ensure buttons are clickable
+                  zIndex: 1100,
                   background: "#fff",
                   border: "none",
                   padding: "10px",
@@ -170,16 +219,77 @@ export default function Project() {
                   right: "10px",
                   top: "50%",
                   transform: "translateY(-50%)",
-                  zIndex: 1100, // Ensure buttons are clickable
+                  zIndex: 1100,
                   background: "#fff",
                   border: "none",
                   padding: "10px",
                   cursor: "pointer",
                   opacity: 0.8,
                 }}
-                aria-label="Next Image" >
+                aria-label="Next Image"
+              >
                 Next &rarr;
               </button>
+            </div>
+          </div>
+        )}
+
+        {/* Contact Form Popup */}
+        {showContactPopup && (
+          <div
+            className="contact-popup-modal"
+            style={{
+              position: "fixed",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              background: "rgba(0, 0, 0, 0.7)",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              zIndex: 1060,
+            }}
+            onClick={handleCloseContactPopup}
+          >
+            <div
+              className="contact-popup-content"
+              style={{
+                background: "#fff",
+                padding: "30px",
+                borderRadius: "10px",
+                maxWidth: "600px",
+                width: "90%",
+                maxHeight: "90vh",
+                overflowY: "auto",
+                position: "relative",
+              }}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button
+                onClick={handleCloseContactPopup}
+                style={{
+                  position: "absolute",
+                  top: "15px",
+                  right: "15px",
+                  background: "none",
+                  border: "none",
+                  fontSize: "24px",
+                  cursor: "pointer",
+                  color: "#333",
+                }}
+                aria-label="Close popup"
+              >
+                &times;
+              </button>
+              
+              {/* <h3 className="text-center mb-4">Get Access to Full Gallery</h3>
+              <p className="text-center mb-4">
+                Please fill out the form below to view our complete project gallery
+              </p>
+               */}
+              {/* Modified ContactMain component for gallery page */}
+              <ContactMain onSuccess={handleContactFormSuccess} />
             </div>
           </div>
         )}
@@ -202,7 +312,178 @@ export default function Project() {
         .project-thumb-two img:hover {
           transform: scale(1.05);
         }
+        .contact-popup-content {
+          animation: popupFadeIn 0.3s ease;
+        }
+        @keyframes popupFadeIn {
+          from { opacity: 0; transform: scale(0.9); }
+          to { opacity: 1; transform: scale(1); }
+        }
       `}</style>
     </>
   );
 }
+
+// Modified ContactMain component specifically for gallery page
+const GalleryContactForm = ({ onSuccess }) => {
+  const [formData, setFormData] = useState({
+    fullName: '',
+    email: '',
+    phone: '',
+    subject: 'Gallery Access Request',
+    message: 'I would like to view the full project gallery',
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [response, setResponse] = useState(null);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setResponse(null);
+
+    // Client-side validation
+    if (!formData.fullName || !formData.email || !formData.message) {
+      setResponse({
+        success: false,
+        message: 'Please fill in all required fields',
+        errors: []
+      });
+      setIsSubmitting(false);
+      return;
+    }
+
+    try {
+      const res = await fetch('/api/zap', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: `${formData.fullName}`,
+          email: formData.email,
+          phone: formData.phone,
+          subject: formData.subject,
+          message: formData.message,
+        }),
+      });
+
+      const data = await res.json();
+
+      setResponse({
+        success: data.success,
+        message: data.message,
+        errors: data.errors || []
+      });
+
+      if (data.success) {
+        // Call success callback to close popup and show full gallery
+        setTimeout(() => {
+          onSuccess();
+        }, 1500);
+      }
+    } catch (error) {
+      setResponse({
+        success: false,
+        message: 'Network error. Please try again.'
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  const handleChange = (e) => {
+    setFormData(prev => ({
+      ...prev,
+      [e.target.id]: e.target.value
+    }));
+  };
+
+  return (
+    <div className="contact-form-wrap">
+      {/* Response Messages */}
+      {response && (
+        <div className={`alert ${response.success ? 'alert-success' : 'alert-danger'} mb-4`}>
+          {response.message}
+          {response.errors && response.errors.length > 0 && (
+            <ul className="mt-2 mb-0">
+              {response.errors.map((error, index) => (
+                <li key={index}>{error}</li>
+              ))}
+            </ul>
+          )}
+        </div>
+      )}
+
+      <form onSubmit={handleSubmit} className="contact-form">
+        <div className="row">
+          <div className="col-md-12">
+            <div className="form-grp">
+              <input
+                id="fullName"
+                type="text"
+                placeholder="Full Name*"
+                value={formData.fullName}
+                onChange={handleChange}
+                required
+                disabled={isSubmitting}
+              />
+            </div>
+          </div>
+
+          <div className="col-md-6">
+            <div className="form-grp">
+              <input
+                id="email"
+                type="email"
+                placeholder="Email Address*"
+                value={formData.email}
+                onChange={handleChange}
+                required
+                disabled={isSubmitting}
+              />
+            </div>
+          </div>
+          <div className="col-md-6">
+            <div className="form-grp">
+              <input
+                id="phone"
+                type="text"
+                placeholder="Phone Number"
+                value={formData.phone}
+                onChange={handleChange}
+                disabled={isSubmitting}
+              />
+            </div>
+          </div>
+        </div>
+        <div className="form-grp">
+          <input
+            id="subject"
+            type="hidden"
+            value={formData.subject}
+            onChange={handleChange}
+            disabled={isSubmitting}
+          />
+        </div>
+        <div className="form-grp">
+          <textarea
+            id="message"
+            placeholder="Your Message here*"
+            value={formData.message}
+            onChange={handleChange}
+            required
+            disabled={isSubmitting}
+            rows="3"
+          />
+        </div>
+        <button
+          className="btn btn-primary w-100"
+          type="submit"
+          disabled={isSubmitting}
+        >
+          {isSubmitting ? 'Submitting...' : 'View Full Gallery'}
+        </button>
+      </form>
+    </div>
+  );
+};
