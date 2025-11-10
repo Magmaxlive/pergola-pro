@@ -5,6 +5,7 @@ import { useEffect, useState, useRef } from "react"
 import { baseURL } from "@/auth/auth";
 import Slugify from "@/components/validators/slugify";
 import Head from "next/head"
+import parse from 'html-react-parser';
 
 export default function BlogDetails() {
     let Router = useRouter()
@@ -326,7 +327,10 @@ export default function BlogDetails() {
                                             <h4 className="widget-title">Recent News</h4>
                                             <div className="rc-post-wrap">
                                                 {blogsData.map((data, i) => {
-                                                    let slugnName = data?.title.rendered ? Slugify(data?.title.rendered) : null;
+                                                   
+                                                    const cleanContent = (data?.title.rendered || "").replace(/\[\+\d+\s+chars\]/g, "");
+                                                    const detailData = parse(cleanContent);
+                                                     let slugnName = detailData ? Slugify(detailData) : null;
                                                     return (
                                                         <>
                                                             <div className="rc-post-item">
@@ -335,7 +339,7 @@ export default function BlogDetails() {
                                                                         style={{ width: "100%", height: "90px", objectFit: "cover" }} alt={data?.title.rendered ? Slugify(data?.title.rendered) : ""} /></Link>
                                                                 </div>
                                                                 <div className="rc-post-content">
-                                                                    <h5 className="title"><Link href={`/blog/${slugnName}/${data.id}`}>{data?.title.rendered ? data?.title.rendered : ""}</Link></h5>
+                                                                    <h5 className="title"><Link href={`/blog/${slugnName}/${data.id}`}>{detailData}</Link></h5>
                                                                     <span><i className="fas fa-calendar-alt" />{formatDate(data.date)}</span>
                                                                 </div>
                                                             </div>

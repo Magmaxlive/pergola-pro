@@ -9,7 +9,7 @@ export default function BlogCard1({ item }) {
     const cleanContent = (item?.title.rendered || "").replace(/\[\+\d+\s+chars\]/g, "");
     const detailData = parse(cleanContent);
 
-    const [slugnName, SlugName] = useState(cleanContent);
+    const [slugnName, SlugName] = useState(detailData);
 
     const formatDate = (dateString) => {
         const date = new Date(dateString)
