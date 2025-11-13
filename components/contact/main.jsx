@@ -86,8 +86,8 @@ const ContactMain = ({ onSuccess }) => {
         <>
 
             <div className="contact-form-wrap" data-background="/assets/img/images/contact_form_bg.jpg">
-                <h2 className="title">Contact With Us</h2>
-                <p>Send us a message and we'll respond as soon as possible</p>
+                {/* <h2 className="title">Contact With Us</h2>
+                <p>Send us a message and we'll respond as soon as possible</p> */}
 
                 {/* Response Messages */}
                 {response && (
