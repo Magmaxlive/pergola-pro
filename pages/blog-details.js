@@ -115,109 +115,7 @@ export default function BlogDetails() {
                                             </div>
                                         </div>
                                     </div>
-                                    {/* <div className="comments-wrap">
-                                        <h4 className="comments-wrap-title">Comments (04)</h4>
-                                        <div className="latest-comments">
-                                            <ul className="list-wrap">
-                                                <li>
-                                                    <div className="comments-box">
-                                                        <div className="comments-avatar">
-                                                            <img src="/assets/img/blog/comment_avatar01.png" alt="" />
-                                                        </div>
-                                                        <div className="comments-text">
-                                                            <div className="avatar-name">
-                                                                <h6 className="name">
-                                                                    Abubokkor Siddik
-                                                                    <Link href="#" className="comment-reply-link"><i className="fas fa-reply" />Reply</Link>
-                                                                </h6>
-                                                                <span className="date">September 6, {new Date().getFullYear()}</span>
-                                                            </div>
-                                                            <p>Lorem ipsum dolor sit amet consectetur. Ut tellus suspendisse nulla aliquam. Risus rutrum tellus ultrices.</p>
-                                                        </div>
-                                                    </div>
-                                                    <ul className="list-wrap children">
-                                                        <li>
-                                                            <div className="comments-box">
-                                                                <div className="comments-avatar">
-                                                                    <img src="/assets/img/blog/comment_avatar02.png" alt="" />
-                                                                </div>
-                                                                <div className="comments-text">
-                                                                    <div className="avatar-name">
-                                                                        <h6 className="name">
-                                                                            Admin
-                                                                            <Link href="#" className="comment-reply-link"><i className="fas fa-reply" />Reply</Link>
-                                                                        </h6>
-                                                                        <span className="date">September 6, {new Date().getFullYear()}</span>
-                                                                    </div>
-                                                                    <p>Lorem ipsum dolor sit amet consectetur. Ut tellus suspendisse nulla aliquam. Risus rutrum tellus ultrices.</p>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <div className="comments-box">
-                                                        <div className="comments-avatar">
-                                                            <img src="/assets/img/blog/comment_avatar03.png" alt="" />
-                                                        </div>
-                                                        <div className="comments-text">
-                                                            <div className="avatar-name">
-                                                                <h6 className="name">
-                                                                    Elliot Alderson
-                                                                    <Link href="#" className="comment-reply-link"><i className="fas fa-reply" />Reply</Link>
-                                                                </h6>
-                                                                <span className="date">September 6, {new Date().getFullYear()}</span>
-                                                            </div>
-                                                            <p>Lorem ipsum dolor sit amet consectetur. Ut tellus suspendisse nulla aliquam. Risus rutrum tellus.</p>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li>
-                                                    <div className="comments-box">
-                                                        <div className="comments-avatar">
-                                                            <img src="/assets/img/blog/comment_avatar04.png" alt="" />
-                                                        </div>
-                                                        <div className="comments-text">
-                                                            <div className="avatar-name">
-                                                                <h6 className="name">
-                                                                    Enanath Jhon
-                                                                    <Link href="#" className="comment-reply-link"><i className="fas fa-reply" />Reply</Link>
-                                                                </h6>
-                                                                <span className="date">September 6, {new Date().getFullYear()}</span>
-                                                            </div>
-                                                            <p>Lorem ipsum dolor sit amet consectetur. Ut tellus suspendisse nulla aliquam. Risus rutrum tellus eget ultrices pretium.</p>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div> */}
-                                    {/* <div className="comment-respond">
-                                        <h3 className="comment-reply-title">Write Your Comment</h3>
-                                        <form className="comment-form" action="#">
-                                            <div className="row">
-                                                <div className="col-md-4">
-                                                    <div className="form-grp">
-                                                        <input type="text" placeholder="Name *" />
-                                                    </div>
-                                                </div>
-                                                <div className="col-md-4">
-                                                    <div className="form-grp">
-                                                        <input type="email" placeholder="Email *" />
-                                                    </div>
-                                                </div>
-                                                <div className="col-md-4">
-                                                    <div className="form-grp">
-                                                        <input type="url" placeholder="Website*" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div className="form-grp">
-                                                <textarea name="message" placeholder="Comment *" />
-                                            </div>
-                                            <button type="submit" className="btn btn-two">Post Comment</button>
-                                        </form>
-                                    </div> */}
+                                    
                                 </div>
                             </div>
                             <div className="col-xl-4 col-lg-6 col-md-10">
@@ -307,7 +205,6 @@ export default function BlogDetails() {
                         </div>
                     </div>
                 </section>
-
             </Layout>
         </>
     )

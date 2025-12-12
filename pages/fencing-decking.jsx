@@ -4,7 +4,6 @@ import Link from "next/link";
 import GoogleReviews from "@/components/google/reviews";
 import Head from "next/head"
 
-// Content payload in JSON format
 const serviceContent = {
     mainTitle: "Fencing and Decking",
     title: "Fencing and Decking: Define and Enhance Your Outdoor Space in Tauranga",
@@ -52,8 +51,8 @@ const serviceContent = {
             "Energy Efficiency: Fences can block wind and reduce cooling costs by creating shaded areas."
         ],
         images: [
-            "/assets/img/services/sb_img01.jpg",
-            "/assets/img/services/sb_img02.jpg"
+            "/assets/img/services/fence-deck/3.jpg",
+            "/assets/img/services/fence-deck/4.jpg"
         ]
     },
 
@@ -141,7 +140,7 @@ export default function ServiceDetails() {
             </Head>
             <Layout
                 breadcrumbTitle={serviceContent.mainTitle}
-                imageURL={`https://server.pergolapro.co.nz/wp-content/uploads/2024/08/fence.png`}
+                imageURL={`/assets/img/services/fence-deck/1.png`}
                 pageTitle="Service Details"
                 isService={true} >
                 <div>
@@ -160,7 +159,7 @@ export default function ServiceDetails() {
                                                 <div className="row justify-content-center align-items-center">
                                                     <div className="col-lg-6 col-md-8">
                                                         <div className="services-process-img">
-                                                            <img src="/assets/img/services/sp_img02.jpg" alt="" />
+                                                            <img src="/assets/img/services/fence-deck/2.png" alt=""  />
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-6">
@@ -191,7 +190,7 @@ export default function ServiceDetails() {
                                                     <div className="col-lg-7 order-0 order-lg-2">
                                                         <div className="benefits-img">
                                                             {serviceContent.benefits.images.map((image, index) => (
-                                                                <img key={index} src={image} alt="" />
+                                                                <img key={index} src={image} alt="" style={{maxWidth:"300px", maxHeight: "400px", objectFit: "cover"}} />
                                                             ))}
                                                         </div>
                                                     </div>

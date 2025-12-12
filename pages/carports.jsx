@@ -52,8 +52,8 @@ const serviceContent = {
             "Low Maintenance: Built from rust-proof and UV-resistant materials that require minimal upkeep."
         ],
         images: [
-            "/assets/img/services/sb_img01.jpg",
-            "/assets/img/services/sb_img02.jpg"
+            "/assets/img/services/carports/1.jpg",
+            "/assets/img/services/carports/2.jpg"
         ]
     },
 
@@ -142,7 +142,7 @@ export default function ServiceDetails() {
 
             <Layout
                 breadcrumbTitle={serviceContent.mainTitle}
-                imageURL={`https://server.pergolapro.co.nz/wp-content/uploads/2023/12/carports.jpg`}
+                imageURL={`/assets/img/services/carports/3.jpg`}
                 pageTitle="Service Details"
                 isService={true} >
                 <div>
@@ -161,7 +161,7 @@ export default function ServiceDetails() {
                                                 <div className="row justify-content-center align-items-center">
                                                     <div className="col-lg-6 col-md-8">
                                                         <div className="services-process-img">
-                                                            <img src="/assets/img/services/sp_img02.jpg" alt="" />
+                                                            <img src="/assets/img/services/carports/2.jpg" alt="" />
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-6">
@@ -192,7 +192,7 @@ export default function ServiceDetails() {
                                                     <div className="col-lg-7 order-0 order-lg-2">
                                                         <div className="benefits-img">
                                                             {serviceContent.benefits.images.map((image, index) => (
-                                                                <img key={index} src={image} alt="" />
+                                                                <img key={index} src={image} alt="" style={{maxWidth:"300px", maxHeight: "400px", objectFit: "cover"}} />
                                                             ))}
                                                         </div>
                                                     </div>

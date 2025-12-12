@@ -11,7 +11,7 @@ import { GoogleTagManager } from '@/components/google/GoogleTag';
 import { GTMNoScript } from '@/components/google/GTM';
 import JsonLdSchema from "@/components/Script/local-schema";
 import Script from 'next/script';
-// import Head from "next/head"
+import BreakingNews from "@/components/elements/AutoScroll";
 
 
 export default function Layout({ headerCls, headerTop, headTitle, breadcrumbTitle, children, pageTitle, isService, imageURL }) {

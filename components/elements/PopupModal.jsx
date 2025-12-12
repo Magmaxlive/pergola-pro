@@ -25,16 +25,20 @@ const PopupModal = ({ isOpen, onClose }) => {
 
                 <div className="popup-row">
                     <div className="popup-image-col">
-                        <img 
-                            src="/assets/img/popup/1.jpg" 
-                            alt="Pergola Special Offer" 
-                            className="popup-image" 
-                        />
+                        <div className="popup-image-container">
+                            <img 
+                                src="/assets/img/popup/2.png" 
+                                alt="Pergola Special Offer" 
+                                className="popup-image" 
+                            />
+                        </div>
                     </div>
 
                     <div className="popup-form-col">
-                        <div className="popup-contact-wrapper">
-                            <ContactMain />
+                        <div className="popup-form-container">
+                            <div className="popup-contact-wrapper">
+                                <ContactMain />
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -113,23 +117,44 @@ const PopupModal = ({ isOpen, onClose }) => {
         }
 
         .popup-image-col {
-          flex: 1;
-          min-width: 0; /* Important for flexbox sizing */
+          flex: 0 0 50%; /* Fixed width for image column */
+          display: flex;
+          height: 100%;
+          background: #f5f5f5; /* Fallback background */
+        }
+
+        .popup-image-container {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+          padding: 20px;
         }
 
         .popup-image {
           width: 100%;
           height: 100%;
-          object-fit: cover;
+          object-fit: contain; /* Changed from cover to contain */
+          object-position: center;
           display: block;
         }
 
         .popup-form-col {
-          flex: 1;
-          min-width: 0; /* Important for flexbox sizing */
+          flex: 1; /* Takes remaining space */
           display: flex;
           flex-direction: column;
           height: 100%;
+          min-width: 0; /* Prevents flex item overflow */
+        }
+
+        .popup-form-container {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          height: 100%;
+          overflow: hidden;
         }
 
         .popup-contact-wrapper {
@@ -141,14 +166,15 @@ const PopupModal = ({ isOpen, onClose }) => {
           padding: 40px 30px 30px 30px;
         }
 
+        /* Ensure ContactMain fills available space */
         .popup-contact-wrapper > :global(*) {
           flex: 1;
           display: flex;
           flex-direction: column;
-          height: 100%;
-          overflow: hidden;
+          min-height: 0;
         }
 
+        /* Form container inside ContactMain */
         .popup-contact-wrapper > :global(*) > :global(*) {
           flex: 1;
           display: flex;
@@ -183,6 +209,26 @@ const PopupModal = ({ isOpen, onClose }) => {
           scrollbar-color: #c1c1c1 #f1f1f1;
         }
 
+        /* Medium screens adjustment */
+        @media (max-width: 900px) {
+          .popup-modal-content {
+            max-width: 95vw;
+            height: 85vh;
+          }
+          
+          .popup-image-col {
+            flex: 0 0 45%; /* Slightly smaller on medium screens */
+          }
+          
+          .popup-image-container {
+            padding: 15px;
+          }
+          
+          .popup-contact-wrapper {
+            padding: 30px 25px 25px 25px;
+          }
+        }
+
         @media (max-width: 768px) {
           .popup-modal-overlay {
             padding: 10px;
@@ -193,6 +239,7 @@ const PopupModal = ({ isOpen, onClose }) => {
             height: 90vh;
             max-height: none;
             width: 95vw;
+            max-width: 500px;
           }
 
           .popup-row {
@@ -201,8 +248,13 @@ const PopupModal = ({ isOpen, onClose }) => {
           }
 
           .popup-image-col {
-            flex: 0 0 40%;
+            flex: 0 0 35%;
+            width: 100%;
             min-height: 200px;
+          }
+
+          .popup-image {
+            object-fit: cover; /* Back to cover on mobile */
           }
 
           .popup-form-col {
@@ -211,7 +263,7 @@ const PopupModal = ({ isOpen, onClose }) => {
           }
 
           .popup-contact-wrapper {
-            padding: 20px 20px 20px 20px;
+            padding: 25px 20px;
           }
 
           .popup-close-btn {
@@ -237,16 +289,29 @@ const PopupModal = ({ isOpen, onClose }) => {
 
           .popup-image-col {
             flex: 0 0 30%;
-            min-height: 150px;
+            min-height: 180px;
           }
 
           .popup-contact-wrapper {
-            padding: 15px;
+            padding: 20px 15px;
+          }
+        }
+
+        /* For very tall screens */
+        @media (max-height: 600px) and (min-width: 769px) {
+          .popup-modal-content {
+            height: 90vh;
+            max-height: none;
+          }
+          
+          .popup-image-col {
+            flex: 0 0 40%;
           }
         }
 
         /* Debug borders - remove in production */
         /* .popup-modal-content { border: 2px solid red; }
+        .popup-image-col { border: 2px solid orange; }
         .popup-form-col { border: 2px solid blue; }
         .popup-contact-wrapper { border: 2px solid green; } */
       `}</style>
