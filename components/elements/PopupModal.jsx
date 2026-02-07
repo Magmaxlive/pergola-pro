@@ -24,7 +24,7 @@ const PopupModal = ({ isOpen, onClose }) => {
                 </button>
 
                 <div className="popup-row">
-                    <div className="popup-image-col">
+                    {/* <div className="popup-image-col">
                         <div className="popup-image-container">
                             <img 
                                 src="/assets/img/popup/2.png" 
@@ -32,7 +32,7 @@ const PopupModal = ({ isOpen, onClose }) => {
                                 className="popup-image" 
                             />
                         </div>
-                    </div>
+                    </div> */}
 
                     <div className="popup-form-col">
                         <div className="popup-form-container">
