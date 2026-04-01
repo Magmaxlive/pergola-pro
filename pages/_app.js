@@ -23,11 +23,8 @@ function MyApp({ Component, pageProps }) {
 
     }, [])
     return (<>
-        {!loading ? (
-            <Component {...pageProps} />
-        ) : (
-            <Preloader />
-        )}
+        {loading && <Preloader />}
+        <Component {...pageProps} />
     </>)
 }
 

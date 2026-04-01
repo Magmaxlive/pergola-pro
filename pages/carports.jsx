@@ -136,7 +136,7 @@ export default function ServiceDetails() {
 
             <Head>
                 <title>Carport Builders Tauranga | Durable & Stylish | Pergola Pro</title>
-                <meta name="title" content="Tauranga’s trusted carport builders. Pergola Pro NZ designs and installs durable, stylish carports tailored to protect your vehicle year-round."></meta>
+                <meta name="title" content="Carport Builders Tauranga | Durable & Stylish | Pergola Pro"></meta>
                 <meta name="description" content="Tauranga’s trusted carport builders. Pergola Pro NZ designs and installs durable, stylish carports tailored to protect your vehicle year-round."></meta>
             </Head>
 

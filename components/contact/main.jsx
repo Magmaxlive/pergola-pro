@@ -106,11 +106,12 @@ const ContactMain = ({ onSuccess }) => {
                 <form onSubmit={handleSubmit} className="contact-form">
                     <div className="row">
                         <div className="col-md-12">
-                            <div className="form-grp">
+                            <div className="form-grp d-flex flex-column gap-2">
+                                <label htmlFor="fullName" className="fw-bold text-start">Full Name <span className="text-danger">*</span></label>
                                 <input
                                     id="fullName"
                                     type="text"
-                                    placeholder="Full Name*"
+                                    placeholder="Enter your full name"
                                     value={formData.fullName}
                                     onChange={handleChange}
                                     required
@@ -120,11 +121,12 @@ const ContactMain = ({ onSuccess }) => {
                         </div>
 
                         <div className="col-md-6">
-                            <div className="form-grp">
+                            <div className="form-grp d-flex flex-column gap-2">
+                                <label htmlFor="fullName" className="fw-bold text-start">Email <span className="text-danger">*</span></label>
                                 <input
                                     id="email"
                                     type="email"
-                                    placeholder="Email Address*"
+                                    placeholder="Enter email address"
                                     value={formData.email}
                                     onChange={handleChange}
                                     required
@@ -133,11 +135,13 @@ const ContactMain = ({ onSuccess }) => {
                             </div>
                         </div>
                         <div className="col-md-6">
-                            <div className="form-grp">
+                            <div className="form-grp d-flex flex-column gap-2">
+                                 <label htmlFor="fullName" className="fw-bold text-start">Phone <span className="text-danger">*</span></label>
+
                                 <input
                                     id="phone"
                                     type="text"
-                                    placeholder="Phone Number*"
+                                    placeholder="Enter phone number"
                                     value={formData.phone}
                                     onChange={handleChange}
                                     required
@@ -146,20 +150,24 @@ const ContactMain = ({ onSuccess }) => {
                             </div>
                         </div>
                     </div>
-                    <div className="form-grp">
+                    <div className="form-grp d-flex flex-column gap-2">
+                            <label htmlFor="subject" className="fw-bold text-start">Subject</label>
+
                         <input
                             id="subject"
                             type="text"
-                            placeholder="Subject"
+                            placeholder="Enter the subject"
                             value={formData.subject}
                             onChange={handleChange}
                             disabled={isSubmitting}
                         />
                     </div>
-                    <div className="form-grp">
+                    <div className="form-grp d-flex flex-column gap-2">
+                            <label htmlFor="message" className="fw-bold text-start">Message <span className="text-danger">*</span></label>
+
                         <textarea
                             id="message"
-                            placeholder="Your Message here*"
+                            placeholder="Your Message here"
                             value={formData.message}
                             onChange={handleChange}
                             required
