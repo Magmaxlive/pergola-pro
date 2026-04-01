@@ -64,13 +64,14 @@ const PopupModal = ({ isOpen, onClose }) => {
           border-radius: 12px;
           max-width: 1000px;
           width: 100%;
-          height: 80vh;
-          max-height: 700px;
+          height: 90vh;
+          max-height: 800px;
           position: relative;
           box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
           animation: popup-appear 0.3s ease-out;
           display: flex;
           overflow: hidden;
+          padding-bottom : 10px;
         }
 
         @keyframes popup-appear {

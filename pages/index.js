@@ -12,6 +12,10 @@ import PopupModal from "@/components/elements/PopupModal";
 import Head from "next/head";
 import BreakingNews from "@/components/elements/AutoScroll";
 
+export async function getStaticProps() {
+  return { props: {} };
+}
+
 export default function Home() {
   const [showPopup, setShowPopup] = useState(false);
   const [popupShown, setPopupShown] = useState(false);
@@ -78,7 +82,7 @@ export default function Home() {
         <title>#1 Pergola Tauranga, Custom Pergola Builder | Pergola Pro NZ</title>
         <meta name="google-site-verification" content="Vwx11lciX8sFPCvdtJJiOKoUiHImUD5Jw02PtRJTFEA" />
         <meta name="title" content="#1 Pergola Tauranga, Custom Pergola Builder | Pergola Pro NZ"></meta>
-        <meta name="description" content="Tauranga's No.1 Pergola Builder for custom pergolas, awnings & outdoor blinds. Transform your outdoor space with Pergola Pro NZ – Call +64 27 392 8106."></meta>
+        <meta name="description" content="Tauranga’s No.1 Pergola Builder for custom pergolas, awnings & outdoor blinds. Transform your outdoor space with Pergola Pro NZ – Call +64 27 392 8106."></meta>
       </Head>
 
       {/* <div >

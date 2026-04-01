@@ -1,66 +1,8 @@
 // components/GoogleReviews.jsx
-import { useState, useEffect, useRef } from 'react';
+import { useRef } from 'react';
 
-const GoogleReviews = () => {
-  const [reviews, setReviews] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-  const scrollContainerRef = useRef(null);
-
-  // Mock data - Replace this with actual Google Places API data
-  const mockReviews = [
-    {
-      id: 1,
-      author_name: "John Smith",
-      rating: 5,
-      text: "Absolutely fantastic service! The pergola looks amazing and the team was professional throughout the entire process. Highly recommend PergolaPro!",
-      time: "2024-01-15T10:30:00Z",
-      profile_photo_url: "/assets/img/reviews/user1.jpg"
-    },
-    {
-      id: 2,
-      author_name: "Sarah Johnson",
-      rating: 5,
-      text: "From consultation to completion, the experience was seamless. The quality of workmanship is outstanding. Our new outdoor space is perfect!",
-      time: "2024-01-10T14:22:00Z",
-      profile_photo_url: "/assets/img/reviews/user2.jpg"
-    },
-    {
-      id: 3,
-      author_name: "Mike Thompson",
-      rating: 4,
-      text: "Great work done on our pergola. The team was punctual and cleaned up perfectly after themselves. Would definitely use them again.",
-      time: "2024-01-08T09:15:00Z",
-      profile_photo_url: "/assets/img/reviews/user3.jpg"
-    },
-    {
-      id: 4,
-      author_name: "Lisa Brown",
-      rating: 5,
-      text: "Exceptional quality and attention to detail. The pergola has transformed our backyard into a beautiful entertainment area.",
-      time: "2024-01-05T16:45:00Z",
-      profile_photo_url: "/assets/img/reviews/user4.jpg"
-    },
-    {
-      id: 5,
-      author_name: "David Wilson",
-      rating: 5,
-      text: "Professional, reliable, and high-quality work. The communication was excellent and the project was completed on time.",
-      time: "2024-01-03T11:20:00Z",
-      profile_photo_url: "/assets/img/reviews/user5.jpg"
-    },
-    {
-      id: 6,
-      author_name: "Emma Davis",
-      rating: 4,
-      text: "Very happy with the result. The team worked efficiently and the pergola looks exactly as we envisioned.",
-      time: "2023-12-28T13:10:00Z",
-      profile_photo_url: "/assets/img/reviews/user6.jpg"
-    }
-  ];
-
-
-  const nReview = [
+// Static review data at module level — rendered by SSR immediately, no JS needed
+const nReview = [
     {
       "id": "Ci9DQUlRQUNvZENodHljRjlvT21adVZWVmFXamRzU0U5cGVreDBTblJ0VDFoNVQxRRAB",
       "reviewer": {
@@ -263,24 +205,10 @@ const GoogleReviews = () => {
       "has_photos": false,
       "photos": []
     }
-  ];
+];
 
-  useEffect(() => {
-    // Simulate API fetch
-    const fetchReviews = async () => {
-      try {
-        setTimeout(() => {
-          setReviews(nReview);
-          setLoading(false);
-        }, 1000);
-      } catch (err) {
-        setError('Failed to load reviews');
-        setLoading(false);
-      }
-    };
-
-    fetchReviews();
-  }, []);
+const GoogleReviews = () => {
+  const scrollContainerRef = useRef(null);
 
   const scrollLeft = () => {
     if (scrollContainerRef.current) {
@@ -315,37 +243,6 @@ const GoogleReviews = () => {
     });
   };
 
-  if (loading) {
-    return (
-      <section className="reviews-section py-5 bg-light">
-        <div className="container">
-          <div className="text-center mb-5">
-            <h2 className="h1 fw-bold text-dark mb-3">Google Reviews</h2>
-            <p className="lead text-muted">What our customers say about us</p>
-          </div>
-          <div className="text-center">
-            <div className="spinner-border text-primary" role="status">
-              <span className="visually-hidden">Loading...</span>
-            </div>
-            <p className="mt-2 text-muted">Loading reviews...</p>
-          </div>
-        </div>
-      </section>
-    );
-  }
-
-  if (error) {
-    return (
-      <section className="reviews-section py-5 bg-light">
-        <div className="container">
-          <div className="alert alert-danger text-center" role="alert">
-            {error}
-          </div>
-        </div>
-      </section>
-    );
-  }
-
   return (
     <section className="reviews-section py-5 bg-light">
       <div className="container">
@@ -361,7 +258,7 @@ const GoogleReviews = () => {
               <span className="h4 fw-bold text-dark ms-2 mb-0">5.0</span>
             </div>
             <span className="text-muted">•</span>
-            <span className="text-muted">{reviews.length} reviews</span>
+            <span className="text-muted">{nReview.length} reviews</span>
           </div>
         </div>
 
@@ -393,7 +290,7 @@ const GoogleReviews = () => {
               msOverflowStyle: 'none',
               scrollSnapType: 'x mandatory'
             }} >
-            {reviews.map((review) => (
+            {nReview.map((review) => (
               <div
                 key={review.id}
                 className="flex-shrink-0 col-12 col-md-6 col-lg-4 col-xl-3"

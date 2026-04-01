@@ -5345,6 +5345,10 @@ label {
 }
 .contact-form-wrap .contact-form .btn {
 	width: 100%;
+	padding: 20px 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .contact-info-wrap {
 	background: var(--tg-gray);

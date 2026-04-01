@@ -52,8 +52,8 @@ const serviceContent = {
             "Low Maintenance: Easy to clean and operate, with no need for frequent repairs."
         ],
         images: [
-            "/assets/img/services/sb_img01.jpg",
-            "/assets/img/services/sb_img02.jpg"
+            "/assets/img/services/roller/rollerbends2.png",
+            
         ]
     },
 
@@ -140,7 +140,7 @@ export default function ServiceDetails() {
             </Head>
             <Layout
                 breadcrumbTitle={serviceContent.mainTitle}
-                imageURL={`https://server.pergolapro.co.nz/wp-content/uploads/2023/12/roller.jpg`}
+                imageURL="/assets/img/services/roller/rollerbends1.jpg"
                 pageTitle="Service Details"
                 isService={true} >
                 <div>
@@ -154,10 +154,10 @@ export default function ServiceDetails() {
                                             <h2 className="title">{serviceContent.title}</h2>
                                             <p>{serviceContent.description}</p>
                                             <div className="services-process-wrap">
-                                                <div className="row justify-content-center align-items-center">
+                                                <div className="row justify-content-center align-items-start">
                                                     <div className="col-lg-6 col-md-8">
                                                         <div className="services-process-img">
-                                                            <img src="/assets/img/services/sp_img02.jpg" alt="" />
+                                                            <img src="/assets/img/services/roller/rollerbends3.jpg" alt="" />
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-6">

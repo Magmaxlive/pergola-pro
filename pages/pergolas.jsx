@@ -43,8 +43,8 @@ const serviceContent = {
             "Low Maintenance: Requires minimal cleaning and upkeep due to rust-proof and UV-resistant materials."
         ],
         images: [
-            "/assets/img/services/sb_img01.jpg",
-            "/assets/img/services/sb_img02.jpg"
+            
+            "/assets/img/services/pergola/pergola2.jpg"
         ]
     },
 
@@ -132,7 +132,7 @@ export default function ServiceDetails() {
 
             <Layout
                 breadcrumbTitle={serviceContent.mainTitle}
-                imageURL={`https://server.pergolapro.co.nz/wp-content/uploads/2023/12/canopies.jpg`}
+                imageURL='/assets/img/services/pergola/pergola1.jpg'
                 pageTitle="Service Details"
                 isService={true}
             >
@@ -153,7 +153,7 @@ export default function ServiceDetails() {
                                                 <div className="row justify-content-center align-items-center">
                                                     <div className="col-lg-6 col-md-8">
                                                         <div className="services-process-img">
-                                                            <img src="/assets/img/services/sp_img02.jpg" alt="" />
+                                                            <img src="/assets/img/services/pergola/banner.png" alt="" />
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-6">
