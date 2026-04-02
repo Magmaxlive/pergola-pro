@@ -294,7 +294,7 @@ const PopupModal = ({ isOpen, onClose }) => {
           }
 
           .popup-contact-wrapper {
-            padding: 20px 15px;
+            padding: 10px 15px;
           }
         }
 

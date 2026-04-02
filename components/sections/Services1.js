@@ -139,7 +139,7 @@ export default function Services1({ isService }) {
 
                     </div>
 
-                    {isService ? (<p className="mt-50">At Pergola Pro, we offer a wide range of outdoor solutions designed to enhance your home&apos;s beauty and functionality. Our services include custom canopies, adjustable louvres, durable carports, elegant pergolas, and versatile roller blinds. Each solution is crafted with precision and tailored to your unique needs, ensuring that your outdoor space is both beautiful and practical. Whether you're looking to create shade, increase privacy, or add a stylish feature to your home, our team of experts is dedicated to delivering quality craftsmanship and exceptional service.</p>) : null}
+                    {isService ? (<p className="mt-50">At Pergola Pro, we offer a wide range of outdoor solutions designed to enhance your home&apos;s beauty and functionality. Our services include custom canopies, adjustable louvres, durable <a href="https://pergolapro.co.nz/services/carports/">carports</a> , elegant pergolas, and versatile <a href="https://pergolapro.co.nz/services/roller-blinds/">roller blinds</a>. Each solution is crafted with precision and tailored to your unique needs, ensuring that your outdoor space is both beautiful and practical. Whether you're looking to create shade, increase privacy, or add a stylish feature to your home, our team of experts is dedicated to delivering quality craftsmanship and exceptional service.</p>) : null}
 
                 </div>
             </section>

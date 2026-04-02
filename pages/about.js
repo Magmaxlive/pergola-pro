@@ -72,7 +72,7 @@ export default function About() {
                                         {/* <span className="sub-title">About Our Company</span> */}
                                         <h2 className="title">About Our Company</h2>
                                     </div>
-                                    <p>Pergola Pro expertly creates outdoor areas that are tailored to each house. Under the direction of our in-house architectural designer, every client is able to express their distinct vision during the design phase. We then turn that vision into a remarkable final product, which significantly enhances the value of your property and lifestyle with comprehensive outdoor solutions.</p>
+                                    <p>Pergola Pro expertly creates outdoor areas that are tailored to each house. Under the direction of our in-house architectural designer, every client is able to express their distinct vision during the design phase. We then turn that vision into a remarkable final product, which significantly enhances the value of your property and lifestyle with comprehensive <a href="https://pergolapro.co.nz/">outdoor solutions</a>.</p>
                                     <p>
                                         <strong>OUR WORKFLOW IN-HOME CONSULTATION</strong> <br />
                                         After meeting with you on-site, one of our design experts will thoroughly comprehend your home’s vision, go over all of your options, and then offer you the best option for your particular circumstance.</p>

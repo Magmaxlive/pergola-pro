@@ -7,7 +7,7 @@ import Head from "next/head"
 const serviceContent = {
     mainTitle: "Fencing and Decking",
     title: "Fencing and Decking: Define and Enhance Your Outdoor Space in Tauranga",
-    description: "At Pergola Pro, we specialize in high-quality fencing and decking solutions that add privacy, security, and style to your home. Our fences and decks are built from authentic pine and other durable materials, ensuring they stay strong and look great for years. Whether you want a cozy barbecue deck or a privacy fence to keep your backyard secluded, we can design and install the perfect solution for your space and budget. As a trusted pergola builder in Tauranga, we're here to bring your outdoor vision to life.",
+    description: "At Pergola Pro, we specialize in high-quality fencing and decking solutions that add privacy, security, and style to your home. Our fences and decks are built from authentic pine and other durable materials, ensuring they stay strong and look great for years. Whether you want a cozy barbecue deck or a privacy fence to keep your backyard secluded, we can design and install the perfect solution for your space and budget. As a trusted <a href='https://pergolapro.co.nz/'>pergola builder in Tauranga</a>, we're here to bring your outdoor vision to life.",
 
     whyChoose: {
         title: "Why Choose Pergola Pro's Fencing and Decking?",
@@ -153,7 +153,7 @@ export default function ServiceDetails() {
                                     <div className="services-details-wrap">
                                         <div className="services-details-content mt-50">
                                             <h2 className="title">{serviceContent.title}</h2>
-                                            <p>{serviceContent.description}</p>
+                                            <p dangerouslySetInnerHTML={{ __html: serviceContent.description }} />
 
 
                                             <div className="services-process-wrap">
