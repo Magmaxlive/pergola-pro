@@ -8,7 +8,7 @@ import Head from "next/head"
 const serviceContent = {
     mainTitle: "Canopies",
     title: "Canopies: All-Weather Protection for Your Tauranga Outdoor Space",
-    description: "At Pergola Pro, we design and install high-quality canopies to protect your outdoor areas from sun, rain, and wind. Our canopies are made from UV-resistant polycarbonate and rust-proof aluminium, ensuring they stay strong and look great for years. Whether you need a canopy for your patio, carport, or garden, we can customize it to fit your space and budget.",
+    description: "At Pergola Pro, we design and install high-quality canopies to protect your outdoor areas from sun, rain, and wind. Our canopies are made from UV-resistant polycarbonate and rust-proof aluminium, ensuring they stay strong and look great for years. Whether you need a canopy for your patio,<a href='https://pergolapro.co.nz/services/carports/'> carport </a>, or garden, we can customize it to fit your space and budget.",
 
     whyChoose: {
         title: "Why Choose Pergola Pro's Canopies?",
@@ -20,7 +20,7 @@ const serviceContent = {
             },
             {
                 title: "Custom Designs for Every Space",
-                description: "Choose from a variety of sizes, styles, and colors to match your home's look. Custom options for curved, flat, or sloped roof designs to suit your needs. Our design experts will help you pick the perfect canopy for your patio, deck, or driveway.",
+                description: "Choose from a variety of sizes, styles, and colors to match your home's look. Custom options for curved, flat, or sloped roof designs to suit your needs. Our design experts will help you pick the perfect canopy for your patio, <a href='https://pergolapro.co.nz/services/fencing-decking/'> deck </a>, or driveway.",
                 icon: "/assets/img/icon/sp_icon01.svg",
             },
             {
@@ -149,7 +149,7 @@ export default function ServiceDetails() {
                                     <div className="services-details-wrap">
                                         <div className="services-details-content mt-50">
                                             <h2 className="title">{serviceContent.title}</h2>
-                                            <p>{serviceContent.description}</p>
+                                            <p dangerouslySetInnerHTML={{ __html: serviceContent.description }}/>
 
 
                                             <div className="services-process-wrap">
@@ -171,7 +171,7 @@ export default function ServiceDetails() {
                                                                             </div> */}
                                                                             <div className="content">
                                                                                 <h4 className="title">{feature.title}</h4>
-                                                                                <p>{feature.description}</p>
+                                                                                <p dangerouslySetInnerHTML={{ __html: feature.description }}/>
                                                                             </div>
                                                                         </div>
                                                                     </li>

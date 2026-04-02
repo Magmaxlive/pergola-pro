@@ -8,7 +8,7 @@ import Head from "next/head"
 const serviceContent = {
     mainTitle: "Carports",
     title: "Carports: Protect Your Vehicles with Style in Tauranga",
-    description: "At Pergola Pro, we build strong and stylish carports to protect your vehicles from the sun, rain, and other weather conditions. Made from high-quality aluminium and polycarbonate roofing, our carports are designed to last without needing much maintenance. Whether you need a simple carport for one car or a larger setup for multiple vehicles, we can customize it to fit your space and budget.",
+    description: "At <a href='https://pergolapro.co.nz/'> Pergola Pro </a>, we build strong and stylish carports to protect your vehicles from the sun, rain, and other weather conditions. Made from high-quality aluminium and polycarbonate roofing, our carports are designed to last without needing much maintenance. Whether you need a simple carport for one car or a larger setup for multiple vehicles, we can customize it to fit your space and budget.",
 
     whyChoose: {
         title: "Why Choose Pergola Pro Carports?",
@@ -155,7 +155,7 @@ export default function ServiceDetails() {
                                     <div className="services-details-wrap">
                                         <div className="services-details-content mt-50">
                                             <h2 className="title">{serviceContent.title}</h2>
-                                            <p>{serviceContent.description}</p>
+                                            <p dangerouslySetInnerHTML={{ __html: serviceContent.description }}/>
 
 
                                             <div className="services-process-wrap">

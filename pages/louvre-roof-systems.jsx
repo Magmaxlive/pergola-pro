@@ -8,7 +8,7 @@ import Head from "next/head"
 const serviceContent = {
     mainTitle: "Louvre Roof Systems",
     title: "Louvre Roof Systems Tauranga: Control Sun and Shade Effortlessly",
-    description: "With Pergola Pro's Louvre Roof Systems, you can take full control of your outdoor space—whether you want sunlight, shade, or protection from rain. Our louvre roofs feature adjustable panels that open and close at the touch of a button, letting you enjoy your patio, deck, or pergola in any weather. Made from high-quality aluminium and built to last, our louvre systems are the perfect mix of style and function.",
+    description: "With Pergola Pro's Louvre Roof Systems, you can take full control of your outdoor space—whether you want sunlight, shade, or protection from rain. Our louvre roofs feature adjustable panels that open and close at the touch of a button, letting you enjoy your patio, deck, or <a href='https://pergolapro.co.nz/'> pergola </a> in any weather. Made from high-quality aluminium and built to last, our louvre systems are the perfect mix of style and function.",
 
     whyChoose: {
         title: "Why Choose Pergola Pro's Louvre Roof Systems?",
@@ -154,7 +154,7 @@ export default function ServiceDetails() {
                                     <div className="services-details-wrap">
                                         <div className="services-details-content mt-50">
                                             <h2 className="title">{serviceContent.title}</h2>
-                                            <p>{serviceContent.description}</p>
+                                            <p dangerouslySetInnerHTML={{ __html: serviceContent.description }}/>
 
 
                                             <div className="services-process-wrap">
