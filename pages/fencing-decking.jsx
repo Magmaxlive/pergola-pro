@@ -135,6 +135,7 @@ export default function ServiceDetails() {
         <>
             <Head>
                 <title>Decking & Fencing Builders Tauranga | Pergola Pro NZ</title>
+                <link rel="canonical" href="https://www.pergolapro.co.nz/fencing-decking/" />
                 <meta name="title" content="Decking & Fencing Builders Tauranga | Pergola Pro NZ"></meta>
                 <meta name="description" content="Create the perfect outdoor space with expert decking and fencing Tauranga. Trust Pergola Pro for stylish, durable outdoor installations. Call +64 27 392 8106."></meta>
             </Head>

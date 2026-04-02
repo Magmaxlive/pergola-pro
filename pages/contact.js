@@ -10,6 +10,7 @@ export default function Contact({ onSuccess }) {
         <>
             <Head>
                 <title>Contact Pergola Pro Tauranga | Outdoor Living Experts</title>
+                <link rel="canonical" href="https://www.pergolapro.co.nz/contact/" />
                 <meta name="title" content="Contact Pergola Pro Tauranga | Outdoor Living Experts"></meta>
                 <meta name="description" content="Get in touch with Pergola Pro, Tauranga’s outdoor living specialists. Call +64 27 392 8106 or message us today to discuss your project."></meta>
             </Head>

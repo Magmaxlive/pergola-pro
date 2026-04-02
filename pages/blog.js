@@ -61,6 +61,7 @@ export default function Blog() {
         <>
             <Head>
                 <title>Pergola Pro Blog | Outdoor Living Tips & Design Ideas NZ</title>
+                <link rel="canonical" href="https://www.pergolapro.co.nz/blog/" />
                 <meta name="title" content="Pergola Pro Blog | Outdoor Living Tips & Design Ideas NZ"></meta>
                 <meta name="description" content="Stay updated with expert advice, pergola design trends, and outdoor living inspiration from Pergola Pro – Tauranga’s trusted pergola specialists."></meta>
             </Head>
