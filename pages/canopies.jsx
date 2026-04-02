@@ -131,6 +131,7 @@ export default function ServiceDetails() {
         <>
             <Head>
                 <title>Canopy Builders Tauranga | Outdoor Experts | Pergola Pro</title>
+                <link rel="canonical" href="https://www.pergolapro.co.nz/carports/" />
                 <meta name="title" content="Canopy Builders Tauranga | Outdoor Experts | Pergola Pro"></meta>
                 <meta name="description" content="Enhance your outdoor area with custom canopies in Tauranga. Pergola Pro provides stylish, weather-resistant canopy solutions with expert installation."></meta>
             </Head>

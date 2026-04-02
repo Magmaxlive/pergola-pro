@@ -136,6 +136,7 @@ export default function ServiceDetails() {
         <>
             <Head>
                 <title>Louvre Roof Systems Tauranga | Custom Installs | Pergola Pro</title>
+                <link rel="canonical" href="https://www.pergolapro.co.nz/louvre-roof-systems/" />
                 <meta name="title" content="Louvre Roof Systems Tauranga | Custom Installs | Pergola Pro"></meta>
                 <meta name="description" content="Upgrade with custom louvre roof systems in Tauranga. Pergola Pro designs and installs adjustable, stylish shade solutions. Request a quote now."></meta>
             </Head>

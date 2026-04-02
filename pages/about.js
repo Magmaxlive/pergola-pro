@@ -25,6 +25,7 @@ export default function About() {
         <>
             <Head>
                 <title>About Pergola Pro | Tauranga’s Trusted Outdoor Living Experts</title>
+                <link rel="canonical" href="https://www.pergolapro.co.nz/about/" />
                 <meta name="title" content="About Pergola Pro | Tauranga’s Trusted Outdoor Living Experts"></meta>
                 <meta name="description" content="Discover Pergola Pro’s story, values, and commitment to creating stylish outdoor spaces across Tauranga and the Bay of Plenty. Quality you can trust."></meta>
             </Head>

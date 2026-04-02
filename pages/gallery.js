@@ -104,6 +104,7 @@ export default function Project() {
     <>
       <Head>
         <title>Pergola Pro Gallery | Outdoor Living Inspiration in Tauranga</title>
+        <link rel="canonical" href="https://www.pergolapro.co.nz/gallery/" />
         <meta name="title" content="Pergola Pro Gallery | Outdoor Living Inspiration in Tauranga"></meta>
         <meta name="description" content="Explore our gallery of pergolas, carports, and louvre roofs built across Tauranga and NZ. Get inspired for your next outdoor project."></meta>
       </Head>
