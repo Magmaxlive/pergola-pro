@@ -154,7 +154,7 @@ export default function ServiceDetails() {
                                                 <div className="row justify-content-center align-items-center">
                                                     <div className="col-lg-6 col-md-8">
                                                         <div className="services-process-img">
-                                                            <img src="/assets/img/services/pergola/banner.png" alt="" />
+                                                            <img src="/assets/img/services/pergola/banner.png" alt="Modern outdoor pergola with dining and lounge area in landscaped backyard Tauranga" />
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-6">
@@ -186,7 +186,7 @@ export default function ServiceDetails() {
                                                     <div className="row justify-content-center align-items-center">
                                                         <div className="col-lg-6 col-md-8">
                                                             <div className="services-process-img">
-                                                                <img src="/assets/img/services/sp_img02.jpg" alt="" />
+                                                                <img src="/assets/img/services/sp_img02.jpg" alt="Outdoor louvre pergola structure with sliding screens and sunlight New Zealand" />
                                                             </div>
                                                         </div>
                                                         <div className="col-lg-6">

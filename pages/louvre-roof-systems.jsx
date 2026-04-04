@@ -52,8 +52,18 @@ const serviceContent = {
             "Low Maintenance: Built from rust-proof and UV-resistant materials that require little upkeep."
         ],
         images: [
-            "/assets/img/services/louvre-roof-system/3.png",
-            "/assets/img/services/louvre-roof-system/4.jpg"
+
+            {
+                image : "/assets/img/services/louvre-roof-system/3.png",
+                alt : 'Modern outdoor pergola with louvre roof and glass walls in landscaped backyard Tauranga'
+            },
+
+            {
+                image : "/assets/img/services/louvre-roof-system/4.jpg",
+                alt : 'Close-up of wooden louvre roof pergola panels providing shade and airflow'
+            },
+
+           
         ]
     },
 
@@ -161,7 +171,7 @@ export default function ServiceDetails() {
                                                 <div className="row justify-content-center align-items-center">
                                                     <div className="col-lg-6 col-md-8">
                                                         <div className="services-process-img">
-                                                            <img src="/assets/img/services/louvre-roof-system/2.png" alt="" />
+                                                            <img src="/assets/img/services/louvre-roof-system/2.png" alt="Woman relaxing under louvre roof pergola adjusting remote control in outdoor space Tauranga" />
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-6">
@@ -191,8 +201,8 @@ export default function ServiceDetails() {
                                                 <div className="row">
                                                     <div className="col-lg-7 order-0 order-lg-2">
                                                         <div className="benefits-img">
-                                                            {serviceContent.benefits.images.map((image, index) => (
-                                                                <img key={index} src={image} alt="" style={{maxWidth:"300px", maxHeight: "300px", objectFit: "cover"}} />
+                                                            {serviceContent.benefits.images.map((i,index) => (
+                                                                <img key={index} src={i.image} alt={i.alt} style={{maxWidth:"300px", maxHeight: "300px", objectFit: "cover"}} />
                                                             ))}
                                                         </div>
                                                     </div>

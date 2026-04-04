@@ -52,8 +52,17 @@ const serviceContent = {
             "Low Maintenance: Built from rust-proof and UV-resistant materials that require minimal upkeep."
         ],
         images: [
-            "/assets/img/services/carports/1.jpg",
-            "/assets/img/services/carports/2.jpg"
+            {
+                image : "/assets/img/services/carports/1.jpg",
+                alt : 'Single carport installation with metal roof protecting vehicle outside home Tauranga'
+            },
+
+            {
+                image : "/assets/img/services/carports/2.jpg",
+                alt : 'Modern carport structure with parked car in residential driveway New Zealand'
+            },
+            
+            
         ]
     },
 
@@ -162,7 +171,7 @@ export default function ServiceDetails() {
                                                 <div className="row justify-content-center align-items-center">
                                                     <div className="col-lg-6 col-md-8">
                                                         <div className="services-process-img">
-                                                            <img src="/assets/img/services/carports/2.jpg" alt="" />
+                                                            <img src="/assets/img/services/carports/2.jpg" alt="Interior window with roller blinds controlling sunlight in modern home Tauranga" />
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-6">
@@ -192,8 +201,8 @@ export default function ServiceDetails() {
                                                 <div className="row">
                                                     <div className="col-lg-7 order-0 order-lg-2">
                                                         <div className="benefits-img">
-                                                            {serviceContent.benefits.images.map((image, index) => (
-                                                                <img key={index} src={image} alt="" style={{maxWidth:"300px", maxHeight: "400px", objectFit: "cover"}} />
+                                                            {serviceContent.benefits.images.map((i, index) => (
+                                                                <img key={index} src={i.image} alt={i.alt} style={{maxWidth:"300px", maxHeight: "400px", objectFit: "cover"}} />
                                                             ))}
                                                         </div>
                                                     </div>

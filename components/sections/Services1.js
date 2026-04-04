@@ -38,7 +38,7 @@ export default function Services1({ isService }) {
                         <div className="col-lg-4 col-md-6 col-sm-10">
                             <div className="services-item wow fadeInUp" data-wow-delay=".4s" data-background="https://server.pergolapro.co.nz/wp-content/uploads/2023/12/canopies.jpg" onMouseEnter={() => handleToggle(2)} onMouseLeave={() => handleToggle(2)}>
                                 <div className="services-icon" style={{ display: `${isActive.key == 2 ? "none" : "flex"}` }}>
-                                    <img src="/assets/img/icon/services_icon02.svg" alt="" />
+                                    <img src="/assets/img/icon/services_icon02.svg" alt="Pergolas service in Tauranga – custom outdoor pergola installation" />
                                 </div>
                                 <div className="services-content">
                                     <h2 className="title" style={{ display: `${isActive.key == 2 ? "none" : "block"}` }}><Link href="/pergolas">Pergolas</Link></h2>
@@ -55,7 +55,7 @@ export default function Services1({ isService }) {
                         <div className="col-lg-4 col-md-6 col-sm-10">
                             <div className="services-item wow fadeInUp" data-wow-delay=".6s" data-background="https://server.pergolapro.co.nz/wp-content/uploads/2023/12/carports.jpg" onMouseEnter={() => handleToggle(3)} onMouseLeave={() => handleToggle(3)}>
                                 <div className="services-icon" style={{ display: `${isActive.key == 3 ? "none" : "flex"}` }}>
-                                    <img src="/assets/img/icon/services_icon03.svg" alt="" />
+                                    <img src="/assets/img/icon/services_icon03.svg" alt="Carports installation Tauranga – durable and modern carport solutions" />
                                 </div>
                                 <div className="services-content">
                                     <h2 className="title" style={{ display: `${isActive.key == 3 ? "none" : "block"}` }}><Link href="/carports">Carports</Link></h2>
@@ -72,7 +72,7 @@ export default function Services1({ isService }) {
                         <div className="col-lg-4 col-md-6 col-sm-10">
                             <div className="services-item wow fadeInUp" data-wow-delay=".4s" data-background="https://server.pergolapro.co.nz/wp-content/uploads/2023/12/roller.jpg" onMouseEnter={() => handleToggle(4)} onMouseLeave={() => handleToggle(4)}>
                                 <div className="services-icon" style={{ display: `${isActive.key == 4 ? "none" : "flex"}` }}>
-                                    <img src="/assets/img/icon/services_icon02.svg" alt="" />
+                                    <img src="/assets/img/icon/services_icon02.svg" alt="Outdoor roller blinds Tauranga – weather protection and privacy screens" />
                                 </div>
                                 <div className="services-content">
                                     <h2 className="title" style={{ display: `${isActive.key == 4 ? "none" : "block"}` }}><Link href="/roller-blinds">Roller Blinds</Link></h2>
@@ -89,7 +89,7 @@ export default function Services1({ isService }) {
                         <div className="col-lg-4 col-md-6 col-sm-10">
                             <div className="services-item wow fadeInUp" data-wow-delay=".3s" data-background="https://server.pergolapro.co.nz/wp-content/uploads/2023/12/louvre.jpg" onMouseEnter={() => handleToggle(5)} onMouseLeave={() => handleToggle(5)}>
                                 <div className="services-icon" style={{ display: `${isActive.key == 5 ? "none" : "flex"}` }}>
-                                    <img src="/assets/img/icon/services_icon04.svg" alt="" />
+                                    <img src="/assets/img/icon/services_icon04.svg" alt="Louvre roof systems Tauranga – adjustable outdoor roofing solutions" />
                                 </div>
                                 <div className="services-content">
                                     <h2 className="title" style={{ display: `${isActive.key == 5 ? "none" : "block"}` }}><Link href="/louvre-roof-systems">Louvre Roof Systems</Link></h2>
@@ -106,7 +106,7 @@ export default function Services1({ isService }) {
                         <div className="col-lg-4 col-md-6 col-sm-10">
                             <div className="services-item wow fadeInUp" data-wow-delay=".6s" data-background="https://server.pergolapro.co.nz/wp-content/uploads/2023/12/canopies.jpg" onMouseEnter={() => handleToggle(6)} onMouseLeave={() => handleToggle(6)}>
                                 <div className="services-icon" style={{ display: `${isActive.key == 6 ? "none" : "flex"}` }}>
-                                    <img src="/assets/img/icon/services_icon05.svg" alt="" />
+                                    <img src="/assets/img/icon/services_icon05.svg" alt="Custom canopies Tauranga – stylish shade structures for outdoor spaces" />
                                 </div>
                                 <div className="services-content">
                                     <h2 className="title" style={{ display: `${isActive.key == 6 ? "none" : "block"}` }}><Link href="/canopies">Canopies</Link></h2>
@@ -123,7 +123,7 @@ export default function Services1({ isService }) {
                         <div className="col-lg-4 col-md-6 col-sm-10">
                             <div className="services-item wow fadeInUp" data-wow-delay=".9s" data-background="https://server.pergolapro.co.nz/wp-content/uploads/2024/08/fence.png" onMouseEnter={() => handleToggle(7)} onMouseLeave={() => handleToggle(7)}>
                                 <div className="services-icon" style={{ display: `${isActive.key == 7 ? "none" : "flex"}` }}>
-                                    <img src="/assets/img/icon/services_icon06.svg" alt="" />
+                                    <img src="/assets/img/icon/services_icon06.svg" alt="Fencing and decking Tauranga – quality outdoor construction services" />
                                 </div>
                                 <div className="services-content">
                                     <h2 className="title" style={{ display: `${isActive.key == 7 ? "none" : "block"}` }}><Link href="/fencing-decking">Fencing & Decking</Link></h2>
