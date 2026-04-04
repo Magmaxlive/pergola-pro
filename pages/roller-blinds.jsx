@@ -158,7 +158,7 @@ export default function ServiceDetails() {
                                                 <div className="row justify-content-center align-items-start">
                                                     <div className="col-lg-6 col-md-8">
                                                         <div className="services-process-img">
-                                                            <img src="/assets/img/services/roller/rollerbends3.jpg" alt="" />
+                                                            <img src="/assets/img/services/roller/rollerbends3.jpg" alt="Interior window with roller blinds controlling sunlight in modern home Tauranga" />
                                                         </div>
                                                     </div>
                                                     <div className="col-lg-6">
@@ -189,7 +189,7 @@ export default function ServiceDetails() {
                                                     <div className="col-lg-7 order-0 order-lg-2">
                                                         <div className="benefits-img">
                                                             {serviceContent.benefits.images.map((image, index) => (
-                                                                <img key={index} src={image} alt="" />
+                                                                <img key={index} src={image} alt="Outdoor room with roller blinds and glass walls overlooking garden landscape Tauranga" />
                                                             ))}
                                                         </div>
                                                     </div>

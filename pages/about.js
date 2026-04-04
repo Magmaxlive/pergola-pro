@@ -44,12 +44,12 @@ export default function About() {
                         <div className="row align-items-center">
                             <div className="col-xl-7 col-lg-6 order-0 order-lg-2">
                                 <div className="about-img-wrap">
-                                    <img src="/assets/img/about/3.jpg" alt="" style={{ maxWidth: "309px" }} className="wow fadeInRight" data-wow-delay=".4s" />
-                                    <img src="/assets/img/about/5.webp" alt="" style={{ maxWidth: "369px" }} className="wow fadeInRight" data-wow-delay=".2s" />
+                                    <img src="/assets/img/about/3.jpg" alt="Installer working on modern louvre roof system outdoor installation Tauranga" style={{ maxWidth: "309px" }} className="wow fadeInRight" data-wow-delay=".4s" />
+                                    <img src="/assets/img/about/5.webp" alt="Stylish pergola with outdoor dining setup in landscaped backyard New Zealand" style={{ maxWidth: "369px" }} className="wow fadeInRight" data-wow-delay=".2s" />
                                     <div className="about-experiences-wrap">
                                         <div className="experiences-item">
                                             <div className="icon">
-                                                <img src="/assets/img/icon/about_icon01.svg" alt="" />
+                                                <img src="/assets/img/icon/about_icon01.svg" alt="Pergola Pro 10+ years experience icon representing trusted outdoor solutions" />
                                             </div>
                                             <div className="content">
                                                 <h6 className="title">We have more than 10 years of experiences</h6>
@@ -57,7 +57,7 @@ export default function About() {
                                         </div>
                                         <div className="experiences-item">
                                             <div className="icon">
-                                                <img src="/assets/img/icon/about_icon02.svg" alt="" />
+                                                <img src="/assets/img/icon/about_icon02.svg" alt="Professional Tauranga team icon representing experienced pergola installers" />
                                             </div>
                                             <div className="content">
                                                 <h6 className="title">Professional & Experienced Local Tauranga Team</h6>
