@@ -133,6 +133,7 @@ export default function BlogDetails() {
                 <title>{blogPost.yoast_head_json.title ? blogPost.yoast_head_json.title : ""}</title>
                 <meta name="title" content={blogPost.yoast_head_json.title ? blogPost.yoast_head_json.title : ""}></meta>
                 <meta name="description" content={blogPost.yoast_head_json.description ? blogPost.yoast_head_json.description : ""}></meta>
+                <link rel="canonical" href={`https://pergolapro.co.nz/blog/${Router.query.name}/${id}`} />
             </Head>
             <Layout breadcrumbTitle="Blog Details">
                 {blogPost && (
