@@ -62,7 +62,7 @@ const ContactMain = ({ onSuccess }) => {
                 });
 
                 setTimeout(() => {
-                    onSuccess();
+                    if (typeof onSuccess === 'function') onSuccess();
                 }, 1500);
             }
         } catch (error) {
