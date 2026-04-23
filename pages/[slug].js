@@ -102,19 +102,24 @@ export default function SuburbPage({ suburb, slug }) {
                 <section style={{ padding: "80px 0" }}>
                     <div className="container">
                         <div className="row align-items-center">
-                            <div className="col-lg-12 text-center">
+                            <div className="col-lg-5 col-12 text-start">
                                 <h2 className="title mb-20">{suburb.hero.headline}</h2>
                                 {isLouvre && suburb.hero.subheadline && (
                                     <h2 className="sub-title mb-20" style={{ fontSize: "1.3rem", fontWeight: 500 }}>
                                         {suburb.hero.subheadline}
                                     </h2>
                                 )}
-                                <p className="mb-35" style={{ maxWidth: 800, margin: "0 auto" }}>
+                                <p className="mb-35" style={{ maxWidth: 750, margin: "0 auto" }}>
                                     {suburb.hero.description}
                                 </p>
-                                <Link href="/contact" className="btn btn-two mt-2">
-                                    Get a Free Quote
+                                <Link href="/gallery" className="btn btn-two mt-3">
+                                    View our gallery
                                 </Link>
+                            </div>
+                            <div className="col-lg-1"></div>
+                            <div className="col-lg-6 col-12 mt-5 mt-lg-0">
+                                <ContactMain />
+
                             </div>
                         </div>
                     </div>
