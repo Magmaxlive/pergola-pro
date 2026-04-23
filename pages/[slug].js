@@ -101,22 +101,63 @@ export default function SuburbPage({ suburb, slug }) {
                 {/* Hero */}
                 <section style={{ padding: "80px 0" }}>
                     <div className="container">
-                        <div className="row align-items-center">
-                            <div className="col-lg-5 col-12 text-start">
+                        <div className="row align-items-start">
+                            <div className="col-lg-6 col-12 text-start">
                                 <h2 className="title mb-20">{suburb.hero.headline}</h2>
                                 {isLouvre && suburb.hero.subheadline && (
                                     <h2 className="sub-title mb-20" style={{ fontSize: "1.3rem", fontWeight: 500 }}>
                                         {suburb.hero.subheadline}
                                     </h2>
                                 )}
-                                <p className="mb-35" style={{ maxWidth: 750, margin: "0 auto" }}>
+                                <p className="mb-35" style={{ maxWidth: 800, margin: "0 auto" }}>
                                     {suburb.hero.description}
                                 </p>
                                 <Link href="/gallery" className="btn btn-two mt-3">
                                     View our gallery
                                 </Link>
+
+                                <div className="mt-5 col-12" >
+                                <div className="contact-info-wrap">
+                                    <h2 className="title">Get Your Free Quote Today
+</h2>
+                                    <ul className="list-wrap d-flex justify-content-between">
+                                        <li>
+                                            <div className="contact-info-item mt-4">
+                                                <div className="icon">
+                                                    <i className="fas fa-phone-alt" />
+                                                </div>
+                                                <div className="content">
+                                                    <Link href="tel:+64273928106">+64 27 392 8106</Link>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div className="contact-info-item">
+                                                <div className="icon">
+                                                    <i className="fas fa-envelope" />
+                                                </div>
+                                                <div className="content">
+                                                    <Link href="mailto:info@pergolapro.co.nz">info@pergolapro.co.nz</Link>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            {/* <div className="contact-info-item">
+                                                <div className="icon">
+                                                    <i className="fas fa-map-marker-alt" />
+                                                </div>
+                                                <div className="content">
+                                                    <p>11 Aurora Avenue, Welcome Bay, <br /> Tauranga 3112, New Zealand</p>
+                                                </div>
+                                            </div> */}
+                                        </li>
+                                    </ul>
+                                </div>
+                                {/* contact-map */}
+                               
                             </div>
-                            <div className="col-lg-1"></div>
+                            </div>
+                            
                             <div className="col-lg-6 col-12 mt-5 mt-lg-0">
                                 <ContactMain />
 
@@ -265,14 +306,7 @@ export default function SuburbPage({ suburb, slug }) {
                     </div>
                 </section>
 
-                <div className="row justify-content-center py-2">
-                    <h3 className="text-center" id="contact">Get in touch</h3>
-                    <div className="col-xl-6 col-lg-10 my-3">
-
-                            <ContactMain />
-
-                        </div>
-                </div>
+                
 
             </Layout>
         </>
