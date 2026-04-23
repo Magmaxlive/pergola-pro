@@ -4,11 +4,13 @@ import Layout from "@/components/layout/Layout"
 import { data } from "@/supurbData"
 import Slugify from "@/components/validators/slugify"
 import { useState } from "react"
+import GoogleReviews from "@/components/google/reviews"
+import ContactMain from "@/components/contact/main"
 
 function getCanonicalSlug(entry) {
     const base = Slugify(entry.suburb)
     return entry.page_type === "louvre_roof_systems"
-        ? `louvres-${base}`
+        ? `louvreroof-${base}`
         : `pergola-${base}`
 }
 
@@ -59,14 +61,49 @@ export default function SuburbPage({ suburb, slug }) {
                 `}</style>
             </Head>
 
-            <Layout breadcrumbTitle={suburb.page_title}>
+            <Layout>
+
+                {/* Banner */}
+                <section style={{
+                    position: "relative",
+                    padding: "200px 0",
+                    backgroundSize: "cover",
+                    backgroundImage: 'url(/assets/img/banner/pergolaCover.png)',
+                    backgroundPosition: "center",
+                }}>
+                    <div style={{
+                        position: "absolute",
+                        inset: 0,
+                        background: "rgba(0, 0, 0, 0.65)",
+                    }} />
+                    <div className="container text-center" style={{ position: "relative", zIndex: 1 }}>
+                        <h1 style={{ color: "#fff", fontWeight: 700, marginBottom: 8 }}>
+                            {suburb.page_title}
+                        </h1>
+                        {/* <p style={{ color: "rgba(255,255,255,0.75)", marginBottom: 0 }}>
+                            {suburb.suburb} · Pergola Pro NZ
+                        </p> */}
+                        <div className="d-flex justify-content-center align-items-center gap-3 mt-5">
+                            <p style={{ color: "rgba(255,255,255,0.85)", marginBottom: 0 , fontSize:'20px' , fontWeight:600 }}>1000+ Happy Customers</p>
+                            <span style={{ color: "rgba(255,255,255,0.4)" }}>|</span>
+                            <p style={{ color: "rgba(255,255,255,0.85)", marginBottom: 0 , fontSize:'20px' , fontWeight:600 }}>
+                                <i className="fas fa-star" style={{ color: "#FFC107" }} />
+                                <i className="fas fa-star" style={{ color: "#FFC107" }} />
+                                <i className="fas fa-star" style={{ color: "#FFC107" }} />
+                                <i className="fas fa-star" style={{ color: "#FFC107" }} />
+                                <i className="fas fa-star" style={{ color: "#FFC107" }} />
+                                {" "} 4.9/5 stars
+                            </p>
+                        </div>
+                    </div>
+                </section>
 
                 {/* Hero */}
-                <section className="about-area pt-120 pb-80">
+                <section style={{ padding: "80px 0" }}>
                     <div className="container">
                         <div className="row align-items-center">
                             <div className="col-lg-12 text-center">
-                                <h1 className="title mb-20">{suburb.hero.headline}</h1>
+                                <h2 className="title mb-20">{suburb.hero.headline}</h2>
                                 {isLouvre && suburb.hero.subheadline && (
                                     <h2 className="sub-title mb-20" style={{ fontSize: "1.3rem", fontWeight: 500 }}>
                                         {suburb.hero.subheadline}
@@ -82,6 +119,8 @@ export default function SuburbPage({ suburb, slug }) {
                         </div>
                     </div>
                 </section>
+
+                <GoogleReviews/>
 
                 {/* Services */}
                 <section className="services-area pt-80 pb-80" style={{ background: "#f7f7f7" }}>
@@ -220,6 +259,15 @@ export default function SuburbPage({ suburb, slug }) {
                         </div>
                     </div>
                 </section>
+
+                <div className="row justify-content-center py-2">
+                    <h3 className="text-center" id="contact">Get in touch</h3>
+                    <div className="col-xl-6 col-lg-10 my-3">
+
+                            <ContactMain />
+
+                        </div>
+                </div>
 
             </Layout>
         </>

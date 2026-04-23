@@ -37,6 +37,9 @@
 28. Preloader
 ============================
 */
+body{
+	overflow-x: hidden;
+}
 
 /* Services Details Content Styling */
 .services-details-content {
