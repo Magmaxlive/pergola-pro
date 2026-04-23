@@ -1,7 +1,7 @@
 export const data = [
   {
     "suburb": "Tauranga",
-    "page_title": "Pergola Tauranga – Custom Outdoor Living Solutions",
+    "page_title": "Pergola Tauranga",
     "hero": {
       "headline": "Enhance Your Home with a Custom Pergola in Tauranga",
       "description": "Transform your outdoor space into the perfect retreat with a custom pergola in Tauranga. Whether you're looking to host guests, relax in style, or add value to your home, Pergola Pro delivers high-quality outdoor solutions tailored to your needs. With expert craftsmanship and premium materials, our pergolas are designed to provide shade, protection, and an elegant touch to any property. From concept to completion, our in-house architectural designer ensures every detail aligns with your vision, resulting in a space that enhances both aesthetics and functionality."
@@ -74,7 +74,7 @@ export const data = [
   },
   {
     "suburb": "Whakatāne",
-    "page_title": "Pergola Whakatāne – Custom Outdoor Living Experts",
+    "page_title": "Pergola Whakatāne",
     "hero": {
       "headline": "Premium Pergola Solutions in Whakatāne",
       "description": "Enhance your outdoor space with a custom pergola in Whakatāne, designed to provide style, comfort, and protection year-round. Whether you need a shaded retreat for relaxation or an elegant entertainment area, Pergola Pro creates bespoke outdoor structures that blend seamlessly with your home's design. Our expert team works closely with you to craft a pergola that reflects your vision, using top-tier materials to ensure durability and long-term performance."
@@ -147,7 +147,7 @@ export const data = [
   },
   {
     "suburb": "Opotiki",
-    "page_title": "Pergola Opotiki – Expert Outdoor Living Solutions",
+    "page_title": "Pergola Opotiki",
     "hero": {
       "headline": "Custom Pergolas in Opotiki for Stylish & Functional Outdoor Spaces",
       "description": "Transform your backyard into a stylish and functional retreat with a custom pergola in Opotiki. Whether you're looking for a shaded entertainment area, a cozy relaxation spot, or an elegant extension of your home, Pergola Pro specializes in crafting high-quality outdoor structures that enhance both aesthetics and usability. Our team of experienced designers and builders ensures that each pergola is tailored to your needs, using durable materials that withstand Opotiki's weather conditions."
@@ -220,7 +220,7 @@ export const data = [
   },
   {
     "suburb": "Matamata",
-    "page_title": "Pergola Matamata – Elevate Your Outdoor Living",
+    "page_title": "Pergola Matamata",
     "hero": {
       "headline": "Custom Pergolas in Matamata – Built for Style & Comfort",
       "description": "Enhance your outdoor space with a custom pergola in Matamata, designed to bring both style and functionality to your home. Whether you want a relaxing retreat, a shaded entertainment area, or a seamless extension of your living space, Pergola Pro creates high-quality outdoor structures tailored to your needs. With expert craftsmanship and durable materials, our pergolas are built to withstand Matamata's climate while adding value and comfort to your property."
@@ -293,7 +293,7 @@ export const data = [
   },
   {
     "suburb": "Putāruru",
-    "page_title": "Pergola Putāruru – Custom Outdoor Living Solutions",
+    "page_title": "Pergola Putāruru",
     "hero": {
       "headline": "Expert Pergola Builders in Putāruru – Designed for Comfort & Style",
       "description": "Enhance your outdoor space with a custom pergola in Putāruru, crafted to provide the perfect blend of style, shade, and durability. Whether you want a cozy retreat, an elegant entertainment area, or a practical extension of your living space, Pergola Pro delivers high-quality outdoor solutions tailored to your needs. Built with premium materials and expert craftsmanship, our pergolas are designed to withstand Putāruru's weather conditions while enhancing your home's aesthetics and functionality."
@@ -366,7 +366,7 @@ export const data = [
   },
   {
     "suburb": "Rotorua",
-    "page_title": "Pergola Rotorua – Custom Outdoor Living Experts",
+    "page_title": "Pergola Rotorua",
     "hero": {
       "headline": "Premium Pergola Solutions in Rotorua – Designed for Style & Functionality",
       "description": "Transform your backyard with a custom pergola in Rotorua, built to enhance your outdoor space with shade, style, and durability. Whether you need a cozy retreat, a modern entertainment area, or an elegant extension of your home, Pergola Pro delivers high-quality outdoor solutions tailored to your lifestyle. Using premium materials and expert craftsmanship, we create pergolas that withstand Rotorua's unique climate, adding both value and comfort to your property."
@@ -439,7 +439,7 @@ export const data = [
   },
   {
     "suburb": "Waihi",
-    "page_title": "Pergola Waihi – Custom Outdoor Living Experts",
+    "page_title": "Pergola Waihi",
     "hero": {
       "headline": "Bespoke Pergola Solutions in Waihi – Built for Style & Durability",
       "description": "Enhance your outdoor space with a custom pergola in Waihi, designed to provide shade, comfort, and elegance to your home. Whether you're looking to create a peaceful retreat, a stylish entertainment area, or a practical extension of your outdoor living space, Pergola Pro delivers high-quality solutions tailored to your needs. Our expert team ensures that each pergola is crafted with premium materials, designed to withstand Waihi's coastal climate, offering long-term durability and enhanced property value."
@@ -512,7 +512,7 @@ export const data = [
   },
   {
     "suburb": "Katikati",
-    "page_title": "Pergola Katikati – Transform Your Outdoor Space",
+    "page_title": "Pergola Katikati",
     "hero": {
       "headline": "Custom Pergolas in Katikati – Built for Style & Durability",
       "description": "Enhance your outdoor living with a custom pergola in Katikati, designed to provide shade, style, and functionality to your home. Whether you want a cozy relaxation area, a stunning entertainment space, or an elegant extension of your outdoor living, Pergola Pro offers high-quality solutions tailored to your needs. With expert craftsmanship and premium materials, our pergolas are built to withstand Katikati's weather conditions, ensuring long-lasting beauty and protection for your outdoor space."
@@ -877,7 +877,7 @@ export const data = [
   },
   {
     "suburb": "Tauranga",
-    "page_title": "Tauranga - Louvre Roof Systems",
+    "page_title": "Louvre Roof Tauranga",
     "page_type": "louvre_roof_systems",
     "hero": {
       "headline": "Louvre Roof Systems Tauranga – Redefine Your Outdoor Experience",
@@ -939,7 +939,7 @@ export const data = [
   },
   {
     "suburb": "Whakatāne",
-    "page_title": "Louvre Roof Systems – Whakatāne",
+    "page_title": "Louvre Roof Whakatāne",
     "page_type": "louvre_roof_systems",
     "hero": {
       "headline": "Louvre Roof Systems in Whakatāne – Elevate Your Outdoor Lifestyle",

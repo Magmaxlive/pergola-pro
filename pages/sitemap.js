@@ -46,9 +46,7 @@ export default function Sitemap() {
 
                             {/* Main Pages */}
                             <div className="col-lg-4 col-md-6 mb-40">
-                                <h4 className="title mb-20" style={{ borderBottom: "2px solid #fe5d14", paddingBottom: 10 }}>
-                                    Main Pages
-                                </h4>
+                                
                                 <ul className="list-unstyled">
                                     {staticLinks.map((link, i) => (
                                         <li key={i} className="mb-10">
@@ -61,9 +59,7 @@ export default function Sitemap() {
 
                             {/* Suburb Pergola Pages */}
                             <div className="col-lg-4 col-md-6 mb-40">
-                                <h4 className="title mb-20" style={{ borderBottom: "2px solid #fe5d14", paddingBottom: 10 }}>
-                                    Pergola Locations
-                                </h4>
+                                
                                 <ul className="list-unstyled">
                                     {pergolaSlugs.map((entry, i) => (
                                         <li key={i} className="mb-10">
@@ -76,9 +72,7 @@ export default function Sitemap() {
 
                             {/* Louvre Suburb Pages */}
                             <div className="col-lg-4 col-md-6 mb-40">
-                                <h4 className="title mb-20" style={{ borderBottom: "2px solid #fe5d14", paddingBottom: 10 }}>
-                                    Louvre Roof Locations
-                                </h4>
+                                
                                 <ul className="list-unstyled">
                                     {louvreSlug.map((entry, i) => (
                                         <li key={i} className="mb-10">
