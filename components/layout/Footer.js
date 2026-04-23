@@ -111,6 +111,8 @@ export default function Footer1() {
                                                 <li><Link href="/contact"><i className="fas fa-angle-double-right" />Refund Policy</Link></li>
                                                 <li><Link href="/contact"><i className="fas fa-angle-double-right" />Sitemap</Link></li> */}
                                                 <li><Link href="/contact/"><i className="fas fa-angle-double-right" />Contact Us</Link></li>
+                                                <li><Link href="/sitemap/"><i className="fas fa-angle-double-right" />Sitemap</Link></li>
+
                                             </ul>
                                         </div>
                                     </div>
