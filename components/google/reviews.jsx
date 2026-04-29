@@ -351,17 +351,9 @@ const GoogleReviews = () => {
                                 height="16"
                                 viewBox="0 0 24 24"
                                 fill={index < review.rating ? "#FFD700" : "#E4E5E9"}
-                                role="img"
-                                aria-labelledby={`star-title-${review.id}-${index}`}
-                                aria-describedby={`star-desc-${review.id}-${index}`}
+                                aria-hidden="true"
                                 className="me-1"
                               >
-                                <title id={`star-title-${review.id}-${index}`}>
-                                  {index < review.rating ? "Filled star" : "Empty star"}
-                                </title>
-                                <desc id={`star-desc-${review.id}-${index}`}>
-                                  {`Star ${index + 1} of 5 for ${review.reviewer.name}`}
-                                </desc>
                                 <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
                               </svg>
                             ))}
