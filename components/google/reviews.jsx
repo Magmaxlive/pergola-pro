@@ -11,13 +11,16 @@ const nReview = [
         "avatar": "https://lh3.googleusercontent.com/a/ACg8ocIdDvc6QCbZ1uvIAU2Eon7zCJF6_nKk_G6SnsUjv4GNy31nXw=s72-c-rp-mo-br100",
         "review_count": 3,
         "photo_count": 0,
-        "is_local_guide": false
+        "is_local_guide": false,
       },
       "rating": 5,
       "date": "8 weeks ago",
       "content": "Excellent work, we love the outcome. Thank you Pergola Pro!",
       "has_photos": false,
-      "photos": []
+      "photos": [],
+      'title':'Arnie Tablac customer testimonial',
+      'desc':'Customer Arnie Tablac sharing positive feedback about Pergola Pro service and experience'
+
     },
     {
       "id": "Ci9DQUlRQUNvZENodHljRjlvT2twUlJqTkxYMHhYTVc4eVlraDJaV1pMTnpSRFZtYxAB",
@@ -33,7 +36,10 @@ const nReview = [
       "date": "8 weeks ago",
       "content": "Pergola Pro - the team was professional, friendly and skilled. They arrived on time and communicated clearly from the start to finish. Sturdy construction and a perfect fit for my outdoor space. I will recommend for quality work and a smooth installation process.",
       "has_photos": false,
-      "photos": []
+      "photos": [],
+      'title':'George Walter Rajan customer review',
+      'desc':'Customer George Walter Rajan reviewing Pergola Pro professionalism and workmanship'
+
     },
     {
       "id": "ChdDSUhNMG9nS0VPSFA3LVRreWVMRWxnRRAB",
@@ -49,6 +55,9 @@ const nReview = [
       "date": "20 weeks ago",
       "content": "Finished our pergola in 2 days and then returned upon our request to fix a minor adjustment the very next day. Although initially skeptical, they certainly proved their worth, I would be happy to recommend them!!",
       "has_photos": true,
+      'title':'Hiraina Melbourne testimonial',
+      'desc':'Customer Hiraina Melbourne describing Pergola Pro service quality and support',
+
       "photos": [
         {
           "url": "https://lh3.googleusercontent.com/geougc-cs/AB3l90ANLf1-1yycdrtPlHKgUPM0LZC6iCa316DMkwCiUVCOGFiDT2YFWdACOaMHlWPTVknTBlO52xmd0swVn2Nz5z1oGkuAAApc7di4GfI6FR2tGkMij-0tXR3lBp7TFEVSqrbhOGw=s1440-w1440-h634-rw-k-p",
@@ -70,6 +79,9 @@ const nReview = [
       "date": "24 weeks ago",
       "content": "Very very punctual and easy to deal with also delivery of the finish product on time as discussed during the first meet up during the free quote and with very good and affordable price range.",
       "has_photos": false,
+      'title':'Kris Chand customer feedback',
+      'desc':'Customer Kris Chand sharing experience with Pergola Pro project delivery and service',
+
       "photos": []
     },
     {
@@ -226,7 +238,7 @@ const GoogleReviews = () => {
     return (
       <div className="d-flex">
         {[...Array(5)].map((_, i) => (
-          <i
+          <i 
             key={i}
             className={`fas fa-star ${i < rating ? 'text-warning' : 'text-light'}`}
           ></i>
@@ -304,24 +316,34 @@ const GoogleReviews = () => {
                           src={review.reviewer.avatar}
                           alt={review.reviewer.name}
                           className="rounded-circle"
-                          style={{ width: '50px', height: '50px', objectFit: 'cover', }}
+                          referrerPolicy="no-referrer"
+                          style={{ width: '50px', height: '50px', objectFit: 'cover' }}
+                          onError={(e) => {
+                            e.target.style.display = 'none'
+                            e.target.nextSibling.style.display = 'flex'
+                          }}
                         />
-                        {/* <div
-                          className="rounded-circle bg-gradient-primary d-flex align-items-center justify-content-center text-white fw-bold"
+                        <div
+                          className="rounded-circle d-none align-items-center justify-content-center text-white fw-bold"
                           style={{
                             width: '50px',
                             height: '50px',
                             background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-                            display: 'none'
-                          }} >
-                          {review.reviewer.name.charAt(0)}
-                        </div> */}
+                            fontSize: '1.2rem',
+                          }}
+                        >
+                          {review.reviewer.name.charAt(0).toUpperCase()}
+                        </div>
                       </div>
                       <div className="flex-grow-1 ms-3">
                         <h5 className="card-title fw-bold mb-1" style={{fontSize: "16px"}}>{review.reviewer.name}</h5>
                         <div className="d-flex align-items-center flex-wrap gap-2">
                           {/* Star Rating */}
-                          <div className="d-flex align-items-center">
+                          <div
+                            className="d-flex align-items-center"
+                            role="img"
+                            aria-label={`${review.rating} out of 5 stars — ${review.reviewer.name}`}
+                          >
                             {[...Array(5)].map((_, index) => (
                               <svg
                                 key={index}
@@ -329,7 +351,17 @@ const GoogleReviews = () => {
                                 height="16"
                                 viewBox="0 0 24 24"
                                 fill={index < review.rating ? "#FFD700" : "#E4E5E9"}
-                                className="me-1" >
+                                role="img"
+                                aria-labelledby={`star-title-${review.id}-${index}`}
+                                aria-describedby={`star-desc-${review.id}-${index}`}
+                                className="me-1"
+                              >
+                                <title id={`star-title-${review.id}-${index}`}>
+                                  {index < review.rating ? "Filled star" : "Empty star"}
+                                </title>
+                                <desc id={`star-desc-${review.id}-${index}`}>
+                                  {`Star ${index + 1} of 5 for ${review.reviewer.name}`}
+                                </desc>
                                 <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
                               </svg>
                             ))}

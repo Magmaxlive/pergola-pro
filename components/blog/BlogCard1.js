@@ -27,7 +27,7 @@ export default function BlogCard1({ item }) {
                     <div className="blog-post-thumb">
                         <Link href={`/blog/${Slugify(slugnName)}/${item.id}`}><img
                             src={`${item?.yoast_head_json?.og_image ? item?.yoast_head_json?.og_image[0].url : null}`}
-                            alt=""
+                            alt={cleanContent}
                             style={{ width: "100%", height: "300px", objectFit: "cover" }} />
                         </Link>
                     </div>
