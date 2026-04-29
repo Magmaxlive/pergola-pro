@@ -42,6 +42,86 @@ export default function Layout({ headerCls, headerTop, headTitle, breadcrumbTitl
                 `,
                 }}
             />
+
+            <Script
+                id="ld-json-org"
+                type="application/ld+json"
+                strategy="afterInteractive"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                            "@context": "https://schema.org",
+                            "@type": "FAQPage",
+                            "mainEntity": [
+
+                                {
+                                "@type": "Question",
+                                "name": "What is a pergola and how does it improve outdoor living?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "A pergola is an outdoor structure designed to provide shade and enhance your outdoor living space. It creates a comfortable area for relaxing, entertaining, and protecting against sun and light rain."
+                                }
+                                },
+                                {
+                                "@type": "Question",
+                                "name": "How much does a pergola cost in New Zealand?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Pergola costs in New Zealand vary depending on size, materials, and design. Basic pergolas may start from a few thousand dollars, while custom louvre roof systems and premium designs can cost significantly more."
+                                }
+                                },
+                                {
+                                "@type": "Question",
+                                "name": "What is a louvre roof system?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "A louvre roof system features adjustable blades that can be opened or closed to control sunlight, ventilation, and rain protection, making it ideal for year-round outdoor use."
+                                }
+                                },
+                                {
+                                "@type": "Question",
+                                "name": "Do I need council consent to build a pergola in New Zealand?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "In many cases, small pergolas may not require council consent, but larger or attached structures may need approval. It is best to check local council regulations before building."
+                                }
+                                },
+                                {
+                                "@type": "Question",
+                                "name": "Can Pergola Pro customise outdoor structures?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Yes, Pergola Pro offers fully customised pergolas, carports, and louvre roof systems designed to suit your space, style, and functional requirements."
+                                }
+                                },
+                                {
+                                "@type": "Question",
+                                "name": "Do pergolas provide protection from rain?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Standard pergolas offer partial protection, while louvre roof systems and covered pergolas provide excellent rain protection by closing the roof panels."
+                                }
+                                },
+                                {
+                                "@type": "Question",
+                                "name": "What materials are used for pergolas?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Pergolas are commonly built using aluminium, timber, or steel. Aluminium is popular in New Zealand due to its durability, low maintenance, and weather resistance."
+                                }
+                                },
+                                {
+                                "@type": "Question",
+                                "name": "Do you install pergolas in Tauranga and nearby areas?",
+                                "acceptedAnswer": {
+                                    "@type": "Answer",
+                                    "text": "Yes, Pergola Pro provides pergola and outdoor structure installations in Tauranga, Papamoa, Rotorua, and surrounding areas."
+                                }
+                                }
+
+                            ]
+                            }),
+                }}
+            />
             <Script
                 id="ld-json-org"
                 type="application/ld+json"
