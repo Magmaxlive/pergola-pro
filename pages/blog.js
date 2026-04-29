@@ -97,7 +97,7 @@ export default function Blog() {
                                                         <div className="rc-post-item">
                                                             <div className="rc-post-thumb">
                                                                 <Link href={`/blog/${slugnName}/${data.id}`}><img src={`${data?.yoast_head_json?.og_image ? data?.yoast_head_json?.og_image[0].url : null}`}
-                                                                    style={{ width: "100%", height: "90px", objectFit: "cover" }} alt={data?.title.rendered ? Slugify(data?.title.rendered) : ""} /></Link>
+                                                                    style={{ width: "100%", height: "90px", objectFit: "cover" }} alt={data?.title.rendered ? data.title.rendered.replace(/<[^>]*>/g, '') : ""} /></Link>
                                                             </div>
                                                             <div className="rc-post-content">
                                                                 <h5 className="title"><Link href={`/blog/${slugnName}/${data.id}`}>{parse(cleanContent)}</Link></h5>

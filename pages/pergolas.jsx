@@ -218,7 +218,7 @@ export default function ServiceDetails() {
                                                     <div className="col-lg-7 order-0 order-lg-2">
                                                         <div className="benefits-img">
                                                             {serviceContent.benefits.images.map((image, index) => (
-                                                                <img key={index} src={image} alt="" />
+                                                                <img key={index} src={image} alt="Benefits of Installing a Pergola?" />
                                                             ))}
                                                         </div>
                                                     </div>
