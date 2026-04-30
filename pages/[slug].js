@@ -37,11 +37,11 @@ export default function SuburbPage({ suburb, slug }) {
     return (
         <>
             <Head>
-                <title>{suburb.page_title} | Pergola Pro NZ</title>
-                <meta name="title" content={`${suburb.page_title} | Pergola Pro NZ`} />
+                <title>{suburb.meta.title}</title>
+                <meta name="title" content={suburb.meta.title} />
                 <meta
                     name="description"
-                    content={suburb.hero.description.slice(0, 160)}
+                    content={suburb.meta.description}
                 />
                 <link rel="canonical" href={canonicalUrl} />
                 <style>{`
@@ -109,9 +109,8 @@ export default function SuburbPage({ suburb, slug }) {
                                         {suburb.hero.subheadline}
                                     </h2>
                                 )}
-                                <p className="mb-35" style={{ maxWidth: 800, margin: "0 auto" }}>
-                                    {suburb.hero.description}
-                                </p>
+                                <p className="mb-35" style={{ maxWidth: 800, margin: "0 auto" }} dangerouslySetInnerHTML={{ __html: suburb.hero.description }} />
+                                
                                 <Link href="/gallery" className="btn btn-two mt-3">
                                     View our gallery
                                 </Link>
