@@ -56,6 +56,7 @@ export default function Header({ headerCls, headerTop }) {
     { path: "/about", label: "About us" },
     { path: "/blog", label: "Blog" },
     { path: "/contact", label: "Contact" },
+    { path: "/catalogue", label: "Catalogue" },
   ];
 
   return (
