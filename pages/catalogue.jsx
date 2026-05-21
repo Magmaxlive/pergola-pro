@@ -155,7 +155,7 @@ export default function Catalogue() {
                                 <div className="col-md-6 col-12 d-flex flex-column gap-3 px-md-5 px-3">
                                         <h5>Pergola designs, louvre roof systems, and outdoor living ideas. All in one catalogue made for New Zealand homes.</h5>
                                         <p>Some homes have a room that does most of the living. For a growing number of homeowners from Tauranga to the Bay of Plenty and beyond, that room doesn't have walls.</p>
-                                        <p> If you're exploring pergola ideas for your New Zealand home, this is where it starts. One pergola brochure. Every answer you need. Before you measure, before you quote, before you decide.</p>
+                                        <p> If you're exploring <a href="https://www.pergolapro.co.nz/blog/top-5-pergola-design-ideas-for-nz-homes/10009/" className="text-decoration-underline fw-bold">  pergola ideas</a> for your New Zealand home, this is where it starts. One pergola brochure. Every answer you need. Before you measure, before you quote, before you decide.</p>
                                         <h6 className="fw-bold">Get the Free Catalogue <span className="fw-light ms-2"> 20 pages. Straight to your inbox.</span></h6>
                                         <button onClick={openModal} className="py-2 px-3 fw-bold text-white border-0 rounded-3 cat-dl-btn" style={{backgroundColor:'#fe5d14'}}>Download Catalogue</button>
                                 </div>
