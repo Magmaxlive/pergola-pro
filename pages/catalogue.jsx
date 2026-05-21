@@ -3,10 +3,11 @@ import Head from "next/head"
 import { useState } from "react"
 
 
+
 export default function Catalogue() {
     const [isActive, setIsActive] = useState({ status: false, key: "" })
     const [showModal, setShowModal] = useState(false)
-    const [formData, setFormData] = useState({ name: '', email: '', phone: '' })
+    const [formData, setFormData] = useState({ name: '', email: '', phone: '' , service:'', location:''})
     const [submitting, setSubmitting] = useState(false)
     const [error, setError] = useState('')
 
@@ -25,7 +26,7 @@ export default function Catalogue() {
 
     const closeModal = () => {
         setShowModal(false)
-        setFormData({ name: '', email: '', phone: '' })
+        setFormData({ name: '', email: '', phone: '', location: '', service: '' })
         setError('')
     }
 
@@ -38,14 +39,15 @@ export default function Catalogue() {
         setError('')
         setSubmitting(true)
         try {
-            const res = await fetch('/api/contact', {
+            const res = await fetch('/api/catalogue', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
                     name: formData.name,
                     email: formData.email,
-                    message: `Phone: ${formData.phone || 'Not provided'}\n\nRequested: Catalogue Download`,
-                    subject: 'Catalogue Download Request',
+                    phone: formData.phone,
+                    service: formData.service,
+                    location: formData.location,
                 }),
             })
             if (!res.ok) throw new Error('Submission failed')
@@ -275,6 +277,32 @@ export default function Catalogue() {
                                 />
                             </div>
 
+                            <div>
+                                <label className="form-label fw-bold">Service <span>(Optional)</span></label>
+                                <input
+                                    type="text"
+                                    name="service"
+                                    className="form-control"
+                                    placeholder="Describe the service you're interested in"
+                                    value={formData.service}
+                                    onChange={handleChange}
+                                />
+                            </div>
+
+                            <div>
+                                <label className="form-label fw-bold">Location <span style={{color:'#fe5d14'}}>*</span></label>
+                                <input
+                                    type="text"
+                                    name="location"
+                                    className="form-control"
+                                    placeholder="Enter your location"
+                                    value={formData.location}
+                                    onChange={handleChange}
+                                    required
+                                />
+                            </div>
+
+                            
                             {error && <p style={{color:'red',fontSize:'0.875rem',margin:0}}>{error}</p>}
 
                             <button
