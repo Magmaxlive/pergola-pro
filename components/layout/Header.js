@@ -2,6 +2,8 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Sidebar from "./Sidebar";
+import { usePathname } from "next/navigation"
+
 
 export default function Header({ headerCls, headerTop }) {
   const [scroll, setScroll] = useState(0);
@@ -9,6 +11,7 @@ export default function Header({ headerCls, headerTop }) {
   const [servicesDropdown, setServicesDropdown] = useState(false);
   const [mobileServicesDropdown, setMobileServicesDropdown] = useState(false);
   const router = useRouter();
+  const pathname = usePathname();
 
   const handleToggled = () => {
     setToggled(!isToggled);
@@ -188,11 +191,14 @@ export default function Header({ headerCls, headerTop }) {
                     </div>
                     <div className="header-action d-none d-md-block">
                       <ul className="list-wrap">
-                        <li className="header-btn">
-                          <Link href="/catalogue" className="btn" style={{ fontSize: "14px" }}>
-                            Download Catalogue 
-                          </Link>
-                        </li>
+                        {pathname !== "/catalogue/" && (
+                          <li className="header-btn">
+                            <Link href="/catalogue" className="btn" style={{ fontSize: "14px" }}>
+                              Download Catalogue 
+                            </Link>
+                          </li>
+                        )}
+                        
                       </ul>
                     </div>
                   </nav>

@@ -128,10 +128,10 @@ export default function Catalogue() {
         <>
             <style>{`.cat-dl-btn { width: 50%; } @media (max-width: 767px) { .cat-dl-btn { width: 100% !important; } }`}</style>
             <Head>
-                <title>Catalogue Pergola Pro | Tauranga’s Trusted Outdoor Living Experts</title>
+                <title>Pergola Designs for Tauranga, NZ Homes | Free Catalogue Download</title>
                 <link rel="canonical" href="https://www.pergolapro.co.nz/about/" />
-                <meta name="title" content="About Pergola Pro | Tauranga’s Trusted Outdoor Living Experts"></meta>
-                <meta name="description" content="Discover Pergola Pro’s story, values, and commitment to creating stylish outdoor spaces across Tauranga and the Bay of Plenty. Quality you can trust."></meta>
+                <meta name="title" content="Pergola Designs for Tauranga, NZ Homes | Free Catalogue Download"></meta>
+                <meta name="description" content="Download the free Pergola Pro catalogue featuring modern pergola designs, louvre roof systems, outdoor living ideas, and premium solutions for New Zealand homes"></meta>
             </Head>
             <Layout breadcrumbTitle="About Us">
                 <section className="about-area inner-about-area pt-30 pb-120">
@@ -150,7 +150,7 @@ export default function Catalogue() {
                         <div className="d-flex gap-5 flex-column mt-5">
                             <div className="row gap-4 gap-md-0 gap-lg-0">
                                 <div className="col-md-6 col-12 ">
-                                    <img src="/assets/img/gallery/canopies.png" alt="Canopies" style={{width:'100%'}} />
+                                    <img src="/assets/img/gallery/canopies.png" alt="pergola design nz" style={{width:'100%'}} />
                                 </div>
                                 <div className="col-md-6 col-12 d-flex flex-column gap-3 px-md-5 px-3">
                                         <h5>Pergola designs, louvre roof systems, and outdoor living ideas. All in one catalogue made for New Zealand homes.</h5>
@@ -198,7 +198,7 @@ export default function Catalogue() {
                         <div className="d-flex gap-5 flex-column mt-5">
                             <div className="row gap-4 gap-md-0 gap-lg-0">
                                 <div className="col-md-6 col-12 ">
-                                    <img src="/assets/img/gallery/15.png" alt="Canopies" style={{width:'100%'}} />
+                                    <img src="/assets/img/gallery/15.png" alt="pergola design tauranga" style={{width:'100%'}} />
                                 </div>
                                 <div className="col-md-6 col-12 d-flex flex-column gap-3 px-md-5 px-3">
                                         <h5>One Catalogue. The Whole Picture.</h5>
