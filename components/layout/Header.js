@@ -56,7 +56,7 @@ export default function Header({ headerCls, headerTop }) {
     { path: "/about", label: "About us" },
     { path: "/blog", label: "Blog" },
     { path: "/contact", label: "Contact" },
-    { path: "/catalogue", label: "Catalogue" },
+    
   ];
 
   return (
@@ -189,8 +189,8 @@ export default function Header({ headerCls, headerTop }) {
                     <div className="header-action d-none d-md-block">
                       <ul className="list-wrap">
                         <li className="header-btn">
-                          <Link href="/contact" className="btn" style={{ fontSize: "14px" }}>
-                            Get a Quote
+                          <Link href="/catalogue" className="btn" style={{ fontSize: "14px" }}>
+                            Download Catalogue 
                           </Link>
                         </li>
                       </ul>
