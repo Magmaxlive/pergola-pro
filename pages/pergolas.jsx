@@ -127,8 +127,8 @@ export default function ServiceDetails() {
             <Head>
                 <title>Quality Custom Pergola Builders Tauranga | Pergola Pro NZ</title>
                 <link rel="canonical" href="https://www.pergolapro.co.nz/pergolas/" />
-                <meta name="title" content="Quality Custom Pergola Builders Tauranga | Pergola Pro NZ"></meta>
-                <meta name="description" content="Build your dream pergola in Tauranga with Pergola Pro NZ. We craft durable, stylish and custom pergolas tailored to your outdoor lifestyle. Free quotes today."></meta>
+                <meta name="title" content="Custom Pergolas Tauranga | Aluminium Pergola Builders NZ"></meta>
+                <meta name="description" content="Custom aluminium pergolas designed for your home & NZ weather. Add style, shade & lasting value to your outdoor space. Free quote from Pergola Pro Tauranga."></meta>
             </Head>
 
             <Layout

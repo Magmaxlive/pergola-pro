@@ -72,8 +72,8 @@ export default function Blog({posts}) {
             <Head>
                 <title>Pergola Pro Blog | Outdoor Living Tips & Design Ideas NZ</title>
                 <link rel="canonical" href="https://www.pergolapro.co.nz/blog/" />
-                <meta name="title" content="Pergola Pro Blog | Outdoor Living Tips & Design Ideas NZ"></meta>
-                <meta name="description" content="Stay updated with expert advice, pergola design trends, and outdoor living inspiration from Pergola Pro – Tauranga’s trusted pergola specialists."></meta>
+                <meta name="title" content="Pergola Ideas & Outdoor Living Tips | Pergola Pro Blog NZ"></meta>
+                <meta name="description" content="Discover pergola design ideas, louvre roof tips, costs & outdoor living inspiration for NZ homes. Expert guides from Tauranga's outdoor specialists."></meta>
             </Head>
             <Layout breadcrumbTitle="Blog">
                 <section className="pt-30 pb-120">

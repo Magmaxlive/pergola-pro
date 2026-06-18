@@ -146,8 +146,8 @@ export default function ServiceDetails() {
             <Head>
                 <title>Carport Builders Tauranga | Durable & Stylish | Pergola Pro</title>
                 <link rel="canonical" href="https://www.pergolapro.co.nz/carports/" />
-                <meta name="title" content="Carport Builders Tauranga | Durable & Stylish | Pergola Pro"></meta>
-                <meta name="description" content="Tauranga’s trusted carport builders. Pergola Pro NZ designs and installs durable, stylish carports tailored to protect your vehicle year-round."></meta>
+                <meta name="title" content="Carport Builders Tauranga | Custom Aluminium Carports NZ"></meta>
+                <meta name="description" content="Protect your vehicle with a durable, stylish aluminium carport. Custom-built for Tauranga & Bay of Plenty homes & businesses. Free quote from Pergola Pro."></meta>
             </Head>
 
             <Layout

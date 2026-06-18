@@ -135,9 +135,9 @@ export default function ServiceDetails() {
         <>
             <Head>
                 <title>Roller Blinds Tauranga | Custom Outdoor Blinds | Pergola Pro</title>
-                <meta name="title" content="Roller Blinds Tauranga | Custom Outdoor Blinds | Pergola Pro"></meta>
+                <meta name="title" content="Outdoor Roller Blinds Tauranga | Ziptrak-Style Blinds NZ"></meta>
                 <link rel="canonical" href="https://www.pergolapro.co.nz/roller-blinds/" />
-                <meta name="description" content="Discover premium roller blinds in Tauranga. Pergola Pro installs custom outdoor blinds for shade, privacy, and modern aesthetics. Call: +64 27 392 8106."></meta>
+                <meta name="description" content="Premium outdoor roller blinds for shade, privacy & shelter year-round. Custom Ziptrak-style blinds built for NZ outdoor living. Free quote from Pergola Pro."></meta>
             </Head>
             <Layout
                 breadcrumbTitle={serviceContent.mainTitle}
