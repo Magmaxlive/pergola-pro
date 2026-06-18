@@ -9,7 +9,6 @@ export default function BlogCard1({ item }) {
     const cleanContent = (item?.title.rendered || "").replace(/\[\+\d+\s+chars\]/g, "");
     const detailData = parse(cleanContent);
 
-    const [slugnName, SlugName] = useState(detailData);
 
     const formatDate = (dateString) => {
         const date = new Date(dateString)
@@ -25,7 +24,7 @@ export default function BlogCard1({ item }) {
             <div className="col-lg-6 col-md-6">
                 <div className="blog-post-item">
                     <div className="blog-post-thumb">
-                        <Link href={`/blog/${Slugify(slugnName)}/${item.id}`}><img
+                        <Link href={`/blog/${item.slug}/${item.id}`}><img
                             src={`${item?.yoast_head_json?.og_image ? item?.yoast_head_json?.og_image[0].url : null}`}
                             alt={cleanContent}
                             style={{ width: "100%", height: "300px", objectFit: "cover" }} />
@@ -39,9 +38,9 @@ export default function BlogCard1({ item }) {
                                 <li><i className="fas fa-calendar-alt" />{formatDate(item.date)}</li>
                             </ul>
                         </div>
-                        <h2 className="title"><Link href={`/blog/${Slugify(slugnName)}/${item.id}`}>{detailData ? detailData.substring(0, 55) : null}</Link>
+                        <h2 className="title"><Link href={`/blog/${item.slug}/${item.id}`}>{detailData ? detailData.substring(0, 55) : null}</Link>
                         </h2>
-                        <Link href={`/blog/${slugnName}/${item.id}`} className="link-btn">Read More<i className="fas fa-arrow-right" /></Link>
+                        <Link href={`/blog/${item.slug}/${item.id}`} className="link-btn">Read More<i className="fas fa-arrow-right" /></Link>
                     </div>
                 </div>
             </div>

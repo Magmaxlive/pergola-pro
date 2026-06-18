@@ -6,14 +6,17 @@ import Pagination from "./Pagination"
 import { baseURL } from "@/auth/auth";
 import { useRouter } from "next/navigation";
 
-export default function BlogPost({ style, showItem, showPagination }) {
+
+
+export default function BlogPost({ posts,style, showItem, showPagination }) {
+   
     let [currentPage, setCurrentPage] = useState(1)
     let showLimit = showItem,
         paginationItem = 4
 
     let [pagination, setPagination] = useState([])
     let [limit, setLimit] = useState(showLimit)
-    let [pages, setPages] = useState(Math.ceil(data.length / limit))
+    let [pages, setPages] = useState(0)
 
     useEffect(() => {
         cratePagination()
@@ -57,37 +60,7 @@ export default function BlogPost({ style, showItem, showPagination }) {
     const cachedData = useRef([]);
     const router = useRouter();
 
-    useEffect(() => {
-        const storedData = localStorage.getItem("nData");
-        if (storedData) {
-            const parsedData = JSON.parse(storedData);
-            setNewsData(parsedData);
-            cachedData.current = parsedData;
-        } else {
-            fetchNewsData();
-        }
-        const handleScroll = () => {
-            if (window.scrollY === 0 && cachedData.current.length === 0) {
-                fetchNewsData();
-            }
-        };
-        window.addEventListener("scroll", handleScroll);
-        return () => window.removeEventListener("scroll", handleScroll);
-    }, []);
-
-    const fetchNewsData = async () => {
-        setIsLoading(true);
-        const res = await fetch(`${baseURL}/wp-json/wp/v2/posts?per_page=100`, {
-            method: "GET",
-            headers: { "Content-Type": "application/json" },
-        });
-        const data = await res.json();
-        setNewsData(data);
-        cachedData.current = data;
-        localStorage.setItem("nData", JSON.stringify(data));
-        setIsLoading(false);
-    };
-
+    
 
     return (
         <>
@@ -96,7 +69,7 @@ export default function BlogPost({ style, showItem, showPagination }) {
                 <h3>No Products Found </h3>
             )}
 
-            {newsData.map((news, i) => (
+            {posts.map((news, i) => (
                 <BlogCard1 key={i} item={news} />
             ))}
 

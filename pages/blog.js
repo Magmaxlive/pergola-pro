@@ -8,7 +8,17 @@ import Slugify from "@/components/validators/slugify";
 import Head from "next/head"
 import parse from 'html-react-parser';
 
-export default function Blog() {
+export async function getStaticProps() {
+  const res = await fetch(`${baseURL}/wp-json/wp/v2/posts?per_page=100`)
+  const posts = await res.json()
+  return {
+    props: { posts },
+    revalidate: 60,
+  }
+}
+
+
+export default function Blog({posts}) {
 
     const [blogsData, setNewsData] = useState([]);
     const [isLoading, setIsLoading] = useState(false);
@@ -81,7 +91,7 @@ export default function Blog() {
                         <div className="row justify-content-center">
                             <div className="col-xl-8">
                                 <div className="row">
-                                    <BlogPost showItem={6} showPagination />
+                                    <BlogPost posts={posts} showItem={6} showPagination />
                                 </div>
                             </div>
                             <div className="col-xl-4 col-lg-6 col-md-10">
@@ -90,7 +100,7 @@ export default function Blog() {
                                         <h4 className="widget-title">Recent News</h4>
                                         <div className="rc-post-wrap">
                                             {blogsData.map((data, i) => {
-                                                let slugnName = data?.title.rendered ? Slugify(data?.title.rendered) : null;
+                                                let slugnName = data?.slug;
                                                 const cleanContent = (data?.title.rendered || "").replace(/\[\+\d+\s+chars\]/g, "");
                                                 return (
                                                     <>
