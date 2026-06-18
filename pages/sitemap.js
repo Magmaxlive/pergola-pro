@@ -24,6 +24,7 @@ const staticLinks = [
     { label: "Gallery",            href: "/gallery/" },
     { label: "Blog",               href: "/blog/" },
     { label: "Contact",            href: "/contact/" },
+    { label: "Catalogue",            href: "/catalogue/" },
 ]
 
 export default function Sitemap() {
