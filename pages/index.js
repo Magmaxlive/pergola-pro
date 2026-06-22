@@ -79,7 +79,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>#1 Pergola Tauranga, Custom Pergola Builder | Pergola Pro NZ</title>
+        <title>Tauranga Pergola Builders | Louvre Roofs | Pergola Pro NZ</title>
         <link rel="canonical" href="https://www.pergolapro.co.nz/" />
         <meta name="google-site-verification" content="Vwx11lciX8sFPCvdtJJiOKoUiHImUD5Jw02PtRJTFEA" />
         <meta name="title" content="Tauranga Pergola Builders | Louvre Roofs | Pergola Pro NZ"></meta>
@@ -108,7 +108,7 @@ export default function Home() {
         <Faq1 />
 
         {/* Popup Modal */}
-        <PopupModal isOpen={showPopup} onClose={handleClosePopup} />
+        {/* <PopupModal isOpen={showPopup} onClose={handleClosePopup} /> */}
       </Layout>
     </>
   );

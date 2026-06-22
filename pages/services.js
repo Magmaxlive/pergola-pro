@@ -46,7 +46,7 @@ export default function Service({isService}) {
                                 "@type": "City",
                                 "name": "Tauranga"
                             },
-                            "url": "https://pergolapro.co.nz/services/pergolas/"
+                            "url": "https://pergolapro.co.nz/pergolas/"
                         }),
                     }}
                 />

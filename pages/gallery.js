@@ -103,7 +103,7 @@ export default function Project() {
   return (
     <>
       <Head>
-        <title>Pergola Pro Gallery | Outdoor Living Inspiration in Tauranga</title>
+        <title>Pergola Gallery Tauranga | Outdoor Living Projects NZ</title>
         <link rel="canonical" href="https://www.pergolapro.co.nz/gallery/" />
         <meta name="title" content="Pergola Gallery Tauranga | Outdoor Living Projects NZ"></meta>
         <meta name="description" content="Browse completed pergolas, carports, louvre roofs & decking across Tauranga & the Bay of Plenty. Get inspired for your own outdoor project today."></meta>
@@ -115,7 +115,7 @@ export default function Project() {
               <div className="col-lg-8">
                 <div className="section-title text-center mb-60">
                   <span className="sub-title">Our Gallery</span>
-                  <h2 className="title">Our Latest Gallery</h2>
+                  <h1 className="title">Our Latest Gallery</h1>
                 </div>
               </div>
             </div>

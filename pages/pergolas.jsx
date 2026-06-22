@@ -125,7 +125,7 @@ export default function ServiceDetails() {
     return (
         <>
             <Head>
-                <title>Quality Custom Pergola Builders Tauranga | Pergola Pro NZ</title>
+                <title>Custom Pergolas Tauranga | Aluminium Pergola Builders NZ</title>
                 <link rel="canonical" href="https://www.pergolapro.co.nz/pergolas/" />
                 <meta name="title" content="Custom Pergolas Tauranga | Aluminium Pergola Builders NZ"></meta>
                 <meta name="description" content="Custom aluminium pergolas designed for your home & NZ weather. Add style, shade & lasting value to your outdoor space. Free quote from Pergola Pro Tauranga."></meta>
@@ -146,7 +146,7 @@ export default function ServiceDetails() {
                                 <div className="col-xl-12">
                                     <div className="services-details-wrap">
                                         <div className="services-details-content mt-50">
-                                            <h2 className="title">{serviceContent.title}</h2>
+                                            <h1 className="title">{serviceContent.title}</h1>
                                             <p dangerouslySetInnerHTML={{ __html: serviceContent.description }} />
 
                                             {/* Key Features Section */}

@@ -163,7 +163,7 @@ export default function BlogDetails() {
                                                 </ul>
                                             </div>
 
-                                            <h2 className="title" dangerouslySetInnerHTML={{ __html: blogPost.title?.rendered || '' }} />
+                                            <h1 className="title" dangerouslySetInnerHTML={{ __html: blogPost.title?.rendered || '' }} />
 
                                             {/* Blog Content */}
                                             <div dangerouslySetInnerHTML={{ __html: blogPost.content?.rendered || '' }} />

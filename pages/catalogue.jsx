@@ -139,7 +139,7 @@ export default function Catalogue() {
                         <div className="row justify-content-center" >
                             <div className="col-lg-6">
                                 <div className="section-title text-center mb-50 tg-heading-subheading animation-style3">
-                                    <h2 className="title tg-element-title"><span style={{color:'#fe5d14'}}>New Zealand Pergola Designs &  </span> Outdoor Living Catalogue</h2>
+                                    <h1 className="title tg-element-title"><span style={{color:'#fe5d14'}}>New Zealand Pergola Designs &  </span> Outdoor Living Catalogue</h1>
                                 </div>
                             </div>
                         </div>

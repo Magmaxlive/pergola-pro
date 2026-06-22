@@ -145,7 +145,7 @@ export default function ServiceDetails() {
     return (
         <>
             <Head>
-                <title>Louvre Roof Systems Tauranga | Custom Installs | Pergola Pro</title>
+                <title>Louvre Roof Systems Tauranga | Opening Roof Pergolas NZ</title>
                 <link rel="canonical" href="https://www.pergolapro.co.nz/louvre-roof-systems/" />
                 <meta name="title" content="Louvre Roof Systems Tauranga | Opening Roof Pergolas NZ"></meta>
                 <meta name="description" content="Enjoy year-round outdoor living with adjustable louvre roofs. Control shade, airflow & rain at the push of a button. Free quote from Pergola Pro Tauranga."></meta>
@@ -163,7 +163,7 @@ export default function ServiceDetails() {
                                 <div className="col-xl-12">
                                     <div className="services-details-wrap">
                                         <div className="services-details-content mt-50">
-                                            <h2 className="title">{serviceContent.title}</h2>
+                                            <h1 className="title">{serviceContent.title}</h1>
                                             <p dangerouslySetInnerHTML={{ __html: serviceContent.description }}/>
 
 

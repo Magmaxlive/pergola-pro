@@ -8,7 +8,7 @@ import Head from "next/head"
 const serviceContent = {
     mainTitle: "Roller Blinds",
     title: "Roller Blinds: Privacy and Comfort for Your Outdoor Spaces",
-    description: "At Pergola Pro, we offer a wide range of roller blinds designed to make your outdoor spaces more private and comfortable. Our roller blinds are built from UV-resistant and waterproof fabrics, ensuring that your patio, deck,<a href='https://pergolapro.co.nz/services/louvre-roof-systems/'> louvre roof </a> or pergola stays cool, protected, and stylish. With options for manual and motorized controls, you can easily adjust the blinds to block out sunlight, wind, and nosy neighbors.",
+    description: "At Pergola Pro, we offer a wide range of roller blinds designed to make your outdoor spaces more private and comfortable. Our roller blinds are built from UV-resistant and waterproof fabrics, ensuring that your patio, deck,<a href='https://pergolapro.co.nz/louvre-roof-systems/'> louvre roof </a> or pergola stays cool, protected, and stylish. With options for manual and motorized controls, you can easily adjust the blinds to block out sunlight, wind, and nosy neighbors.",
 
     whyChoose: {
         title: "Why Choose Pergola Pro Roller Blinds in Tauranga?",
@@ -134,7 +134,7 @@ export default function ServiceDetails() {
     return (
         <>
             <Head>
-                <title>Roller Blinds Tauranga | Custom Outdoor Blinds | Pergola Pro</title>
+                <title>Outdoor Roller Blinds Tauranga | Ziptrak-Style Blinds NZ</title>
                 <meta name="title" content="Outdoor Roller Blinds Tauranga | Ziptrak-Style Blinds NZ"></meta>
                 <link rel="canonical" href="https://www.pergolapro.co.nz/roller-blinds/" />
                 <meta name="description" content="Premium outdoor roller blinds for shade, privacy & shelter year-round. Custom Ziptrak-style blinds built for NZ outdoor living. Free quote from Pergola Pro."></meta>
@@ -152,7 +152,7 @@ export default function ServiceDetails() {
                                 <div className="col-xl-12">
                                     <div className="services-details-wrap">
                                         <div className="services-details-content mt-50">
-                                            <h2 className="title">{serviceContent.title}</h2>
+                                            <h1 className="title">{serviceContent.title}</h1>
                                             <p dangerouslySetInnerHTML={{ __html: serviceContent.description }}/>
                                             <div className="services-process-wrap">
                                                 <div className="row justify-content-center align-items-start">

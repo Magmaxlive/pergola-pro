@@ -9,7 +9,7 @@ export default function Contact({ onSuccess }) {
     return (
         <>
             <Head>
-                <title>Contact Pergola Pro Tauranga | Outdoor Living Experts</title>
+                <title>Contact Pergola Pro Tauranga | Free Outdoor Living Quote</title>
                 <link rel="canonical" href="https://www.pergolapro.co.nz/contact/" />
                 <meta name="title" content="Contact Pergola Pro Tauranga | Free Outdoor Living Quote"></meta>
                 <meta name="description" content="Contact Pergola Pro for pergolas, carports, louvre roofs & outdoor blinds in Tauranga. Call +64 27 392 8106 for a free consultation & quote."></meta>
