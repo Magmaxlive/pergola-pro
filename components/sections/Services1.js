@@ -29,7 +29,7 @@ export default function Services1({ isService }) {
                         <div className="col-lg-6">
                             <div className="section-title text-center mb-50 tg-heading-subheading animation-style3">
                                 <span className="sub-title tg-element-title">Services</span>
-                                <h1 className="title tg-element-title"> Our Premium Outdoor Services in Tauranga </h1>
+                                <h2 className="title tg-element-title"> Our Premium Outdoor Services in Tauranga </h2>
                             </div>
                         </div>
                     </div>

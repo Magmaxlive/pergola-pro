@@ -16,7 +16,7 @@ export default function About1() {
                                             <img src="/assets/img/icon/about_icon01.svg" alt="Orange icon representing custom pergolas and outdoor living solutions"  />
                                         </div>
                                         <div className="content">
-                                            <h1 className="title">Award-Winning Custom Pergola Builders in Tauranga</h1>
+                                            <h2 className="title">Award-Winning Custom Pergola Builders in Tauranga</h2>
                                         </div>
                                     </div>
                                     <div className="experiences-item">
