@@ -1,4 +1,53 @@
 import { useState } from 'react'
+
+const faqs = [
+  {
+    question: "What types of pergolas do you offer in Tauranga and around NZ?",
+    answer:
+      "Aluminium, curved, and adjustable louvre roof systems, all custom built for your home and budget.",
+  },
+  {
+    question: "Do you install carports and fencing as well as pergolas?",
+    answer:
+      "Yes. We design and install carports, decking, and fencing alongside pergolas, so your whole outdoor space is handled by one team, with everything designed to match.",
+  },
+  {
+    question: "What's the difference between a louvre roof and a fixed pergola cover?",
+    answer:
+      "A louvre roof opens and closes with the weather. A fixed cover stays the same, if it’s rain or shine. Both are built for real New Zealand conditions.",
+  },
+  {
+    question: "Do you offer pergola installation outside Tauranga?",
+    answer:
+      "Yes. We install across the wider Bay of Plenty, and we also select projects outside that area. Get in touch and we'll let you know straight away whether we can help with yours.",
+  },
+  {
+    question: "How do I find a reliable pergola builder near me in Tauranga?",
+    answer:
+      "Look at their past work. Ask about the warranty. We're a Tauranga-based pergola installer, and we back every installation with a 10-year workmanship guarantee.",
+  },
+  {
+    question: "Will my pergola be custom built to fit my space?",
+    answer:
+      "Every pergola we build is designed to fit your space. Nothing pre-made, nothing generic.",
+  },
+  {
+    question: "What materials do you use?",
+    answer:
+      "Aluminium, chosen because it handles coastal weather without rusting, warping, or wearing out.",
+  },
+  {
+    question: "How long does installation take?",
+    answer:
+      "Most jobs wrap up in a few days. We'll give you a clear timeframe before anything starts.",
+  },
+  {
+    question: "What warranty comes with a Pergola Pro installation?",
+    answer:
+      "Ten years, workmanship guaranteed.",
+  },
+];
+
 export default function Faq1() {
     const [isActive, setIsActive] = useState({
         status: false,
@@ -42,80 +91,24 @@ export default function Faq1() {
                         <div className="col-xl-6">
                             <div className="faq-wrap">
                                 <div className="accordion">
-                                    <div className="accordion-item">
-                                        <h2 className="accordion-header" onClick={() => handleToggle(1)}>
-                                            <button className={isActive.key == 1 ? "accordion-button" : "accordion-button collapsed "}>
-                                                What types of pergolas and outdoor solutions do you offer in Auckland and Tauranga?
+                                    {faqs.map((i,index)=>(
+
+                                    <div key={index} className="accordion-item">
+                                        <h2 className="accordion-header" onClick={() => handleToggle(index)}>
+                                            <button className={isActive.key == index ? "accordion-button" : "accordion-button collapsed "}>
+                                                {i.question}
                                             </button>
                                         </h2>
-                                        <div className={isActive.key == 1 ? "accordion-collapse collapse  show" : "accordion-collapse collapse "}>
+                                        <div className={isActive.key == index ? "accordion-collapse collapse  show" : "accordion-collapse collapse "}>
                                             <div className="accordion-body">
-                                                <p>
-                                                    Pergola Pro specializes in crafting custom-designed pergolas, louvre roof systems, and canopies to enhance your outdoor living space. We also provide high-quality roller blinds, carports, and comprehensive decking and fencing services, all built to withstand New Zealand’s unique weather conditions.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="accordion-item">
-                                        <h2 className="accordion-header" onClick={() => handleToggle(2)}>
-                                            <button className={isActive.key == 2 ? "accordion-button" : "accordion-button collapsed "}>
-                                                How do your pergolas provide year-round protection from the New Zealand weather?
-                                            </button>
-                                        </h2>
-                                        <div className={isActive.key == 2 ? "accordion-collapse collapse  show" : "accordion-collapse collapse "}>
-                                            <div className="accordion-body">
-                                                <p>Our outdoor solutions are engineered to offer superior all-weather protection. They are designed to provide shade and block harmful UV rays during summer, while also offering reliable shelter from rain and wind, ensuring you can enjoy your outdoor area comfortably throughout the year.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="accordion-item">
-                                        <h2 className="accordion-header" onClick={() => handleToggle(3)}>
-                                            <button className={isActive.key == 3 ? "accordion-button" : "accordion-button collapsed "}>
-                                                Are your pergolas custom-made to fit my specific space?
-                                            </button>
-                                        </h2>
-                                        <div className={isActive.key == 3 ? "accordion-collapse collapse  show" : "accordion-collapse collapse "}>
-                                            <div className="accordion-body">
-                                                <p>Yes, absolutely. Every Pergola Pro project is a bespoke creation. We offer a comprehensive consultation and design process to ensure your new pergola is a perfect, tailor-made addition that seamlessly integrates with your home’s architecture and your lifestyle.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="accordion-item">
-                                        <h2 className="accordion-header" onClick={() => handleToggle(4)}>
-                                            <button className={isActive.key == 4 ? "accordion-button" : "accordion-button collapsed "}>
-                                                What materials do you use for your pergolas and outdoor blinds?
-                                            </button>
-                                        </h2>
-                                        <div className={isActive.key == 4 ? "accordion-collapse collapse  show" : "accordion-collapse collapse "}>
-                                            <div className="accordion-body">
-                                                <p>We use high-quality, durable materials, including structural aluminium and top-grade roofing sheets, that are specifically chosen for their longevity and resilience against coastal and high-wind environments. Our outdoor blinds are also made from robust, weather-resistant fabrics.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="accordion-item">
-                                        <h2 className="accordion-header" onClick={() => handleToggle(5)}>
-                                            <button className={isActive.key == 5 ? "accordion-button" : "accordion-button collapsed "}>
-                                                How long does it take to design and install a pergola?
-                                            </button>
-                                        </h2>
-                                        <div className={isActive.key == 5 ? "accordion-collapse collapse  show" : "accordion-collapse collapse "}>
-                                            <div className="accordion-body">
-                                                <p>The timeline for a pergola project can vary based on its complexity and size. From the initial free on-site consultation to the final installation, we work efficiently and maintain clear communication to keep your project on track, aiming for a swift and professional completion.</p>
+                                                <p>{i.answer}</p>
                                             </div>
                                         </div>
                                     </div>
 
-                                     <div className="accordion-item">
-                                        <h2 className="accordion-header" onClick={() => handleToggle(5)}>
-                                            <button className={isActive.key == 5 ? "accordion-button" : "accordion-button collapsed "}>
-                                                Do you offer a warranty on your workmanship and products?
-                                            </button>
-                                        </h2>
-                                        <div className={isActive.key == 5 ? "accordion-collapse collapse  show" : "accordion-collapse collapse "}>
-                                            <div className="accordion-body">
-                                                <p>Yes, we stand by the quality of our work. PergolaPro provides a solid 10-year workmanship guarantee on all our projects, giving you peace of mind and confidence in the long-term durability of your investment.</p>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    ))}
+                                    
+                                   
 
                                 </div>
                             </div>

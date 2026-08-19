@@ -46,7 +46,7 @@ export default function Services1({ isService }) {
                                 </div>
                                 <div className="services-overlay-content" style={{ display: `${isActive.key == 2 ? "block" : "none"}` }}>
                                     <h2 className="title">Pergolas</h2>
-                                    <p>Transform your outdoor space with Pergola Pro&apos;s exquisite pergolas</p>
+                                    <p> Custom aluminium pergolas, built for how you actually live outside</p>
                                     <Link href={"/pergolas"} className="read-more">Read More <i className="fas fa-arrow-right" /></Link>
                                 </div>
                             </div>
@@ -63,7 +63,7 @@ export default function Services1({ isService }) {
                                 </div>
                                 <div className="services-overlay-content" style={{ display: `${isActive.key == 3 ? "block" : "none"}` }}>
                                     <h2 className="title">Carports</h2>
-                                    <p>Discover the advantages of our cutting-edge carports</p>
+                                    <p>Solid, weatherproof carports Tauranga homeowners trust to protect their vehicles</p>
                                     <Link href={"/carports"} className="read-more">Read More <i className="fas fa-arrow-right" /></Link>
                                 </div>
                             </div>
@@ -80,7 +80,7 @@ export default function Services1({ isService }) {
                                 </div>
                                 <div className="services-overlay-content" style={{ display: `${isActive.key == 4 ? "block" : "none"}` }}>
                                     <h2 className="title">Roller Blinds</h2>
-                                    <p>Transform your outdoor space with Pergola Pro&apos;s custom roller blinds</p>
+                                    <p>Shade, privacy, and wind protection, right where your outdoor space needs it</p>
                                     <Link href={"/roller-blinds"} className="read-more">Read More <i className="fas fa-arrow-right" /></Link>
                                 </div>
                             </div>
@@ -97,7 +97,7 @@ export default function Services1({ isService }) {
                                 </div>
                                 <div className="services-overlay-content" style={{ display: `${isActive.key == 5 ? "block" : "none"}` }}>
                                     <h2 className="title">Louvre Roof Systems</h2>
-                                    <p>Pergola Pro specializes in custom louvre solutions for outdoor spaces</p>
+                                    <p>Open for sun. Closed for rain. Full control, any day of the year</p>
                                     <Link href={"/louvre-roof-systems"} className="read-more">Read More <i className="fas fa-arrow-right" /></Link>
                                 </div>
                             </div>
@@ -114,7 +114,7 @@ export default function Services1({ isService }) {
                                 </div>
                                 <div className="services-overlay-content" style={{ display: `${isActive.key == 6 ? "block" : "none"}` }}>
                                     <h2 className="title">Canopies</h2>
-                                    <p>Transform your outdoor space with a canopy</p>
+                                    <p>Custom canopies for patios, decks, and entryways that need more than a plain roof</p>
                                     <Link href={"/canopies"} className="read-more">Read More <i className="fas fa-arrow-right" /></Link>
                                 </div>
                             </div>
@@ -131,7 +131,7 @@ export default function Services1({ isService }) {
                                 </div>
                                 <div className="services-overlay-content" style={{ display: `${isActive.key == 7 ? "block" : "none"}` }}>
                                     <h2 className="title">Fencing & Decking</h2>
-                                    <p>Transform your outdoor space with a canopy</p>
+                                    <p> Fencing and decking built to match the quality of your home and outdoor space</p>
                                     <Link href={"/fencing-decking"} className="read-more">Read More <i className="fas fa-arrow-right" /></Link>
                                 </div>
                             </div>
