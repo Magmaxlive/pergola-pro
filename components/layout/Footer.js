@@ -54,24 +54,24 @@ export default function Footer1() {
                                     <div className="footer-widget">
                                         <h2 className="fw-title">Contact Us</h2>
                                         <div className="footer-content">
-                                            <div class="contact-info">
+                                            <div className="contact-info">
                                                 <p>
-                                                    <i class="bi bi-geo-alt-fill me-2"></i>
-                                                    <a href="https://maps.app.goo.gl/wRSf8qe3BmQEFH8F9" target="_blank" class="text-decoration-none">
+                                                    <i className="bi bi-geo-alt-fill me-2"></i>
+                                                    <a href="https://maps.app.goo.gl/wRSf8qe3BmQEFH8F9" target="_blank" className="text-decoration-none">
                                                         11 Aurora Avenue, Welcome bay, Tauranga
                                                     </a>
                                                 </p>
 
                                                 <p>
-                                                    <i class="bi bi-envelope-fill me-2"></i>
-                                                    <a href="mailto:info@pergolapro.co.nz" class="text-decoration-none underline_hover">
+                                                    <i className="bi bi-envelope-fill me-2"></i>
+                                                    <a href="mailto:info@pergolapro.co.nz" className="text-decoration-none underline_hover">
                                                         info@pergolapro.co.nz
                                                     </a>
                                                 </p>
 
                                                 <p>
-                                                    <i class="bi bi-telephone-fill me-2"></i>
-                                                    <a href="tel:+64273928106" class="text-decoration-none">
+                                                    <i className="bi bi-telephone-fill me-2"></i>
+                                                    <a href="tel:+64273928106" className="text-decoration-none">
                                                         +64 27 392 8106
                                                     </a>
                                                 </p>

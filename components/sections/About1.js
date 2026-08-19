@@ -36,8 +36,14 @@ export default function About1() {
                                     {/* <span className="sub-title tg-element-title">About Our Company</span> */} <br />
                                     <h2 className="title tg-element-title">Custom Pergolas & Outdoor Living Solutions in Tauranga</h2>
                                 </div>
-                                <p>We know how much New Zealand enjoys outdoor entertaining, so we understand the importance of premium outdoor protection that protects against harmful UV rays and unpredictable weather. Transform your outdoor space with Pergola Pro, Tauranga’s trusted pergola builder. Pergola Pro <a href="https://pergolapro.co.nz/pergolas/">custom pergolas</a> , roller blinds, carports, louvre roof systems, canopies, & fencing and decking for both residential and commercial applications.</p>
-                                <p>With years of expertise in <a href="https://pergolapro.co.nz/pergola-tauranga/">pergola installation Tauranga</a> , and a reputation for exceptional craftsmanship, Pergola Pro has become a trusted name in outdoor solutions across New Zealand. Backed by a 10 years workmanship guarantee, you can trust us to enhance your outdoor living space with unmatched quality and reliability, perfect for those looking to invest in a long-lasting pergola New Zealand residents can be proud of.</p>
+                                <p>Your deck shouldn't just be four posts and a roof. It deserves a space you actually want to live in. </p>
+                                <p>Pergola Pro builds custom aluminium pergolas across Tauranga, engineered to handle real coastal weather: wind, rain, and salt air. We're Tauranga's trusted pergola installer, and every outdoor room we've built is proof of that trust.
+                                We also design and install louvre roof systems, carports, roller blinds, canopies, decking, and fencing, all built to the same standard. It's a complete outdoor upgrade, not a single structure bolted onto the side of your house.
+                                </p>
+                                <p>Want it fixed and solid? Choose an aluminium pergola, built to last. Want full control over sun and rain? An adjustable louvre pergola does that. Working to a budget? A ready-made pergola kit performs just as well, as long as it's installed properly."
+                                However you build it, it's made to last, backed by a team with a reputation built on real results.
+                                </p>
+                                <p>Ready to give life to your outdoor space? </p>
                                 {/* <div className="about-list">
                                     <ul className="list-wrap">
                                         <li><i className="fas fa-check" />32k Partners have worked us.</li>
@@ -45,7 +51,7 @@ export default function About1() {
                                         <li><i className="fas fa-check" />Provide the best roof services</li>
                                     </ul>
                                 </div> */}
-                                <Link href="/about" className="btn">Learn More</Link>
+                                <Link href="/contact" className="btn">Talk to us</Link>
                             </div>
                         </div>
                     </div>

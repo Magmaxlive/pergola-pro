@@ -21,8 +21,8 @@ export default function Work1() {
                                     <h4 className="number">01</h4>
                                 </div>
                                 <div className="work-content">
-                                    <h2 className="title">Advanced construction materials</h2>
-                                    <p><ul><li>Highly durable aluminum alloy, resistant to oxidation and corrosion, crafts profiled edges.<br /><br /></li><li>Polycarbonate roofing materials have a lifespan exceeding ten years, ensuring longevity and reliability.</li></ul></p>
+                                    <h2 className="title">Engineered for Coastal Conditions</h2>
+                                    <p><ul><li>Wind, rain, salt air, our pergolas can withstand Tauranga's relentless weather</li></ul></p>
                                 </div>
                             </div>
                         </div>
@@ -34,7 +34,9 @@ export default function Work1() {
                                 </div>
                                 <div className="work-content">
                                     <h2 className="title">Superior Drainage System</h2>
-                                    <p><ul><li>We use corrosion-resistant aluminum alloy drain pipes with a distinctive design to ensure efficient water flow and simple maintenance..<br /><br /></li><li>The noise reduction design ensures a peaceful atmosphere even during rainy weather, enhancing comfort and tranquility.</li></ul></p>
+                                    <p><ul><li>When it rains, the system drains water fast, keeping your space dry<br /><br /></li>
+                                    {/* <li>The noise reduction design ensures a peaceful atmosphere even during rainy weather, enhancing comfort and tranquility.</li> */}
+                                    </ul></p>
                                 </div>
                             </div>
                         </div>
@@ -45,9 +47,9 @@ export default function Work1() {
                                     <h4 className="number">03</h4>
                                 </div>
                                 <div className="work-content">
-                                    <h2 className="title">A fully customizable canopy</h2>
+                                    <h2 className="title">Fully Customisable Pergola & Canopy Design</h2>
                                     <p><ul>
-                                        <li>Irregular shape design options are available to cover any desired area, providing tailored solutions to meet individual needs.</li>
+                                        <li>Every structure is designed around your home, not the other way around</li>
                                     </ul></p>
                                 </div>
                             </div>
@@ -59,10 +61,10 @@ export default function Work1() {
                                     <h4 className="number">04</h4>
                                 </div>
                                 <div className="work-content">
-                                    <h2 className="title">Safety and protection</h2>
+                                    <h2 className="title">Motorised Louvre Roof Options</h2>
                                     <p><ul>
-                                        <li>The aluminum canopy&#8217;s B1-grade flame retardant properties prevent accidental fire damage, ensuring safety for the structure and occupants..<br /><br /></li>
-                                        <li>The double-sided co-extrusion process creates a UV-resistant layer, providing effective protection against harmful UV rays and promoting durability and longevity.</li>
+                                        <li>One button. Open it for sun. Close it for rain. You're always in control.</li>
+                                        {/* <li>The double-sided co-extrusion process creates a UV-resistant layer, providing effective protection against harmful UV rays and promoting durability and longevity.</li> */}
                                     </ul>	</p>
                                 </div>
                             </div>
