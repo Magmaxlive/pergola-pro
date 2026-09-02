@@ -38,7 +38,7 @@ export default async function handler(req, res) {
       phone: phone || 'Not provided',
       subject: subject || 'No subject',
       message: message,
-      timestamp: new Date(),
+      timestamp: new Date().toLocaleString('en-NZ', { timeZone: 'Pacific/Auckland' }),
       source: 'PergolaPro Website',
       location: location || 'Not provided',
     }
