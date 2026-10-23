@@ -1,95 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<!-- Main Website Pages -->
+<url>
     <loc>https://pergolapro.co.nz/</loc>
     <lastmod>2024-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-  </url>
-  
-  <url>
+</url>
+<url>
     <loc>https://pergolapro.co.nz/services/</loc>
     <lastmod>2024-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-  </url>
-  
-  <url>
+</url>
+<url>
     <loc>https://pergolapro.co.nz/about/</loc>
     <lastmod>2024-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-  </url>
-  
-  <url>
+</url>
+<url>
     <loc>https://pergolapro.co.nz/canopies/</loc>
     <lastmod>2024-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-  </url>
-  
-  <url>
+</url>
+<url>
     <loc>https://pergolapro.co.nz/carports/</loc>
     <lastmod>2024-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-  </url>
-  
-  <url>
+</url>
+<url>
     <loc>https://pergolapro.co.nz/contact/</loc>
     <lastmod>2024-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-  </url>
-  
-  <url>
+</url>
+<url>
     <loc>https://pergolapro.co.nz/fencing-decking/</loc>
     <lastmod>2024-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-  </url>
-  
-  <url>
+</url>
+<url>
     <loc>https://pergolapro.co.nz/gallery/</loc>
     <lastmod>2024-10-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-  </url>
-  
-  <url>
+</url>
+<url>
     <loc>https://pergolapro.co.nz/louvre-roof-systems/</loc>
     <lastmod>2024-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-  </url>
-  
-  <url>
+</url>
+<url>
     <loc>https://pergolapro.co.nz/pergolas/</loc>
     <lastmod>2024-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-  </url>
-  
-  <url>
+</url>
+<url>
     <loc>https://pergolapro.co.nz/privacy/</loc>
     <lastmod>2024-10-22</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
-  </url>
-  
-  <url>
+</url>
+<url>
     <loc>https://pergolapro.co.nz/roller-blinds/</loc>
     <lastmod>2024-10-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-  </url>
-  
-  <url>
+</url>
+<url>
     <loc>https://pergolapro.co.nz/blog/</loc>
     <lastmod>2024-10-22</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
-  </url>
+</url>
+
+<!-- Pergola Location Pages -->
+<url><loc>https://pergolapro.co.nz/pergola-tauranga/</loc></url>
+<url><loc>https://pergolapro.co.nz/pergola-whakatane/</loc></url>
+<url><loc>https://pergolapro.co.nz/pergola-opotiki/</loc></url>
+<url><loc>https://pergolapro.co.nz/pergola-matamata/</loc></url>
+<url><loc>https://pergolapro.co.nz/pergola-putaruru/</loc></url>
+<url><loc>https://pergolapro.co.nz/pergola-rotorua/</loc></url>
+<url><loc>https://pergolapro.co.nz/pergola-waihi/</loc></url>
+<url><loc>https://pergolapro.co.nz/pergola-katikati/</loc></url>
+<url><loc>https://pergolapro.co.nz/pergola-thames/</loc></url>
+<url><loc>https://pergolapro.co.nz/pergola-paeroa/</loc></url>
+<url><loc>https://pergolapro.co.nz/pergola-papamoa/</loc></url>
+<url><loc>https://pergolapro.co.nz/pergola-pyespa-lakes/</loc></url>
+
+<!-- Louvre Roof Location Pages -->
+<url><loc>https://pergolapro.co.nz/louvreroof-tauranga/</loc></url>
+<url><loc>https://pergolapro.co.nz/louvreroof-whakatane/</loc></url>
+
+<!-- Blog Articles -->
+<url><loc>https://pergolapro.co.nz/blog/innovative-carports-modern-protection-for-your-vehicles/2668/</loc></url>
+<url><loc>https://pergolapro.co.nz/blog/the-versatility-and-elegance-of-custom-louvre-systems/2666/</loc></url>
+<url><loc>https://pergolapro.co.nz/blog/enhancing-your-outdoor-space-with-custom-canopies/2652/</loc></url>
+<url><loc>https://pergolapro.co.nz/blog/transform-your-outdoor-space-with-pergolas-heres-how-to-install/8235/</loc></url>
+<url><loc>https://pergolapro.co.nz/blog/maintain-your-deck-like-pro/8245/</loc></url>
+<url><loc>https://pergolapro.co.nz/blog/create-your-perfect-outdoor-space/8603/</loc></url>
+<url><loc>https://pergolapro.co.nz/blog/beautify-your-home-with-a-canopy/8912/</loc></url>
+<url><loc>https://pergolapro.co.nz/blog/top-5-reasons-you-need-a-louvre-system/9359/</loc></url>
+<url><loc>https://pergolapro.co.nz/blog/do-you-need-council-consent-for-a-pergola-in-new-zealand/9489/</loc></url>
+<url><loc>https://pergolapro.co.nz/blog/louvre-roof-systems-vs-traditional-pergolas/9550/</loc></url>
+<url><loc>https://pergolapro.co.nz/blog/how-much-does-a-pergola-cost-intauranga/9557/</loc></url>
+<url><loc>https://pergolapro.co.nz/blog/top-5-pergola-design-ideas-for-nz-homes/10009/</loc></url>
+<url><loc>https://pergolapro.co.nz/blog/choose-the-right-outdoor-blinds-for-pergolas-in-tauranga/10021/</loc></url>
+<url><loc>https://pergolapro.co.nz/blog/guide-for-best-roller-blinds-in-tauranga-10056/10056/</loc></url>
+<url><loc>https://pergolapro.co.nz/blog/practical-and-aesthetic-outdoor-living-solutions-in-new-zealand/10065/</loc></url>
+<url><loc>https://pergolapro.co.nz/blog/pergola-trends-2026-guide-outdoor-living-new-zealand/10074/</loc></url>
+<url><loc>https://pergolapro.co.nz/blog/pergola-materials-guide-tauranga-nz/10082/</loc></url>
+<url><loc>https://pergolapro.co.nz/blog/aluminium-pergola-tauranga-nz/10094/</loc></url>
+<url><loc>https://pergolapro.co.nz/blog/pergolas-for-new-zealand-weather/10100/</loc></url>
+<url><loc>https://pergolapro.co.nz/blog/roller-blinds-tauranga/10116/</loc></url>
+<url><loc>https://pergolapro.co.nz/blog/best-pergola-materials-new-zealand-weather/10128/</loc></url>
+<url><loc>https://pergolapro.co.nz/blog/outdoor-canopy-maintenance-nz/10147/</loc></url>
 
 </urlset>
