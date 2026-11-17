@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { useRouter } from "next/navigation";
+
 
 const CTAFormsOne = () => {
-
+    const router = useRouter();
     const [formData, setFormData] = useState({
         fullName: '',
         email: '',
@@ -57,6 +59,8 @@ const CTAFormsOne = () => {
                     phone: '',
                     message: '',
                 })
+
+                router.push('/thankyou')
             }
         } catch (error) {
             setResponse({
